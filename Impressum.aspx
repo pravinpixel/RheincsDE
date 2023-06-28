@@ -34,6 +34,10 @@ Mail info@rheincs.com</p>
     <p>HRB 80619</p>
 <p>Umsatzsteueridentifikationsnummer DE293866616
 </p>
+    <p><b>Verantwortliche Person für alle inhaltlichen Fragen:</b><br/>
+    Arushi Kumbera<br/>
+    Telefon + 44 6671 7555<br />
+    Mail info@rheincs.com</p>
 </div>
 <div class="wrappernew main-container">
 

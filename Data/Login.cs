@@ -12,17 +12,10 @@ namespace RheinBrucke.Data
     using System;
     using System.Collections.Generic;
     
-    public partial class MailSetting
+    public partial class Login
     {
-        public int Id { get; set; }
-        public string LoginName { get; set; }
+        public int ID { get; set; }
+        public string UserName { get; set; }
         public string Password { get; set; }
-        public string Port { get; set; }
-        public string CustomSMTP { get; set; }
-        public Nullable<bool> EnableSSL { get; set; }
-        public Nullable<bool> Relay { get; set; }
-        public string ContactUsMailId { get; set; }
-        public string JobMailId { get; set; }
-        public string LandingMailId { get; set; }
     }
 }

@@ -353,7 +353,7 @@
         }
 
         function saveContact() {
-            //debugger;
+            debugger;
             var _rootUrl = $("#hdfRootUrl").val();
             var _mailList = {
                 name: $('#txtContactName').val(),

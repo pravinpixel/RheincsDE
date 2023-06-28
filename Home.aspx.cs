@@ -53,21 +53,21 @@ namespace RheinBrucke
                     var reader = new DatabaseReader(Server.MapPath("~/GeoIP/GeoLite2-Country.mmdb"));
 
 
-                    //if (Request.Cookies["firstvisit"] == null)
-                    //{
-                    //    var country = reader.Country(GetPublicIP());
-                    //    if (country != null)
-                    //    {
-                    //        HttpCookie myCookie = new HttpCookie("firstvisit");
-                    //        DateTime now = DateTime.Now;
-                    //        myCookie.Value = now.ToString();
-                    //        myCookie.Expires = now.AddMinutes(20);
-                    //        Response.Cookies.Add(myCookie);
+                    if (Request.Cookies["firstvisit"] == null)
+                    {
+                        var country = reader.Country(GetPublicIP());
+                        if (country != null)
+                        {
+                            HttpCookie myCookie = new HttpCookie("firstvisit");
+                            DateTime now = DateTime.Now;
+                            myCookie.Value = now.ToString();
+                            myCookie.Expires = now.AddMinutes(20);
+                            Response.Cookies.Add(myCookie);
 
-                    //        if (country.Country.IsoCode.ToUpper() == "IN" || country.Country.IsoCode.ToUpper() == "US" || country.Country.IsoCode.ToUpper() == "AU" || country.Country.IsoCode.ToUpper() == "CA" || country.Country.IsoCode.ToUpper() == "IE" || country.Country.IsoCode.ToUpper() == "NZ" || country.Country.IsoCode.ToUpper() == "GB")
-                    //            Response.Redirect("https://www.rheincs.com");
-                    //    }
-                    //}
+                            if (country.Country.IsoCode.ToUpper() == "IN" || country.Country.IsoCode.ToUpper() == "US" || country.Country.IsoCode.ToUpper() == "AU" || country.Country.IsoCode.ToUpper() == "CA" || country.Country.IsoCode.ToUpper() == "IE" || country.Country.IsoCode.ToUpper() == "NZ" || country.Country.IsoCode.ToUpper() == "GB")
+                                Response.Redirect("https://www.rheincs.com");
+                        }
+                    }
                 }
             }
             catch (Exception ex)

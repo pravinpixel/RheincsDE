@@ -46,14 +46,9 @@ namespace RheinBrucke.Library
                 }
             }
 
-            mailObj.MailFrom = _mailSettings.EmailId;
-            System.Net.Mail.MailMessage message = new System.Net.Mail.MailMessage();
-            //mailObj.MailFrom, mailObj.MailTo, mailObj.MailSubject, mailObj.MailBody
-
-            message.To.Add(new MailAddress(mailObj.MailTo, ""));
-            message.From = new MailAddress(mailObj.MailFrom, "");
-            message.Subject = mailObj.MailSubject;
-            message.Body = mailObj.MailBody;
+            mailObj.MailFrom = LoginName;
+            System.Net.Mail.MailMessage message = new System.Net.Mail.MailMessage(mailObj.MailFrom, mailObj.MailTo, mailObj.MailSubject, mailObj.MailBody);
+            //MailAddress addressCC = new MailAddress(mailObj.mailCC);
 
             //Attachment Details
             if (mailObj.IsAttachmentAvailable != null && mailObj.IsAttachmentAvailable == "Available")

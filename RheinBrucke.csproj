@@ -137,33 +137,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="2click-Assets\css\socialshareprivacy.css" />
-    <Content Include="2click-Assets\images\2-klick-logo.jpg" />
-    <Content Include="2click-Assets\images\dummy_facebook.png" />
-    <Content Include="2click-Assets\images\dummy_facebook_dark.png" />
-    <Content Include="2click-Assets\images\dummy_facebook_en.png" />
-    <Content Include="2click-Assets\images\dummy_facebook_like.png" />
-    <Content Include="2click-Assets\images\dummy_facebook_share_de.png" />
-    <Content Include="2click-Assets\images\dummy_facebook_share_de_dark.png" />
-    <Content Include="2click-Assets\images\dummy_facebook_share_en.png" />
-    <Content Include="2click-Assets\images\dummy_facebook_share_en_dark.png" />
-    <Content Include="2click-Assets\images\dummy_gplus.png" />
-    <Content Include="2click-Assets\images\dummy_gplus_alt.png" />
-    <Content Include="2click-Assets\images\dummy_gplus_dark.png" />
-    <Content Include="2click-Assets\images\dummy_twitter.png" />
-    <Content Include="2click-Assets\images\dummy_twitter_dark.png" />
-    <Content Include="2click-Assets\images\facebook_share_de.png" />
-    <Content Include="2click-Assets\images\facebook_share_de_dark.png" />
-    <Content Include="2click-Assets\images\facebook_share_en.png" />
-    <Content Include="2click-Assets\images\facebook_share_en_dark.png" />
-    <Content Include="2click-Assets\images\settings.png" />
-    <Content Include="2click-Assets\images\settings_dark.png" />
-    <Content Include="2click-Assets\images\socialshareprivacy_info.png" />
-    <Content Include="2click-Assets\images\socialshareprivacy_info_dark.png" />
-    <Content Include="2click-Assets\images\socialshareprivacy_on_off.png" />
-    <Content Include="2click-Assets\images\socialshareprivacy_on_off_dark.png" />
-    <Content Include="2click-Assets\js\jquery.socialshareprivacy.js" />
-    <Content Include="2click-Assets\js\jquery.socialshareprivacy.min.js" />
     <Content Include="Admin\Admin.aspx" />
     <Content Include="Admin\AdminHome.aspx" />
     <Content Include="Admin\AdminLogin.aspx" />
@@ -1259,8 +1232,6 @@
     <Content Include="Assets\images\Brochure\Image\RIC-brochure-middle-east.png" />
     <Content Include="Assets\images\bxpreviousarrow.png" />
     <Content Include="Assets\images\bxrightarrow.png" />
-    <Content Include="Assets\images\carlos-small.jpg" />
-    <Content Include="Assets\images\Carlos.jpg" />
     <Content Include="Assets\images\CaseStudies\Image\cs-al-ali.png" />
     <Content Include="Assets\images\CaseStudies\Image\cs-arabian-industry.png" />
     <Content Include="Assets\images\CaseStudies\Image\cs-fm.png" />
@@ -1289,13 +1260,9 @@
     <Content Include="Assets\images\einblicke-und-analysen-grey.png" />
     <Content Include="Assets\images\einblicke-und-analysen.png" />
     <Content Include="Assets\images\Epicor-partner-2016.png" />
-    <Content Include="Assets\images\Epicor-Payroll-MEA.png" />
     <Content Include="Assets\images\Epicor-RIC-Smartworld-Picture-2.jfif" />
     <Content Include="Assets\images\Epicor-RIC-Smartworld-Picture.jpeg" />
     <Content Include="Assets\images\executiveoftheyear.jpg" />
-    <Content Include="Assets\images\FactSheets\Image\erpvendor-FS.PNG" />
-    <Content Include="Assets\images\FactSheets\Image\OFS-factsheet.png" />
-    <Content Include="Assets\images\FactSheets\Image\ROI-FS.PNG" />
     <Content Include="Assets\images\Fastest-growing-company-of-the-year.jpg" />
     <Content Include="Assets\images\Gerab.png" />
     <Content Include="Assets\images\hospitalitybanner.jpg" />
@@ -1346,10 +1313,8 @@
     <Content Include="Assets\images\NewsEvents\Thumbnail\RheinBrücke-Microsoft-Partner-Oct-2014 Old.jpg" />
     <Content Include="Assets\images\NewsEvents\Thumbnail\RheinBrücke-Microsoft-Partner-Oct-2014.jpg" />
     <Content Include="Assets\images\NewsEvents\Thumbnail\RheinBrücke-TopConsultant-Award.jpg" />
-    <Content Include="Assets\images\Partner-of-the-year-2018-award-winners-image.jpeg" />
     <Content Include="Assets\images\People_s-choice.jpg" />
     <Content Include="Assets\images\PPA-banner.jpg" />
-    <Content Include="Assets\images\Rheinbrucke-map-location.jpg" />
     <Content Include="Assets\images\ric-logo.png" />
     <Content Include="Assets\images\RightArw.png" />
     <Content Include="Assets\images\Silver.jpg" />
@@ -1375,7 +1340,6 @@
     <Content Include="Assets\images\WhitePapers\Image\The-need-for-speed-and-accurate-data-iScala-whitepaper.png" />
     <Content Include="Assets\images\WhitePapers\Image\Top-6 -Technologies -Small -and Midsize- Manufacturers- cant afford- to -Ignore- EPICOR-ERP-WhitePaper.png" />
     <Content Include="Assets\images\WhitePapers\Image\Transforming-HR-Made-Easy-EPICOR-HCM-whitepaper.png" />
-    <Content Include="Assets\images\world-map-bg-mobile.jpg" />
     <Content Include="Assets\images\youtube\7.jpg" />
     <Content Include="Assets\Iscala\css\animate.min.css" />
     <Content Include="Assets\Iscala\css\expandableGallery.css" />
@@ -1453,21 +1417,6 @@
     <Content Include="Assets\LandingRheincs\Images\construction-3.jpg" />
     <Content Include="Assets\LandingRheincs\Images\hcm-1.jpg" />
     <Content Include="Assets\LandingRheincs\Images\hcm-2.jpg" />
-    <Content Include="bin\DotNetOpenAuth.Core.UI.dll" />
-    <Content Include="bin\DotNetOpenAuth.InfoCard.dll" />
-    <Content Include="bin\DotNetOpenAuth.InfoCard.UI.dll" />
-    <Content Include="bin\DotNetOpenAuth.OAuth.Common.dll" />
-    <Content Include="bin\DotNetOpenAuth.OAuth.ServiceProvider.dll" />
-    <Content Include="bin\DotNetOpenAuth.OAuth2.AuthorizationServer.dll" />
-    <Content Include="bin\DotNetOpenAuth.OAuth2.Client.dll" />
-    <Content Include="bin\DotNetOpenAuth.OAuth2.Client.UI.dll" />
-    <Content Include="bin\DotNetOpenAuth.OAuth2.ClientAuthorization.dll" />
-    <Content Include="bin\DotNetOpenAuth.OAuth2.dll" />
-    <Content Include="bin\DotNetOpenAuth.OAuth2.ResourceServer.dll" />
-    <Content Include="bin\DotNetOpenAuth.OpenId.Provider.dll" />
-    <Content Include="bin\DotNetOpenAuth.OpenId.Provider.UI.dll" />
-    <Content Include="bin\DotNetOpenAuth.OpenId.RelyingParty.UI.dll" />
-    <Content Include="bin\DotNetOpenAuth.OpenId.UI.dll" />
     <Content Include="bin\EntityFramework.SqlServer.xml" />
     <Content Include="bin\EntityFramework.xml" />
     <Content Include="bin\MaxMind.Db.dll" />
@@ -1491,7 +1440,6 @@
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>RheinBruckeEntity.cs</LastGenOutput>
     </Content>
-    <Content Include="Error404.aspx" />
     <Content Include="Fabian-Ringel\css\jquery.ui.css" />
     <Content Include="Fabian-Ringel\css\jquery.ui.html4.css" />
     <Content Include="Fabian-Ringel\css\magazine.css" />
@@ -1540,7 +1488,6 @@
     <Content Include="Fabian-Ringel\pics\zoom-icons-editable.png" />
     <Content Include="Fabian-Ringel\pics\zoom-icons.png" />
     <Content Include="Fabian-Ringel\pics\zoom.png" />
-    <Content Include="FactSheets\FactSheets.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="googlejs\analytics.aspx" />
     <Content Include="googlejs\linkid.aspx" />
@@ -1628,7 +1575,6 @@
     <Content Include="Lösungen\Beratung\ProgrammUndProjektmanagement.aspx" />
     <Content Include="Lösungen\EnterpriseSolutionsUndServices\EPICOR\Epicor-DienstleistungenfürEpicor.aspx" />
     <Content Include="Lösungen\EnterpriseSolutionsUndServices\EPICOR\Epicor-für-die-Bauindustrie.aspx" />
-    <Content Include="Lösungen\EnterpriseSolutionsUndServices\EPICOR\epicor-für-fertigung.aspx" />
     <Content Include="Lösungen\EnterpriseSolutionsUndServices\EPICOR\epicor-iscala-hospitality-industry-software.aspx" />
     <Content Include="Lösungen\EnterpriseSolutionsUndServices\EPICOR\Epicor_ImplementierungsundUnterstützungsLeistungen.aspx" />
     <Content Include="Lösungen\EnterpriseSolutionsUndServices\EPICOR\Epicor-PartnerEnablementProgram.aspx" />
@@ -1651,9 +1597,7 @@
     <Content Include="Lösungen\KundenorientierteLösungenImKMUMarkt\DerFokusliegtaufmittelständischenUnternehmen.aspx" />
     <Content Include="Lösungen\KundenorientierteLösungenImKMUMarkt\Großunternehmen.aspx" />
     <Content Include="Lösungen\KundenorientierteLösungenImKMUMarkt\KleinereUnternehmen.aspx" />
-    <Content Include="NewsundEvents\NewsEventsDetails.aspx" />
     <Content Include="NewsundEvents\NewsEventsDetail.aspx" />
-    <Content Include="NewsundEvents\News-Und-Events.aspx" />
     <Content Include="NewsundEvents\NewsUndEvents.aspx" />
     <Content Include="Nutzungsbedingungen.aspx" />
     <Content Include="packages\AjaxControlToolkit.17.1.1.0\lib\net40\AjaxControlToolkit.dll" />
@@ -2010,7 +1954,6 @@
     <Content Include="ÜberUns\CustomerSpeak.aspx" />
     <Content Include="ÜberUns\Erfolgsgeschichten.aspx" />
     <Content Include="ÜberUns\CorporateVideos.aspx" />
-    <Content Include="ÜberUns\Führung\carlos.aspx" />
     <Content Include="ÜberUns\Führung\Führung.aspx" />
     <Content Include="ÜberUns\Führung\KennethTaormina.aspx" />
     <Content Include="ÜberUns\Überblick.aspx" />
@@ -2628,11 +2571,6 @@
     <Content Include="Fabian-Ringel\pages\5-regions.json" />
     <Content Include="Fabian-Ringel\pages\6-regions.json" />
     <Content Include="Fabian-Ringel\pdf\RICBrochure-Fabian-German.pdf" />
-    <Content Include="2click-Assets\lang\de.lang" />
-    <Content Include="2click-Assets\lang\en.lang" />
-    <Content Include="Assets\images\FactSheets\Thumbnail\Choosing the erp vendor_Factsheet.pdf" />
-    <Content Include="Assets\images\FactSheets\Thumbnail\OFS-Factsheet.pdf" />
-    <Content Include="Assets\images\FactSheets\Thumbnail\ROI_Factsheet.pdf" />
     <None Include="Properties\PublishProfiles\DE.pubxml" />
     <Content Include="Rheincs.Master" />
     <Content Include="RheincsLanding.Master" />
@@ -2839,6 +2777,7 @@
     <Compile Include="api\MailList.cs" />
     <Compile Include="api\ManufacturingDE.cs" />
     <Compile Include="api\ReportSearch.cs" />
+    <Compile Include="Assets2\css\Class1.cs" />
     <Compile Include="Brochure\Brochure.aspx.cs">
       <DependentUpon>Brochure.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2879,9 +2818,6 @@
     <Compile Include="Data\EmailType.cs">
       <DependentUpon>RheinBruckeEntity.tt</DependentUpon>
     </Compile>
-    <Compile Include="Data\FactSheet.cs">
-      <DependentUpon>RheinBruckeEntity.tt</DependentUpon>
-    </Compile>
     <Compile Include="Data\JobApplication.cs">
       <DependentUpon>RheinBruckeEntity.tt</DependentUpon>
     </Compile>
@@ -2891,7 +2827,7 @@
     <Compile Include="Data\LandingPage.cs">
       <DependentUpon>RheinBruckeEntity.tt</DependentUpon>
     </Compile>
-    <Compile Include="Data\LeadSquareLog.cs">
+    <Compile Include="Data\Login.cs">
       <DependentUpon>RheinBruckeEntity.tt</DependentUpon>
     </Compile>
     <Compile Include="Data\MailSetting.cs">
@@ -2911,35 +2847,14 @@
       <AutoGen>True</AutoGen>
     </Compile>
     <Compile Include="Data\RheinBruckeEntity.Designer.cs">
-      <DependentUpon>RheinBruckeEntity.edmx</DependentUpon>
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-    </Compile>
-    <Compile Include="Data\RICNew.cs">
-      <DependentUpon>RheinBruckeEntity.tt</DependentUpon>
+      <DependentUpon>RheinBruckeEntity.cs</DependentUpon>
     </Compile>
     <Compile Include="Data\Testimonial.cs">
       <DependentUpon>RheinBruckeEntity.tt</DependentUpon>
     </Compile>
-    <Compile Include="Data\UserRole.cs">
-      <DependentUpon>RheinBruckeEntity.tt</DependentUpon>
-    </Compile>
+    <Compile Include="Data\UserRole.cs" />
     <Compile Include="Data\WhitePaper.cs">
       <DependentUpon>RheinBruckeEntity.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Error404.aspx.cs">
-      <DependentUpon>Error404.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Error404.aspx.designer.cs">
-      <DependentUpon>Error404.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="FactSheets\FactSheets.aspx.cs">
-      <DependentUpon>FactSheets.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="FactSheets\FactSheets.aspx.designer.cs">
-      <DependentUpon>FactSheets.aspx</DependentUpon>
     </Compile>
     <Compile Include="googlejs\analytics.aspx.cs">
       <DependentUpon>analytics.aspx</DependentUpon>
@@ -3047,13 +2962,6 @@
     </Compile>
     <Compile Include="Lösungen\EnterpriseSolutionsUndServices\EPICOR\Epicor-für-die-Bauindustrie.aspx.designer.cs">
       <DependentUpon>Epicor-für-die-Bauindustrie.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Lösungen\EnterpriseSolutionsUndServices\EPICOR\epicor-für-fertigung.aspx.cs">
-      <DependentUpon>epicor-für-fertigung.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Lösungen\EnterpriseSolutionsUndServices\EPICOR\epicor-für-fertigung.aspx.designer.cs">
-      <DependentUpon>epicor-für-fertigung.aspx</DependentUpon>
     </Compile>
     <Compile Include="Lösungen\EnterpriseSolutionsUndServices\EPICOR\epicor-iscala-hospitality-industry-software.aspx.cs">
       <DependentUpon>epicor-iscala-hospitality-industry-software.aspx</DependentUpon>
@@ -3209,26 +3117,12 @@
     <Compile Include="Lösungen\KundenorientierteLösungenImKMUMarkt\KleinereUnternehmen.aspx.designer.cs">
       <DependentUpon>KleinereUnternehmen.aspx</DependentUpon>
     </Compile>
-    <Compile Include="NewsundEvents\NewsEventsDetails.aspx.cs">
-      <DependentUpon>NewsEventsDetails.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="NewsundEvents\NewsEventsDetails.aspx.designer.cs">
-      <DependentUpon>NewsEventsDetails.aspx</DependentUpon>
-    </Compile>
     <Compile Include="NewsundEvents\NewsEventsDetail.aspx.cs">
       <DependentUpon>NewsEventsDetail.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="NewsundEvents\NewsEventsDetail.aspx.designer.cs">
       <DependentUpon>NewsEventsDetail.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="NewsundEvents\News-Und-Events.aspx.cs">
-      <DependentUpon>News-Und-Events.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="NewsundEvents\News-Und-Events.aspx.designer.cs">
-      <DependentUpon>News-Und-Events.aspx</DependentUpon>
     </Compile>
     <Compile Include="NewsundEvents\NewsUndEvents.aspx.cs">
       <DependentUpon>NewsUndEvents.aspx</DependentUpon>
@@ -3316,13 +3210,6 @@
     </Compile>
     <Compile Include="ÜberUns\CorporateVideos.aspx.designer.cs">
       <DependentUpon>CorporateVideos.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="ÜberUns\Führung\carlos.aspx.cs">
-      <DependentUpon>carlos.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="ÜberUns\Führung\carlos.aspx.designer.cs">
-      <DependentUpon>carlos.aspx</DependentUpon>
     </Compile>
     <Compile Include="ÜberUns\Führung\Führung.aspx.cs">
       <DependentUpon>Führung.aspx</DependentUpon>
@@ -3441,6 +3328,7 @@
     <Compile Include="Datenschutzerklärung.aspx.designer.cs">
       <DependentUpon>Datenschutzerklärung.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="search.aspx.cs">
       <DependentUpon>search.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
