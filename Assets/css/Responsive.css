@@ -1,0 +1,1934 @@
+﻿/* Large desktops and laptops */
+@media (min-width: 1200px) {
+    .rhein-banner-heading-bg {
+        background: #fff;
+        opacity: 0.8;
+        width: 447px;
+        height: 50px;
+        position: absolute;
+        top: 25%;
+        right: 12%;
+        border-width: 0px;
+        margin-left: 0px;
+        margin-top: 0px;
+        padding: 14px !important;
+    }
+
+    .success-img {
+        width: 247px !important;
+        height: 263px !important;
+    }
+
+    .rhein-banner-heading {
+        font-size: 36px;
+        font-family: 'Raleway' sans-serif;
+        color: #000;
+        font-weight: bold;
+        text-align: left !important;
+    }
+
+    .rhein-banner-heading-black-bg {
+        background: #000;
+        opacity: 0.8;
+        width: 450px;
+        height: auto;
+        position: absolute;
+        top: 40%;
+        right: 12%;
+        border-width: 0px;
+        margin-left: 0px;
+        margin-top: 0px;
+        padding: 10px !important;
+    }
+
+    .rhein-banner-heading-black {
+        font-size: 18px;
+        font-family: 'Raleway' sans-serif;
+        color: #fff;
+        text-align: left !important;
+        line-height: 25px;
+    }
+
+    .rhein-banner-readmore-bg {
+        background: #B62641;
+        height: auto;
+        position: absolute;
+        top: 59%;
+        right: 12%;
+        border-width: 0px;
+        margin-left: 0px;
+        margin-top: 0px;
+        padding: 5px !important;
+    }
+
+    .rhein-banner-readmore-bg4 {
+        background: #B62641;
+        height: auto;
+        position: absolute;
+        top: 73%;
+        right: 12%;
+        border-width: 0px;
+        margin-left: 0px;
+        margin-top: 0px;
+        padding: 5px !important;
+    }
+
+    .rhein-banner-readmore-text {
+        font-size: 16px;
+        font-family: 'Raleway' sans-serif;
+        color: #fff;
+        text-align: left !important;
+        line-height: 25px;
+    }
+
+    .telephone {
+        color: #FFFFFF !important;
+        background-color: #1f1f1f;
+        padding: 8px;
+        width: 100%;
+        font-size: 16px;
+        line-height: 1.4em;
+        float: none;
+        border-radius: 5px;
+    }
+
+    .fBottom {
+        margin-bottom: 2em;
+        font-size: 1.3em;
+    }
+
+    .fBottomFull {
+        margin-bottom: 5px;
+    }
+
+    .boder2 {
+        margin-bottom: 0.8em;
+    }
+
+    .testContainer {
+        top: 98px;
+        left: 40px;
+        font-weight: 300;
+        width: auto;
+        font-size: 14px;
+        height: auto;
+        padding-top: 10px;
+        border-width: 0px;
+        margin-left: 0px;
+        margin-top: 0px;
+        transform-origin: 50% 50% 0px;
+        transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -0.002, 0, 0, 0, 1);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .rhein-banner-heading-p {
+        border-width: 0;
+        color: #ffffff;
+        font-family: Raleway;
+        font-size: 24px;
+        font-weight: lighter;
+        height: auto;
+        /*line-height:1.5em;*/
+        line-height: 29px;
+        padding: 0% 5%;
+        width: 100% !important;
+        height: 72px !important;
+        text-align: center;
+    }
+
+    .logo-align {
+        padding-bottom: 30px;
+    }
+
+    .mymodal-download {
+        width: 850px !important;
+        left: -114px;
+    }
+
+    .bg-news-arrow-right {
+        width: 100% !important;
+        float: right !important;
+        margin: 0 -30px 0 0 !important;
+        padding: 0 !important;
+        line-height: 1.5em !important;
+        background: url('../../Assets/images/right-arrow.png') no-repeat center !important;
+    }
+
+    .bg-news-arrow-left {
+        width: 100% !important;
+        float: left !important;
+        margin: 40px 0 0 -28px !important;
+        padding: 0 !important;
+        line-height: 1.5em !important;
+        background: url('../../Assets/images/left-arrow.png') no-repeat center !important;
+    }
+
+
+    .bg-news-right-box {
+        background: #f6f6f6 !important;
+        width: 275px;
+        padding: 20px;
+        border: 1px solid #c6c6c6 !important;
+        float: right; /* margin: 0 0 0 94px; */
+        margin-right: 265px;
+        line-height: 1.5em !important;
+        font-size: 1.3em;
+    }
+
+
+    .bg-news-left-box {
+        background: #f6f6f6 !important;
+        width: 275px;
+        padding: 20px;
+        border: 1px solid #c6c6c6 !important;
+        float: right; /* margin: 0 0 0 94px; */
+        margin-right: 265px;
+    }
+
+    .bg-news-right-inner {
+        background: #f6f6f6 !important;
+        width: 275px;
+        padding: 20px;
+        border: 1px solid #c6c6c6 !important;
+        margin: 0 0 0 265px;
+        line-height: 1.5em !important;
+        font-size: 1.3em;
+    }
+
+    .padding {
+        padding-bottom: 5px !important;
+        padding-top: 5px !important;
+    }
+
+    #Contactfeedback {
+        height: 104px;
+        width: 104px;
+        position: fixed;
+        top: 9% !important;
+        right: 0;
+        z-index: 1060;
+        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+        cursor: pointer;
+    }
+}
+
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+    #nav {
+        width: 970px;
+    }
+
+    .bg-news-arrow-right {
+        width: 100% !important;
+        float: right !important;
+        margin: 0 -30px 0 0 !important;
+        padding: 0 !important;
+        line-height: 1.5em !important;
+        background: url('../../Assets/images/right-arrow.png') no-repeat center !important;
+    }
+
+    .bg-news-arrow-left {
+        width: 100% !important;
+        float: left !important;
+        margin: 40px 0 0 -28px !important;
+        padding: 0 !important;
+        line-height: 1.5em !important;
+        background: url('../../Assets/images/left-arrow.png') no-repeat center !important;
+    }
+
+
+    .bg-news-right-box {
+        background: #f6f6f6 !important;
+        width: 275px;
+        padding: 20px;
+        border: 1px solid #c6c6c6 !important;
+        float: right; /* margin: 0 0 0 94px; */
+        margin-right: 165px;
+        line-height: 1.5em !important;
+        font-size: 1.3em;
+    }
+
+
+    .bg-news-left-box {
+        background: #f6f6f6 !important;
+        width: 275px;
+        padding: 20px;
+        border: 1px solid #c6c6c6 !important;
+        float: right; /* margin: 0 0 0 94px; */
+        margin-right: 265px;
+    }
+
+    .bg-news-right-inner {
+        background: #f6f6f6 !important;
+        width: 275px;
+        padding: 20px;
+        border: 1px solid #c6c6c6 !important;
+        margin: 0 0 0 165px;
+        line-height: 1.5em !important;
+        font-size: 1.3em;
+    }
+
+    #container-top {
+        padding-top: 78px;
+    }
+
+    .rhein-banner-heading-bg {
+        background: #fff;
+        opacity: 0.8;
+        width: 447px;
+        height: 50px;
+        position: absolute;
+        top: 25%;
+        right: 12%;
+        border-width: 0px;
+        margin-left: 0px;
+        margin-top: 0px;
+        padding: 14px !important;
+    }
+
+    .rhein-banner-heading {
+        font-size: 36px;
+        font-family: 'Raleway' sans-serif;
+        color: #000;
+        font-weight: bold;
+        text-align: left !important;
+    }
+
+    .rhein-banner-heading-black-bg {
+        background: #000;
+        opacity: 0.8;
+        width: 450px;
+        height: auto;
+        position: absolute;
+        top: 40%;
+        right: 12%;
+        border-width: 0px;
+        margin-left: 0px;
+        margin-top: 0px;
+        padding: 10px !important;
+    }
+
+    .rhein-banner-heading-black {
+        font-size: 18px;
+        font-family: 'Raleway' sans-serif;
+        color: #fff;
+        text-align: left !important;
+        line-height: 25px;
+    }
+
+    .rhein-banner-readmore-bg {
+        background: #B62641;
+        height: auto;
+        position: absolute;
+        top: 59%;
+        right: 12%;
+        border-width: 0px;
+        margin-left: 0px;
+        margin-top: 0px;
+        padding: 5px !important;
+    }
+
+    .rhein-banner-readmore-bg4 {
+        background: #B62641;
+        height: auto;
+        position: absolute;
+        top: 73%;
+        right: 12%;
+        border-width: 0px;
+        margin-left: 0px;
+        margin-top: 0px;
+        padding: 5px !important;
+    }
+
+    .rhein-banner-readmore-text {
+        font-size: 16px;
+        font-family: 'Raleway' sans-serif;
+        color: #fff;
+        text-align: left !important;
+        line-height: 25px;
+    }
+
+    .telephone {
+        color: #FFFFFF !important;
+        background-color: #1f1f1f;
+        padding: 8px;
+        width: 100%;
+        font-size: 16px;
+        line-height: 1.4em;
+        float: none;
+        border-radius: 5px;
+    }
+
+    .footerCenter {
+        text-align: -webkit-center;
+        text-align: center;
+    }
+
+    .telephone {
+        color: #FFFFFF !important;
+        background-color: #1f1f1f;
+        padding: 8px;
+        width: 100%;
+        font-size: 16px;
+        line-height: 1.4em;
+        float: none;
+        border-radius: 5px;
+    }
+
+    ul.social {
+        text-align: center;
+    }
+
+    .fBottom {
+        margin-bottom: 1.5em;
+        font-size: 1.3em;
+        margin-top: 15px;
+    }
+
+    .tpc {
+        opacity: 1;
+        transition: opacity 1s;
+        max-width: 170px;
+        height: 210px;
+        margin: 0px 17%;
+        border: solid 2px #1F1F1F;
+    }
+
+    .testContainer {
+        top: 98px;
+        left: 40px;
+        font-weight: 300;
+        width: 380px;
+        font-size: 14px;
+        height: auto;
+        padding-top: 10px;
+        border-width: 0px;
+        margin-left: 0px;
+        margin-top: 0px;
+        transform-origin: 50% 50% 0px;
+        transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -0.002, 0, 0, 0, 1);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .rhein-banner-heading-p {
+        border-width: 0;
+        color: #ffffff;
+        font-family: Raleway;
+        font-size: 24px;
+        font-weight: lighter;
+        height: auto;
+        /*line-height:1.5em;*/
+        line-height: 29px;
+        padding: 0% 10%;
+        width: 100% !important;
+        height: 72px !important;
+        text-align: center;
+    }
+
+    .bulletContent-epicor-grey {
+        line-height: 20px !important;
+    }
+
+    .redBullets-epicor {
+        top: 0.5em !important;
+    }
+
+    .bulletContent-epicor-black {
+        line-height: 25px !important;
+    }
+
+    .logo-align {
+        padding-bottom: 30px;
+    }
+
+    #Contactfeedback {
+        height: 104px;
+        width: 104px;
+        position: fixed;
+        top: 15% !important;
+        right: 0;
+        z-index: 1000;
+        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+        cursor: pointer;
+    }
+
+    .mymodal-download {
+        width: 100% !important;
+        right: -1px !important;
+        top: 70px;
+    }
+
+    #slider3 .prev {
+        left: 29px;
+    }
+
+    #slider3 .next {
+        right: 36px;
+    }
+
+    .padding {
+        padding-bottom: 5px !important;
+        padding-top: 5px !important;
+    }
+
+    .microsoft-images-right1 {
+        margin-left: -78px;
+    }
+
+    .microsoft-img-5 {
+        margin-left: -151px;
+    }
+}
+
+@media (min-width:768px) and (max-width:1024px) {
+    .leadership-padding{
+        padding-top:10px !important;
+    }
+    .leadership-padding-30{
+        padding-left:30px !important;
+    }
+    .redBullets-epicor-terms {
+  content: '';
+  position: absolute;
+  top: 0.7em;
+  left: 0em;
+  border: 5px solid #7b1315;
+  /* list-style-type: disc; */
+  border-radius: 10px;
+}
+
+    .slider12 {
+  height: 1% !important;
+  margin: 0px 0 0 !important;
+  overflow: hidden !important;
+  position: relative !important;
+  padding: 0px 96px 0px !important;
+}
+    .leadership-width {
+        width: 86px !important;
+        height: 113px !important;
+    }
+
+    .success-img {
+        width: 247px !important;
+        height: 263px !important;
+    }
+
+    .pad2 {
+        padding-top: 20px !important;
+        padding-bottom: 20px !important;
+        padding-left: 10px !important;
+        background-color: #c7c7c7 !important;
+        height: 516px;
+    }
+        .kumar
+
+{
+    width: 200px !important;
+    height: 261px !important;
+}
+
+.thumb_play {
+    position: absolute;
+    left: 37px;
+    top: 24px;
+}
+
+.video_lightbox_auto_anchor_image {
+    width: 120px;
+}
+
+.slider32 {
+    height: 1% !important;
+    margin: 21px -75px 0 !important;
+    overflow: hidden !important;
+    position: relative !important;
+    padding: 0 0px 0px !important;
+}
+/*.padd-left-leadership {
+   padding-left: 2px;
+  padding-top: 45px;
+}*/
+ #Contactfeedback {
+        height: 104px;
+        width: 104px;
+        position: fixed;
+        top: 9% !important;
+        right: 0;
+        z-index: 1030;
+        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+        cursor: pointer;
+    }
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+   .question-it {
+  font-size: 16px;
+  color: #2f2f2f;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 18px !important;
+}
+            .leftF {
+        width: 100%;
+        text-align: center;
+        margin: 10px auto !important;
+        clear: both;
+    }
+
+    .rightF {
+        width: 100%;
+        text-align: center;
+        margin: 10px auto !important;
+        clear: both;
+    }
+
+    .success-img {
+        width: 247px !important;
+        height: 263px !important;
+    }
+
+    .bg-news-arrow-right {
+        width: 100% !important;
+        float: right !important;
+        margin: 0 -30px 0 0 !important;
+        padding: 0 !important;
+        line-height: 1.5em !important;
+        background: url('../../Assets/images/right-arrow.png') no-repeat center !important;
+    }
+
+    .bg-news-arrow-left {
+        width: 100% !important;
+        float: left !important;
+        margin: 40px 0 0 -28px !important;
+        padding: 0 !important;
+        line-height: 1.5em !important;
+        background: url('../../Assets/images/left-arrow.png') no-repeat center !important;
+    }
+
+
+    .bg-news-right-box {
+        background: #f6f6f6 !important;
+        width: 275px;
+        padding: 20px;
+        border: 1px solid #c6c6c6 !important;
+        float: right; /* margin: 0 0 0 94px; */
+        margin-right: 265px;
+    }
+
+
+    .bg-news-left-box {
+        background: #f6f6f6 !important;
+        width: 275px;
+        padding: 20px;
+        border: 1px solid #c6c6c6 !important;
+        float: right; /* margin: 0 0 0 94px; */
+        margin-right: 265px;
+    }
+
+    .bg-news-right-inner {
+        background: #f6f6f6 !important;
+        width: 275px;
+        padding: 20px;
+        border: 1px solid #c6c6c6 !important;
+        margin: 0 0 0 265px;
+    }
+
+    .rhein-banner-heading-bg {
+        background: #FFF;
+        opacity: 0.8;
+        width: 380px;
+        height: 25px;
+        position: absolute;
+        top: 5%;
+        right: 1%;
+        border-width: 0px;
+        margin-left: 0px;
+        margin-top: 0px;
+        /* font-size: 12px; */
+        padding: 5px !important;
+    }
+
+    #nav {
+        width: 750px;
+        top: -12px !important;
+    }
+
+    #container-top {
+        padding-top: 68px;
+    }
+
+    .rhein-banner-heading-black-bg {
+        background: #000;
+        opacity: 0.8;
+        width: 380px;
+        height: auto;
+        position: absolute;
+        top: 21%;
+        right: 1%;
+        border-width: 0px;
+        margin-left: 0px;
+        margin-top: 0px;
+        padding: 10px !important;
+    }
+
+    .rhein-banner-heading {
+        font-size: 18px;
+        font-family: 'Raleway' sans-serif;
+        color: #000;
+        font-weight: bold;
+        text-align: left !important;
+    }
+
+    .rhein-banner-heading-black {
+        font-size: 15px;
+        font-family: 'Raleway' sans-serif;
+        color: #fff;
+        text-align: left !important;
+        line-height: 20px;
+    }
+
+    .rhein-banner-readmore-bg, .rhein-banner-readmore-bg4 {
+        background: #B62641;
+        height: auto;
+        position: absolute;
+        top: 63%;
+        right: 1%;
+        border-width: 0px;
+        margin-left: 0px;
+        margin-top: 0px;
+        padding: 5px !important;
+    }
+
+    .rhein-banner-readmore-bg {
+        background: #B62641;
+        height: auto;
+        position: absolute;
+        top: 49%;
+        right: 1%;
+        border-width: 0px;
+        margin-left: 0px;
+        margin-top: 0px;
+        padding: 5px !important;
+    }
+
+    .rhein-banner-readmore-text {
+        font-size: 13px;
+        font-family: 'Raleway' sans-serif;
+        color: #fff;
+        text-align: left !important;
+        line-height: 20px;
+    }
+
+    .footerCenter {
+        text-align: -webkit-center;
+        text-align: center;
+    }
+
+    .telephone {
+        color: #FFFFFF !important;
+        background-color: #1f1f1f;
+        padding: 8px;
+        width: 100%;
+        font-size: 16px;
+        line-height: 1.4em;
+        float: none;
+        border-radius: 5px;
+    }
+
+    ul.social {
+        text-align: center;
+    }
+
+    .fBottom {
+        margin-bottom: 1.5em;
+        font-size: 1.3em;
+        margin-top: 15px;
+    }
+
+    .tpc {
+        opacity: 1;
+        transition: opacity 1s;
+        max-width: 170px;
+        height: 210px;
+        margin: 0px 38.5%;
+        border: solid 2px #1F1F1F;
+    }
+
+    .testContainer {
+        top: 98px;
+        left: 40px;
+        font-weight: 300;
+        width: auto;
+        font-size: 14px;
+        height: auto;
+        padding-top: 10px;
+        border-width: 0px;
+        margin-left: 0px;
+        margin-top: 0px;
+        transform-origin: 50% 50% 0px;
+        transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -0.002, 0, 0, 0, 1);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .bulletContent-epicor-grey {
+        line-height: 20px !important;
+    }
+
+    .redBullets-epicor {
+        top: 0.5em !important;
+    }
+
+    .bulletContent-epicor-black {
+        line-height: 25px !important;
+    }
+
+    .boxes-align {
+        padding-left: 0px !important;
+    }
+
+    .boxes-align1 {
+        padding-left: 0px !important;
+    }
+
+    .logo-align {
+        padding-bottom: 30px;
+    }
+
+    .mymodal-download {
+        width: 100% !important;
+        left: 1px !important;
+    }
+
+    .slider32 {
+        height: 1% !important;
+        margin: 21px 106px 0 !important;
+        overflow: hidden !important;
+        position: relative !important;
+        padding: 0 0px 0px !important;
+    }
+
+    .bg-news-right-box {
+        background: #f6f6f6 !important;
+        width: 275px;
+        padding: 20px;
+        border: 1px solid #c6c6c6 !important;
+        float: right; /* margin: 0 0 0 94px; */
+        margin-right: 55px;
+        line-height: 1.5em !important;
+        font-size: 1.3em;
+    }
+
+
+    .bg-news-left-box {
+        background: #f6f6f6 !important;
+        width: 275px;
+        padding: 20px;
+        border: 1px solid #c6c6c6 !important;
+        float: right; /* margin: 0 0 0 94px; */
+        margin-right: 265px;
+    }
+
+    .bg-news-right-inner {
+        background: #f6f6f6 !important;
+        width: 275px;
+        padding: 20px;
+        border: 1px solid #c6c6c6 !important;
+        margin: 0px 0px 22px 55px;
+        line-height: 1.5em !important;
+        font-size: 1.3em;
+    }
+
+    .padding {
+        padding-bottom: 5px !important;
+        padding-top: 5px !important;
+    }
+
+    .microsoft-images-left {
+        margin-left: auto !important;
+        margin-bottom: 20px;
+    }
+
+    .microsoft-images-right {
+        margin-left: auto !important;
+        margin-bottom: 20px;
+    }
+
+    .microsoft-images-right1 {
+        margin-left: auto !important;
+        margin-bottom: 20px;
+    }
+
+    .microsoft-margin-bottom {
+        margin-left: auto !important;
+        margin-bottom: 20px;
+    }
+
+    #Contactfeedback {
+        height: 104px;
+        width: 104px;
+        position: fixed;
+        top: 9% !important;
+        right: 0;
+        z-index: 1030;
+        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+        cursor: pointer;
+    }
+    .padd-left-leadership {
+   padding-left: 2px;
+  padding-top: 45px;
+}
+.slider12 {
+  height: 1% !important;
+  margin: 0px 0 0 !important;
+  overflow: hidden !important;
+  position: relative !important;
+  padding: 0px 119px 0px !important;
+}
+}
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+    question-it {
+  font-size: 16px;
+  color: #2f2f2f;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 23px !important;
+}
+
+
+    .slider12 {
+  height: 1% !important;
+  margin: 0px 0 0 !important;
+  overflow: hidden !important;
+  position: relative !important;
+  padding: 0px 63px 0px !important;
+}
+    .leftF {
+        width: 100%;
+        text-align: center;
+        margin: 10px auto !important;
+        clear: both;
+    }
+
+    .rightF {
+        width: 100%;
+        text-align: center;
+        margin: 10px auto !important;
+        clear: both;
+    }
+
+    #Contactfeedback {
+        height: 104px;
+        width: 104px;
+        position: fixed;
+        top: 9% !important;
+        right: 0;
+        z-index: 1030;
+        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+        cursor: pointer;
+    }
+
+    .bg-news-right-box {
+        background: #f6f6f6 !important;
+        width: 300px;
+        padding: 20px;
+        border: 1px solid #c6c6c6 !important;
+        float: right;
+        /* margin: 0 0 0 94px; */
+        margin-right: 265px;
+        margin-top: 36px;
+        line-height: 1.5em !important;
+        font-size: 1.3em;
+    }
+
+    .bg-news-right-inner {
+        background: #f6f6f6 !important;
+        width: 300px;
+        padding: 20px;
+        border: 1px solid #c6c6c6 !important;
+        margin: 0 0 4px 265px;
+        line-height: 1.5em !important;
+        font-size: 1.3em;
+    }
+
+    .rhein-banner-heading-bg {
+        background: #FFF;
+        opacity: 0.8;
+        width: 380px;
+        height: 25px;
+        position: absolute;
+        top: 5%;
+        right: 1%;
+        border-width: 0px;
+        margin-left: 0px;
+        margin-top: 0px;
+        /* font-size: 12px; */
+        padding: 5px !important;
+    }
+
+    .rhein-banner-heading-black-bg {
+        background: #000;
+        opacity: 0.8;
+        width: 380px;
+        height: auto;
+        position: absolute;
+        top: 21%;
+        right: 1%;
+        border-width: 0px;
+        margin-left: 0px;
+        margin-top: 0px;
+        padding: 10px !important;
+    }
+
+    .rhein-banner-heading {
+        font-size: 13px;
+        font-family: 'Raleway' sans-serif;
+        color: #000;
+        font-weight: bold;
+        text-align: left !important;
+    }
+
+    .rhein-banner-heading-black {
+        font-size: 13px;
+        font-family: 'Raleway' sans-serif;
+        color: #fff;
+        text-align: left !important;
+        line-height: 20px;
+    }
+
+    .rhein-banner-readmore-bg4 {
+        background: #B62641;
+        height: auto;
+        position: absolute;
+        top: 60%;
+        right: 1%;
+        border-width: 0px;
+        margin-left: 0px;
+        margin-top: 0px;
+        padding: 5px !important;
+    }
+
+    .rhein-banner-readmore-bg {
+        background: #B62641;
+        height: auto;
+        position: absolute;
+        top: 52%;
+        right: 1%;
+        border-width: 0px;
+        margin-left: 0px;
+        margin-top: 0px;
+        padding: 5px !important;
+    }
+
+    .rhein-banner-readmore-text {
+        font-size: 13px;
+        font-family: 'Raleway' sans-serif;
+        color: #fff;
+        text-align: left !important;
+        line-height: 20px;
+    }
+
+    .services-box {
+        margin-bottom: 30px;
+    }
+
+    .footerCenter {
+        text-align: -webkit-center;
+        text-align: center;
+    }
+
+    .telephone {
+        color: #FFFFFF !important;
+        background-color: #1f1f1f;
+        padding: 8px;
+        width: 100%;
+        font-size: 16px;
+        line-height: 1.4em;
+        float: none;
+        border-radius: 5px;
+    }
+
+    ul.social {
+        text-align: center;
+    }
+
+    .fBottom {
+        margin-bottom: 1.5em;
+        font-size: 1.3em;
+        margin-top: 15px;
+    }
+
+    .tpc {
+        opacity: 1;
+        transition: opacity 1s;
+        max-width: 170px;
+        height: 210px;
+        margin: 0px 36%;
+        border: solid 2px #1F1F1F;
+    }
+
+    .testContainer {
+        top: 98px;
+        left: 40px;
+        font-weight: 300;
+        width: auto;
+        font-size: 14px;
+        height: auto;
+        padding-top: 10px;
+        border-width: 0px;
+        margin-left: 0px;
+        margin-top: 0px;
+        transform-origin: 50% 50% 0px;
+        transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -0.002, 0, 0, 0, 1);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    #nav {
+        top: -12px !important;
+    }
+
+    #container-top {
+        padding-top: 68px;
+    }
+
+    .epicor-services-box-1 {
+        padding: 3px !important;
+    }
+
+    .rhein-banner-heading-h2 {
+        font-family: Raleway;
+        font-size: 27px !important;
+        font-weight: bold;
+        /*line-height: 1.5em;*/
+        line-height: 25px !important;
+        text-align: center;
+        text-transform: uppercase;
+        color: #ffffff;
+        padding-bottom: 15px;
+        /*border-width:0;*/
+        padding-top: 0px;
+    }
+
+    .bulletContent-epicor-grey {
+        line-height: 20px !important;
+    }
+
+    .redBullets-epicor {
+        top: 0.5em !important;
+    }
+
+    .bulletContent-epicor-black {
+        line-height: 25px !important;
+    }
+
+    .boxes-align {
+        padding-left: 0px !important;
+    }
+
+    .boxes-align1 {
+        padding-left: 0px !important;
+    }
+
+    .logo-align {
+        padding-bottom: 30px;
+    }
+
+    .mymodal-download {
+        width: 100% !important;
+        left: -1px;
+    }
+
+    .slider32 {
+        height: 1% !important;
+        margin: 21px 44px 0 !important;
+        overflow: hidden !important;
+        position: relative !important;
+        padding: 0 0px 0px !important;
+    }
+
+    .bulletContent-epicor-sap {
+        font-size: 16px !important;
+        line-height: 19px !important;
+        color: #2f2f2f !important;
+        font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        padding-left: 25px;
+    }
+
+    .redBullets-epicor-sap {
+        content: '';
+        position: absolute;
+        top: 0.3em;
+        left: 2em;
+        border: 5px solid #7b1315;
+        /* list-style-type: disc; */
+        border-radius: 10px;
+    }
+
+    .padding {
+        padding-bottom: 5px !important;
+        padding-top: 5px !important;
+    }
+
+    .padding-leadership {
+        padding-top: 45px;
+        padding-left: 0px;
+    }
+
+    .leadership-margin {
+        margin-bottom: 20px !important;
+    }
+
+    .leadership-width {
+        width: 200px !important;
+        height: 260px !important;
+    }
+
+    .microsoft-images-left {
+        margin-left: auto !important;
+        margin-bottom: 20px;
+    }
+
+    .microsoft-images-right {
+        margin-left: auto !important;
+        margin-bottom: 20px;
+    }
+
+    .microsoft-images-right1 {
+        margin-left: auto !important;
+        margin-bottom: 20px;
+    }
+
+    .microsoft-margin-bottom {
+        margin-left: auto !important;
+        margin-bottom: 20px;
+    }
+    .padd-left-leadership {
+   padding-left: 2px;
+  padding-top: 45px;
+}
+    .bulletContent-pre-epicor {
+  font-size: 16px !important;
+  line-height: 16px !important;
+  color: #2f2f2f !important;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding-left: 10px;
+}
+    .redBullets-pre-epicor {
+  content: '';
+  position: absolute;
+  top: 0.1em;
+  left: 0em;
+  border: 5px solid #7b1315;
+  border-radius: 10px;
+}
+    .redBullets-epicor-terms {
+  content: '';
+  position: absolute;
+  top: 0.7em;
+  left: 0em;
+  border: 5px solid #7b1315;
+  /* list-style-type: disc; */
+  border-radius: 10px;
+}
+.location {
+  color: #2f2f2f !important;
+  font-size: 14px !important;
+  font-weight: normal !important;
+  padding-top: -16px;
+  margin-top: 20px
+ 
+}
+    .deco-header-dotnet {
+        line-height: 40px;
+    }
+    .current-open-res {
+    padding-left:54px;
+    }
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+    redBullets-epicor {
+  top: 0.2em !important;
+}
+    .redBullets-terms {
+  content: '';
+  position: absolute;
+  top: 0.4em;
+  left: 0em;
+  border: 5px solid #7b1315;
+  border-radius: 10px;
+}
+    .slider12 {
+  height: 1% !important;
+  margin: 0px 0 0 !important;
+  overflow: hidden !important;
+  position: relative !important;
+  padding: 0px 95px 0px !important;
+}
+    .leftF {
+        width: 100%;
+        text-align: center;
+        margin: 10px auto !important;
+        clear: both;
+    }
+
+    .rightF {
+        width: 100%;
+        text-align: center;
+        margin: 10px auto !important;
+        clear: both;
+    }
+
+    .bg-news {
+        background-image: url('../../Assets/images/news-events-bg.jpg') !important;
+        background-repeat: repeat-y !important;
+        background-position: center 0;
+        /* display: none; */
+        background-image: none !important;
+    }
+
+    #Contactfeedback {
+        height: 104px;
+        width: 104px;
+        position: fixed;
+        top: 9% !important;
+        right: 0;
+        z-index: 1030;
+        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+        cursor: pointer;
+    }
+
+    .bg-news-right-box {
+        background: #f6f6f6 !important;
+        width: 300px;
+        padding: 20px;
+        border: 1px solid #c6c6c6 !important;
+        float: right;
+        /* margin: 0 0 0 94px; */
+        margin-right: 110px;
+        margin-top: 0px;
+    }
+
+    .bg-news-right-inner {
+        background: #f6f6f6 !important;
+        width: 299px;
+        padding: 20px;
+        border: 1px solid #c6c6c6 !important;
+        margin: 0px 0px 36px 112px;
+    }
+
+    .rhein-banner-heading-bg {
+        background: #FFF;
+        opacity: 0.8;
+        width: 380px;
+        height: 25px;
+        position: absolute;
+        top: -15%;
+        right: 1%;
+        border-width: 0px;
+        margin-left: 0px;
+        margin-top: 0px;
+        /* font-size: 12px; */
+        padding: 5px !important;
+    }
+
+    #nav {
+        top: -12px !important;
+    }
+
+    #container-top {
+        padding-top: 68px;
+    }
+
+    .rhein-banner-heading-black-bg {
+        background: #000;
+        opacity: 0.8;
+        width: 380px;
+        height: auto;
+        position: absolute;
+        top: 10%;
+        right: 1%;
+        border-width: 0px;
+        margin-left: 0px;
+        margin-top: 0px;
+        padding: 10px !important;
+    }
+
+    .rhein-banner-heading {
+        font-size: 13px;
+        font-family: 'Raleway' sans-serif;
+        color: #000;
+        font-weight: bold;
+        text-align: left !important;
+    }
+
+    .rhein-banner-heading-black {
+        font-size: 13px;
+        font-family: 'Raleway' sans-serif;
+        color: #fff;
+        text-align: left !important;
+        line-height: 20px;
+    }
+
+    .rhein-banner-readmore-bg {
+        background: #B62641;
+        height: auto;
+        position: absolute;
+        top: 55%;
+        right: 1%;
+        border-width: 0px;
+        margin-left: 0px;
+        margin-top: 0px;
+        padding: 5px !important;
+    }
+
+    .rhein-banner-readmore-bg4 {
+        background: #B62641;
+        height: auto;
+        position: absolute;
+        top: 68%;
+        right: 1%;
+        border-width: 0px;
+        margin-left: 0px;
+        margin-top: 0px;
+        padding: 5px !important;
+    }
+
+    .rhein-banner-readmore-text {
+        font-size: 13px;
+        font-family: 'Raleway' sans-serif;
+        color: #fff;
+        text-align: left !important;
+        line-height: 20px;
+    }
+
+    .services-box {
+        margin-bottom: 30px;
+    }
+
+    .footerCenter {
+        text-align: -webkit-center;
+        text-align: center;
+    }
+
+    .telephone {
+        color: #FFFFFF !important;
+        background-color: #1f1f1f;
+        padding: 8px;
+        width: 100%;
+        font-size: 16px;
+        line-height: 1.4em;
+        float: none;
+        border-radius: 5px;
+    }
+
+    .fBottom {
+        margin-bottom: 1.5em;
+        font-size: 1.3em;
+        margin-top: 15px;
+    }
+
+    ul.social {
+        text-align: center;
+    }
+
+
+    .tpc {
+        opacity: 1;
+        transition: opacity 1s;
+        max-width: 170px;
+        height: 210px;
+        margin: 0px 30%;
+        border: solid 2px #1F1F1F;
+    }
+
+    .testContainer {
+        top: 98px;
+        left: 40px;
+        font-weight: 300;
+        width: auto;
+        font-size: 14px;
+        height: auto;
+        padding-top: 10px;
+        border-width: 0px;
+        margin-left: 0px;
+        margin-top: 0px;
+        transform-origin: 50% 50% 0px;
+        transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -0.002, 0, 0, 0, 1);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .rhein-banner-heading-p {
+        border-width: 0;
+        color: #ffffff;
+        font-family: Raleway;
+        font-size: 20px;
+        font-weight: lighter;
+        height: auto;
+        /*line-height:1.5em;*/
+        line-height: 29px !important;
+        padding: 0% 0%;
+        width: 100% !important;
+        text-align: center;
+    }
+
+    .epicor-services-box-1 {
+        padding: 3px !important;
+    }
+
+    .rhein-banner-heading-h2 {
+        font-family: Raleway;
+        font-size: 27px !important;
+        font-weight: bold;
+        /*line-height: 1.5em;*/
+        line-height: 25px !important;
+        text-align: center;
+        text-transform: uppercase;
+        color: #ffffff;
+        padding-bottom: 15px;
+        padding-top: 0px;
+        /*border-width:0;*/
+    }
+
+    .bulletContent-epicor-grey {
+        line-height: 20px !important;
+    }
+
+    .redBullets-epicor {
+        top: 0.5em !important;
+    }
+
+    .bulletContent-epicor-black {
+        line-height: 16px !important;
+    }
+
+    .boxes-align {
+        padding-left: 0px !important;
+    }
+
+    .boxes-align1 {
+        padding-left: 0px !important;
+    }
+
+    .logo-align {
+        padding-bottom: 30px;
+    }
+
+    .mymodal-download {
+        width: 100% !important;
+        left: -1px;
+    }
+
+    .slider32 {
+        height: 1% !important;
+        margin: 21px -22px 0 !important;
+        overflow: hidden !important;
+        position: relative !important;
+        padding: 0 0px 0px !important;
+    }
+
+    #slider3 .overview li {
+        float: left;
+        margin: 0px 0 0 60px;
+        padding: 1px;
+        font-family: raleway !important;
+        line-height: 18px;
+        font-size: 14px;
+        /* height: 116px; */
+        /* border: 1px solid #dcdcdc; */
+        width: 350px;
+    }
+
+    .padding {
+        padding-bottom: 5px !important;
+        padding-top: 5px !important;
+    }
+
+    .microsoft-images-left {
+        margin-left: auto !important;
+        margin-bottom: 20px;
+    }
+
+    .microsoft-images-right {
+        margin-left: auto !important;
+        margin-bottom: 20px;
+    }
+
+    .microsoft-images-right1 {
+        margin-left: auto !important;
+        margin-bottom: 20px;
+    }
+
+    .microsoft-margin-bottom {
+        margin-left: auto !important;
+        margin-bottom: 20px;
+    }
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 320px) {
+    .bg-news {
+        background-image: url('../../Assets/images/news-events-bg.jpg') !important;
+        background-repeat: repeat-y !important;
+        background-position: center 0;
+        /* display: none; */
+        background-image: none !important;
+    }
+
+    .bg-news-right-box {
+        background: #f6f6f6 !important;
+        width: 275px;
+        padding: 20px;
+        border: 1px solid #c6c6c6 !important;
+        float: right;
+        /* margin: 0 0 0 94px; */
+        margin-right: 43px;
+    }
+
+    .bg-news-right-inner {
+        background: #f6f6f6 !important;
+        width: 275px;
+        padding: 20px;
+        border: 1px solid #c6c6c6 !important;
+        margin: 0 0 46px 43px;
+    }
+
+    .rhein-banner-heading-bg {
+        background: #FFF;
+        opacity: 0.8;
+        width: 297px;
+        height: 22px;
+        position: absolute;
+        top: -28%;
+        right: 1%;
+        border-width: 0px;
+        margin-left: 0px;
+        margin-top: 0px;
+        /* font-size: 12px; */
+        padding: 3px !important;
+    }
+
+    #nav {
+        top: -6px !important;
+    }
+
+    .rhein-banner-heading-black-bg {
+        background: #000;
+        opacity: 0.8;
+        width: 298px;
+        height: auto;
+        position: absolute;
+        top: 2%;
+        right: 1%;
+        border-width: 0px;
+        margin-left: 0px;
+        margin-top: 0px;
+        padding: 4px !important;
+    }
+
+    .rhein-banner-heading {
+        font-size: 16px;
+        font-family: 'Raleway' sans-serif;
+        color: #000;
+        font-weight: bold;
+        text-align: left !important;
+    }
+
+    .rhein-banner-heading-black {
+        font-size: 10px;
+        font-family: 'Raleway' sans-serif;
+        color: #fff;
+        text-align: left !important;
+        line-height: 10px;
+    }
+
+    #Contactfeedback {
+        height: 104px;
+        width: 104px;
+        position: fixed;
+        top: 9% !important;
+        right: 0;
+        z-index: 1050;
+        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+        cursor: pointer;
+    }
+
+    .rhein-banner-readmore-bg, .rhein-banner-readmore-bg4 {
+        background: #B62641;
+        height: auto;
+        position: absolute;
+        top: 82%;
+        right: 1%;
+        border-width: 0px;
+        margin-left: 0px;
+        margin-top: 0px;
+        padding: 5px !important;
+    }
+
+    .rhein-banner-readmore-text {
+        font-size: 10px;
+        font-family: 'Raleway' sans-serif;
+        color: #fff;
+        text-align: left !important;
+        line-height: 10px;
+    }
+
+    .services-box {
+        margin-bottom: 30px;
+    }
+
+    .footerCenter {
+        text-align: -webkit-center;
+        text-align: center;
+    }
+
+    .telephone {
+        color: #FFFFFF !important;
+        background-color: #1f1f1f;
+        padding: 8px;
+        width: 100%;
+        font-size: 16px;
+        line-height: 1.4em;
+        float: left;
+        border-radius: 5px;
+        margin-bottom: 25px;
+    }
+
+    .fBottom {
+        margin-bottom: 1.5em;
+        font-size: 1.2em;
+        margin-top: 15px;
+    }
+
+    ul.social {
+        text-align: center;
+    }
+
+    .tpc {
+        opacity: 1;
+        transition: opacity 1s;
+        max-width: 170px;
+        height: 210px;
+        margin: 0 15%;
+        border: solid 2px #1F1F1F;
+    }
+
+    .testContainer {
+        top: 98px;
+        left: 40px;
+        font-weight: 300;
+        width: auto;
+        font-size: 14px;
+        height: auto;
+        padding-top: 10px;
+        border-width: 0px;
+        margin-left: 0px;
+        margin-top: 0px;
+        transform-origin: 50% 50% 0px;
+        transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -0.002, 0, 0, 0, 1);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .rhein-banner-heading-p {
+        border-width: 0;
+        color: #ffffff;
+        font-family: Raleway;
+        font-size: 20px;
+        font-weight: lighter;
+        height: auto;
+        /*line-height:1.5em;*/
+        line-height: 29px;
+        padding: 0% 4%;
+        width: 100% !important;
+        height: 72px !important;
+        text-align: center;
+    }
+
+    .rhein-banner-heading-h2 {
+        font-family: Raleway;
+        font-size: 33px !important;
+        font-weight: bold;
+        /*line-height: 1.5em;*/
+        line-height: 35px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #ffffff;
+        padding-bottom: 15px;
+        padding-top: 0px;
+        /*border-width:0;*/
+    }
+
+    .epicor-services-box-1 {
+        padding: 3px !important;
+    }
+
+    .channel-text {
+        float: left;
+        margin: 30px -6px !important;
+        clear: none;
+    }
+
+    .logo-align {
+        padding-bottom: 30px;
+    }
+
+    .mymodal-download {
+        width: 100% !important;
+        left: -1px;
+    }
+
+    #slider3 .overview li {
+        float: left;
+        margin: 0px 0 0 31px;
+        padding: 1px;
+        font-family: raleway !important;
+        line-height: 18px;
+        font-size: 14px;
+        /* height: 116px; */
+        /* border: 1px solid #dcdcdc; */
+        width: 230px;
+    }
+
+    .padding {
+        padding-bottom: 5px !important;
+        padding-top: 5px !important;
+    }
+
+    .copyrights-link-footer {
+        text-align: center !important;
+        margin-bottom: 30px;
+    }
+
+    .microsoft-images-left {
+        margin-left: auto !important;
+        margin-bottom: 20px;
+    }
+
+    .microsoft-images-right {
+        margin-left: auto !important;
+        margin-bottom: 20px;
+    }
+
+    .microsoft-images-right1 {
+        margin-left: auto !important;
+        margin-bottom: 20px;
+    }
+
+    .microsoft-margin-bottom {
+        margin-left: auto !important;
+        margin-bottom: 20px;
+    }
+
+    .leftF {
+        width: 100%;
+        text-align: center;
+        margin: 10px auto !important;
+        clear: both;
+    }
+
+    .rightF {
+        width: 100%;
+        text-align: center;
+        margin: 10px auto !important;
+        clear: both;
+    }
+
+    .pad {
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+        background-color: #560000;
+    }
+
+    .pad-a {
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+        background-color: #560000;
+    }
+
+    .pad-b {
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+        background-color: #560000;
+    }
+
+    .pad2 {
+        padding-top: 20px !important;
+        padding-bottom: 0px !important;
+        padding-left: 10px !important;
+    }
+
+    .padd {
+        padding-top: 20px !important;
+        padding-bottom: 0px !important;
+        padding-left: 10px !important;
+        background-color: #96070a !important;
+    }
+    .slider12 {
+  height: 1% !important;
+  margin: 0px -17px 0px !important;
+  overflow: hidden !important;
+  position: relative !important;
+  padding: 0px 41px 0px 47px !important;
+}
+}
+/*Jenifa 01-07-2014*/
+@media only screen and (min-width:320px) and (max-width:768px) {
+    .col-md-3V2 {
+        width: 100% !important;
+    }
+
+    .padding {
+        padding-bottom: 5px !important;
+        padding-top: 5px !important;
+    }
+
+    .padding-leadership {
+        padding-top: 45px;
+        padding-left: 0px;
+    }
+
+    .leadership-margin {
+        margin-bottom: 20px !important;
+    }
+
+    .leadership-width {
+        width: 200px !important;
+        height: 260px !important;
+    }
+}

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="2ffe1f7ef1ce44d6ab80bbdb1ab49b85" Name="Diagram1" ZoomLevel="66">
+        <EntityTypeShape EntityType="RheinBruckeDevModel.EmailRequest" Width="1.5" PointX="3.25" PointY="1.375" />
+        <EntityTypeShape EntityType="RheinBruckeDevModel.EmailType" Width="1.5" PointX="0.875" PointY="1.875" />
+        <AssociationConnector Association="RheinBruckeDevModel.FK__EmailRequ__Email__15502E78" />
+        <EntityTypeShape EntityType="RheinBruckeDevModel.Testimonial" Width="1.5" PointX="0.75" PointY="4.75" />
+        <EntityTypeShape EntityType="RheinBruckeDevModel.JobList" Width="1.5" PointX="3.375" PointY="4.75" />
+        <EntityTypeShape EntityType="RheinBruckeDevModel.NewsEvent" Width="1.5" PointX="5.375" PointY="0.75" />
+        <EntityTypeShape EntityType="RheinBruckeDevModel.JobApplication" Width="1.5" PointX="5.375" PointY="5.75" />
+        <EntityTypeShape EntityType="RheinBruckeDevModel.LandingPage" Width="1.5" PointX="7.375" PointY="0.75" />
+        <EntityTypeShape EntityType="RheinBruckeDevModel.MailSetting" Width="1.5" PointX="7.375" PointY="7.75" />
+        <EntityTypeShape EntityType="RheinBruckeDevModel.Brochure" Width="1.5" PointX="0.75" PointY="8.75" />
+        <EntityTypeShape EntityType="RheinBruckeDevModel.CaseStudy" Width="1.5" PointX="9.75" PointY="0.75" />
+        <EntityTypeShape EntityType="RheinBruckeDevModel.WhitePaper" Width="1.5" PointX="2.75" PointY="9.75" />
+        <EntityTypeShape EntityType="RheinBruckeDevModel.UserRole" Width="1.5" PointX="9.375" PointY="4.75" />
+        <EntityTypeShape EntityType="RheinBruckeDevModel.RICNew" Width="1.5" PointX="11.375" PointY="4.75" />
+        <EntityTypeShape EntityType="RheinBruckeDevModel.FactSheet" Width="1.5" PointX="9.375" PointY="9.75" />
+        <EntityTypeShape EntityType="RheinBruckeDevModel.LeadSquareLog" Width="1.5" PointX="5.375" PointY="11.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

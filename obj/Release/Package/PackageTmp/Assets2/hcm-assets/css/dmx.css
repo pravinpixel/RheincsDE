@@ -1,0 +1,173 @@
+﻿   /*
+HTML5 Slideshow Master CSS
+(c) 2010 DMXzone
+
+Main class, use this in every rule so no other components get effected
+.dmxSlideshow   - Main container
+
+Other classes:
+.dmxSlide       - Slide container
+.dmxDescription - Description container
+.dmxControlbar  - controlbar container
+.dmxControl     - the control button
+
+other important combination:
+.dmxSlide img - The image
+.dmxDescription h4 - Description title
+.dmxDescription p  - Description text
+.dmxDescription.top - Description positioned at top
+.dmxDescription.bottom - Description positioned at bottom
+.dmxControl.first - Control button first
+.dmxControl.prev - Control button prev
+.dmxControl.pause - Control button pause
+.dmxControl.play - Control button play
+.dmxControl.next - Control button next
+.dmxControl.last - Control button last
+*/
+
+    .dmxSlideshow {
+        position: relative;
+        width: 300px;
+        height: 200px;
+        overflow: hidden;
+        background-color: #fff;
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 11px;
+    }
+
+        .dmxSlideshow .dmxLoader {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('loader.gif');
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .dmxSlideshow .dmxSlide {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background-color: #fff;
+            visibility: hidden;
+        }
+
+            .dmxSlideshow .dmxSlide img,
+            .dmxSlideshow .dmxSlide canvas {
+                position: absolute;
+                left: 0;
+                top: 0;
+                border: none;
+                z-index: 1;
+            }
+
+        .dmxSlideshow .dmxDescription {
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: auto;
+            background-color: transparent;
+            background: rgba(255, 255, 255, 0.5);
+            -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#7FFFFFFF,endColorstr=#7FFFFFFF);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#7FFFFFFF,endColorstr=#7FFFFFFF);
+            z-index: 11;
+        }
+
+            .dmxSlideshow .dmxDescription.top {
+                border-bottom: 3px solid #fff;
+                border-bottom: 3px solid rgba(0, 0, 0, 0.5);
+            }
+
+            .dmxSlideshow .dmxDescription.bottom {
+                border-top: 3px solid #fff;
+                border-top: 3px solid rgba(0, 0, 0, 0.5);
+            }
+
+            .dmxSlideshow .dmxDescription h4 {
+                margin: 5px;
+                padding: 0;
+                color: #fff;
+            }
+
+            .dmxSlideshow .dmxDescription p {
+                margin: 5px;
+                padding: 0;
+                color: #444;
+            }
+
+        .dmxSlideshow .dmxControlbar {
+            position: absolute;
+            padding: 2px 5px;
+            background-color: transparent;
+            background: rgba(255, 255, 255, 0.5);
+            -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#7FFFFFFF,endColorstr=#7FFFFFFF);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#7FFFFFFF,endColorstr=#7FFFFFFF);
+            text-align: center;
+            z-index: 12;
+        }
+
+            .dmxSlideshow .dmxControlbar.top {
+                width: 100%;
+                border-bottom: 3px solid #fff;
+                border-bottom: 3px solid rgba(0, 0, 0, 0.5);
+            }
+
+            .dmxSlideshow .dmxControlbar.bottom {
+                width: 100%;
+                border-top: 3px solid #fff;
+                border-top: 3px solid rgba(0, 0, 0, 0.5);
+            }
+
+            .dmxSlideshow .dmxControlbar.center {
+                border: 3px solid #fff;
+                border: 3px solid rgba(0, 0, 0, 0.5);
+                -webkit-border-radius: 32px;
+                -moz-border-radius: 32px;
+                border-radius: 32px;
+            }
+
+        .dmxSlideshow .dmxControl {
+            display: inline;
+            display: inline-block;
+            margin: 3px;
+            width: 32px;
+            height: 32px;
+            background-image: url('controls.png');
+            cursor: pointer;
+            *display: inline;
+            *vertical-align: middle;
+            zoom: 1;
+        }
+
+            .dmxSlideshow .dmxControl.first {
+                background-position: 0px;
+            }
+
+            .dmxSlideshow .dmxControl.prev {
+                background-position: -32px;
+            }
+
+            .dmxSlideshow .dmxControl.pause {
+                background-position: -64px;
+            }
+
+            .dmxSlideshow .dmxControl.play {
+                background-position: -96px;
+            }
+
+            .dmxSlideshow .dmxControl.next {
+                background-position: -128px;
+            }
+
+            .dmxSlideshow .dmxControl.last {
+                background-position: -160px;
+            }
+
+        .dmxSlideshow .dmxAbout {
+            display: none;
+        }

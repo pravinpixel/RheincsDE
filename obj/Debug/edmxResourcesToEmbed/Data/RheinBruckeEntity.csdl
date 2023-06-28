@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="RheinBruckeDevModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="RheinBruckeDevEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="EmailRequests" EntityType="RheinBruckeDevModel.EmailRequest" />
+    <EntitySet Name="EmailTypes" EntityType="RheinBruckeDevModel.EmailType" />
+    <AssociationSet Name="FK__EmailRequ__Email__15502E78" Association="RheinBruckeDevModel.FK__EmailRequ__Email__15502E78">
+      <End Role="EmailType" EntitySet="EmailTypes" />
+      <End Role="EmailRequest" EntitySet="EmailRequests" />
+    </AssociationSet>
+    <EntitySet Name="Testimonials" EntityType="RheinBruckeDevModel.Testimonial" />
+    <EntitySet Name="JobLists" EntityType="RheinBruckeDevModel.JobList" />
+    <EntitySet Name="NewsEvents" EntityType="RheinBruckeDevModel.NewsEvent" />
+    <EntitySet Name="JobApplications" EntityType="RheinBruckeDevModel.JobApplication" />
+    <EntitySet Name="LandingPages" EntityType="RheinBruckeDevModel.LandingPage" />
+    <EntitySet Name="MailSettings" EntityType="RheinBruckeDevModel.MailSetting" />
+    <EntitySet Name="Brochures" EntityType="RheinBruckeDevModel.Brochure" />
+    <EntitySet Name="CaseStudies" EntityType="RheinBruckeDevModel.CaseStudy" />
+    <EntitySet Name="WhitePapers" EntityType="RheinBruckeDevModel.WhitePaper" />
+    <EntitySet Name="UserRoles" EntityType="RheinBruckeDevModel.UserRole" />
+    <EntitySet Name="RICNews" EntityType="RheinBruckeDevModel.RICNew" />
+    <EntitySet Name="FactSheets" EntityType="RheinBruckeDevModel.FactSheet" />
+    <EntitySet Name="LeadSquareLogs" EntityType="RheinBruckeDevModel.LeadSquareLog" />
+  </EntityContainer>
+  <EntityType Name="EmailRequest">
+    <Key>
+      <PropertyRef Name="EmailRequestID" />
+    </Key>
+    <Property Name="EmailRequestID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Phone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Message" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="EmailTypeID" Type="Int32" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="EmailType" Relationship="RheinBruckeDevModel.FK__EmailRequ__Email__15502E78" FromRole="EmailRequest" ToRole="EmailType" />
+    <Property Name="ContactUsUrl" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="Services" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="EmailType">
+    <Key>
+      <PropertyRef Name="EmailTypeID" />
+    </Key>
+    <Property Name="EmailTypeID" Type="Int32" Nullable="false" />
+    <Property Name="EmailTypeName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Status" Type="Boolean" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="EmailRequests" Relationship="RheinBruckeDevModel.FK__EmailRequ__Email__15502E78" FromRole="EmailType" ToRole="EmailRequest" />
+  </EntityType>
+  <Association Name="FK__EmailRequ__Email__15502E78">
+    <End Type="RheinBruckeDevModel.EmailType" Role="EmailType" Multiplicity="0..1" />
+    <End Type="RheinBruckeDevModel.EmailRequest" Role="EmailRequest" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EmailType">
+        <PropertyRef Name="EmailTypeID" />
+      </Principal>
+      <Dependent Role="EmailRequest">
+        <PropertyRef Name="EmailTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Testimonial">
+    <Key>
+      <PropertyRef Name="TestimonialID" />
+    </Key>
+    <Property Name="TestimonialID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Content" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CompanyName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Designation" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Address" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="ImageName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Status" Type="Boolean" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="JobList">
+    <Key>
+      <PropertyRef Name="JobID" />
+    </Key>
+    <Property Name="JobID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="POTR" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Responsiblities" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Qualification" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Location" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedBy" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+    <Property Name="Field" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="JobTitle" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="Priority" Type="Int32" />
+    <Property Name="UrlDetails" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="NewsEvent">
+    <Key>
+      <PropertyRef Name="NewsAndEventsID" />
+    </Key>
+    <Property Name="NewsAndEventsID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ThumbnailImage" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="NewsImage" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="MetaTagDescription" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="MetaTagKeyword" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="NewsEventsDate" Type="DateTime" Precision="3" />
+    <Property Name="Status" Type="Boolean" />
+    <Property Name="ThumbnailPositionLeft" Type="Boolean" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="UrlDetails" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="JobApplication">
+    <Key>
+      <PropertyRef Name="JobRequestId" />
+    </Key>
+    <Property Name="JobRequestId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="MobileNo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EmailId" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="JobTitle" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DocumentName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CoverLetter" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="LandingPage">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="LastName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Company" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Phone" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ServiceType" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="Title" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Country" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UpgradeProductIntererst" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="MailSetting">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="LoginName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Password" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Port" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CustomSMTP" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EnableSSL" Type="Boolean" />
+    <Property Name="Relay" Type="Boolean" />
+    <Property Name="ContactUsMailId" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="JobMailId" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="LandingMailId" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="EmailId" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Brochure">
+    <Key>
+      <PropertyRef Name="BrochureId" />
+    </Key>
+    <Property Name="BrochureId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FilterName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="DocumentFileName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Thumbnail" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ImageURL" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DisplayOrder" Type="Int32" />
+  </EntityType>
+  <EntityType Name="CaseStudy">
+    <Key>
+      <PropertyRef Name="CaseStudyId" />
+    </Key>
+    <Property Name="CaseStudyId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FilterName" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DocumentFileName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Thumbnail" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ImageURL" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="NotDuplicate" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="WhitePaper">
+    <Key>
+      <PropertyRef Name="WhitePaperId" />
+    </Key>
+    <Property Name="WhitePaperId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FilterName" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DocumentFileName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Thumbnail" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ImageURL" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="NotDuplicate" Type="Boolean" />
+    <Property Name="DisplayOrder" Type="Int32" />
+  </EntityType>
+  <EntityType Name="UserRole">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserRole1" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="EmailId" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Department" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Status" Type="Boolean" />
+    <Property Name="Password" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="RICNew">
+    <Key>
+      <PropertyRef Name="NewsID" />
+    </Key>
+    <Property Name="NewsID" Type="Int32" Nullable="false" />
+    <Property Name="Title" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DetailedDescription" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ThumbnailImage" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="NewsImage" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="BannerImage" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="MetaTagDescription" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="MetaTagKeyword" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="NewsEventsDate" Type="DateTime" Precision="3" />
+    <Property Name="Status" Type="Boolean" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="UrlDetails" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="FactSheet">
+    <Key>
+      <PropertyRef Name="FactSheetId" />
+    </Key>
+    <Property Name="FactSheetId" Type="Int32" Nullable="false" />
+    <Property Name="FilterName" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DocumentFileName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Thumbnail" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ImageURL" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="NotDuplicate" Type="Boolean" />
+    <Property Name="DisplayOrder" Type="Int32" />
+  </EntityType>
+  <EntityType Name="LeadSquareLog">
+    <Key>
+      <PropertyRef Name="LogId" />
+    </Key>
+    <Property Name="LogId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FormPID" Type="Guid" />
+    <Property Name="FormStatus" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="FormMsg" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="FormAction" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Mobile" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="ServiceType" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+</Schema>

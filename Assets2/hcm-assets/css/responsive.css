@@ -1,0 +1,239 @@
+
+@media (min-width: 768px) and (max-width: 991px) {
+    button.multiselect.dropdown-toggle.btn.btn-default {
+        width: 100%;
+        
+    }
+    .btn-group, .btn-group-vertical {
+  width:100%;
+}
+    #cta .btn {
+    margin-top: 0px;
+}
+   .media.service-box .pull-left {
+    margin-right: 20px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+         .social ul li {
+    display: block;
+    margin: 5px;
+    background: rgb(20, 195, 244);
+    width: 300px;
+    text-align: right;
+    padding: 4px;
+    -webkit-border-radius: 0 30px 30px 0;
+    -moz-border-radius: 0 30px 30px 0;
+    border-radius: 0 30px 30px 0;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
+         .section-header .section-title {
+    font-size: 34px;
+    color: #272727;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 20px;
+    margin: 0 0 20px;
+}
+         .textAlign{
+             text-align:left;
+         }
+         section> .container{
+             padding:40px;
+         }
+         #main-slider .slider-inner h2 {
+    margin-top: 30px;
+    font-size: 24px;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #fff;
+}
+          
+         .btn-lg, .btn-group-lg>.btn {
+    padding: 10px 6px;
+    font-size: 18px;
+    line-height: 1.33;
+    border-radius: 6px;
+}
+         #features .media.service-box:first-child {
+    margin-top: 0px;
+}
+         #features, #services, #portfolio, #about, #pricing
+         {
+             border-bottom:1px solid #ccc;
+         }
+         .lead {
+         position: absolute;
+    top: 30%;
+    right: 0%;
+}
+
+}
+
+@media (min-width: 576px) and (max-width: 767px) { 
+      .media.service-box .pull-left {
+    margin-right: 20px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+         .social ul li {
+    display: block;
+    margin: 5px;
+    background: rgb(20, 195, 244);
+    width: 300px;
+    text-align: right;
+    padding: 4px;
+    -webkit-border-radius: 0 30px 30px 0;
+    -moz-border-radius: 0 30px 30px 0;
+    border-radius: 0 30px 30px 0;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
+         .section-header .section-title {
+    font-size: 34px;
+    color: #272727;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 20px;
+    margin: 0 0 20px;
+}
+         .textAlign{
+             text-align:left;
+         }
+         section> .container{
+             padding:40px;
+         }
+         #main-slider .slider-inner h2 {
+    margin-top: 30px;
+    font-size: 24px;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #fff;
+}
+          
+         .btn-lg, .btn-group-lg>.btn {
+    padding: 10px 6px;
+    font-size: 18px;
+    line-height: 1.33;
+    border-radius: 6px;
+}
+         #features .media.service-box:first-child {
+    margin-top: 0px;
+}
+         #features, #services, #portfolio, #about, #pricing
+         {
+             border-bottom:1px solid #ccc;
+         }
+         .lead {
+      position: absolute;
+    top: 40%;
+    right: 0%;
+}
+                button.multiselect.dropdown-toggle.btn.btn-default {
+        width: 100%;
+        
+    }
+    .btn-group, .btn-group-vertical {
+  width:100%;
+}
+button.btn.Submit1 {
+    width: 100% !important;
+}
+#cta .btn {
+    margin-top: 0px;
+}
+        
+}
+ 
+
+@media screen and (min-width:320px) and (max-width:481px){
+    #tour .flex-caption {
+    padding: 5px 5px 5px 5px;
+    text-align: center;
+}
+         .media.service-box .pull-left {
+    margin-right: 20px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+         .social ul li {
+    display: block;
+    margin: 5px;
+    background: rgb(20, 195, 244);
+    width: 300px;
+    text-align: right;
+    padding: 4px;
+    -webkit-border-radius: 0 30px 30px 0;
+    -moz-border-radius: 0 30px 30px 0;
+    border-radius: 0 30px 30px 0;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
+         .section-header .section-title {
+    font-size: 34px;
+    color: #272727;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 20px;
+    margin: 0 0 20px;
+}
+         .textAlign{
+             text-align:left;
+                 font-size: 13px;
+         }
+         .textC{
+        text-align:center;
+         }
+         section> .container{
+             padding:40px;
+         }
+         #main-slider .slider-inner h2 {
+    margin-top: 30px;
+    font-size: 24px;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #fff;
+}
+          
+         .btn-lg, .btn-group-lg>.btn {
+     padding: 10px 6px;
+    font-size: 16px;
+    line-height: 1.33;
+    border-radius: 6px;
+}
+         #features .media.service-box:first-child {
+    margin-top: 0px;
+}
+         #features, #services, #portfolio, #about, #pricing
+         {
+             border-bottom:1px solid #ccc;
+         }
+         .lead {
+    position: absolute;
+    top: 45%;
+    right: 5%;
+}
+             button.multiselect.dropdown-toggle.btn.btn-default {
+        width: 100%;
+        
+    }
+             #cta .btn {
+    margin-top: 0px;
+}
+    .btn-group, .btn-group-vertical {
+  width:100%;
+}
+}
