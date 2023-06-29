@@ -8,9 +8,9 @@
     <meta content="IE=edge" http-equiv="X-UA-Compatible" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0" />
     <asp:ContentPlaceHolder runat="server" ID="headerPlaceHolder" />
-    <script type="text/javascript" src="http://stgde.rheincs.net/2-click/javascripts/jquery.min.js"></script>
-<script type="text/javascript" src="http://stgde.rheincs.net/2-click/javascripts/jquery.cookies.js"></script>
-<script type="application/x-social-share-privacy-settings">{"path_prefix":"http://stgde.rheincs.net/2-click/","uri":"https://de.rheincs.com","layout":"box","services":{"buffer":{"status":false},"delicious":{"status":false},"fbshare":{"status":false},"disqus":{"status":false},"flattr":{"status":false},"hackernews":{"status":false},"mail":{"status":false},"pinterest":{"status":false},"reddit":{"status":false},"stumbleupon":{"status":false},"tumblr":{"status":false},"xing":{"status":false}}}</script> 
+    <script type="text/javascript" src="https://de.rheincs.com/2-click/javascripts/jquery.min.js"></script>
+<script type="text/javascript" src="https://de.rheincs.com/2-click/javascripts/jquery.cookies.js"></script>
+<script type="application/x-social-share-privacy-settings">{"path_prefix":"https://de.rheincs.com/2-click/","uri":"https://de.rheincs.com","layout":"box","services":{"buffer":{"status":false},"delicious":{"status":false},"fbshare":{"status":false},"disqus":{"status":false},"flattr":{"status":false},"hackernews":{"status":false},"mail":{"status":false},"pinterest":{"status":false},"reddit":{"status":false},"stumbleupon":{"status":false},"tumblr":{"status":false},"xing":{"status":false}}}</script> 
     <style>
         li.hvr-wobble-to-top-right {
     display: inherit;
@@ -171,23 +171,24 @@ load_css_async("/Assets/css/OverSheet.css");
     <a id="showLeft1" style="z-index: 1111;" class="slider-menu-icon mobilemenu mobilemenu-color-main-color-hover" href="#"><i class="fa fa-bars"></i></a>
      <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s2">
         <div class="pull-right closeicon" id="HideLeft1"><i class="fa fa-times"></i></div>
-        <div class="mobilemenu-header">
-            <div class="header-search">
-                <div class="col-md-3 no-padding ">
-                    <div class="col-md-3">
-                        <div class="mobile-multi-language"><a href="http://stgde.rheincs.net" class="mobl-lang">DE</a>&nbsp;/&nbsp;<a href="https://stg.rheincs.net" class="mobl-lang">EN</a></div>
+       <div class="mobilemenu-header">
+             <div class="col-md-3 no-padding  float-left">
+                    <div class="col-md-6">
+                        <!--class="mobile-multi-language">-->
+                        <div ><a href="https://de.rheincs.com" class="mobl-lang">DE</a>&nbsp;/&nbsp;<a href="https://rheincs.com" class="mobl-lang">EN | </a><div id="blogid" style="display:inline-block;">
+                        <a style="color: white; font-size: 13px; font-family: 'Raleway';"
+                           href="https://blog.rheincs.com">BLOG</a>
+                    </div></div>
+                         
                     </div>
-                    <div class="">
+                    <div style="display:none;" class="">
                         <div class="textSearchMobile">
                             <input type="text" class="Search-text-box" id="search-input-mobile" placeholder="SEARCH" onfocus="this.placeholder=''" onblur="this.placeholder='SEARCH'" /><i class="fa fa-search Searchicon mobilesearch-closeicon" id="mob-search"></i>
                         </div>
                     </div>
-                    <div id="blogid" style="margin-top: -30px; float: right; margin-right: -9px;">
-                        <a style="color: white; font-size: 13px; font-family: 'Raleway';"
-                           href="https://blog.rheincs.com">BLOG</a>
-                    </div>
+                   
+                   
                 </div>
-            </div>
         </div>
           <ul class="mobilmenu-ul">
             <li class="mobilemenu-level1"><a href="<%=rootpath %>Home" class="Level1-menu ETMenu"><span class="mobilemenu-border-bottom">Home</span></a></li>
@@ -281,12 +282,12 @@ load_css_async("/Assets/css/OverSheet.css");
         <div class="container">
             <div class="row">
                 <div class="col-md-12 headertopnav hidden-xs hidden-sm" id="headsearch">
-                    <div class="header-search">
-                        <div class="col-md-3 pull-right no-padd-right hidden-xs hidden-sm" style="width: 5%; padding-left: 20px !important; margin-top: 10px;">
+                   <div class="header-search">
+                        <div class="col-md-3 pull-right no-padding hidden-xs hidden-sm hidden-md" style="width: 5%;padding-left: 30px !important;margin-top: 8px;">
                             <a style="color: white; font-family: raleway !important; font-size: 13px;"
                                href="https://blog.rheincs.com">BLOG</a>
                         </div>
-                        <div class="col-md-3 pull-right no-padding hidden-xs hidden-sm hidden-md">
+                        <div class="col-md-3 pull-right no-padding hidden-xs hidden-sm hidden-md" style="display: none;">
                             <div class="">
                                 <div class="textSearch">
                                     <input type="text" class="Search-text-box" id="search-input" placeholder="SEARCH" onfocus="this.placeholder=''" onblur="this.placeholder='SEARCH'" /><i class="fa fa-search Searchicon"></i>
@@ -295,9 +296,9 @@ load_css_async("/Assets/css/OverSheet.css");
                             </div>
                         </div>
                         <div class="col-md-3 pull-right no-padd-right hidden-xs hidden-sm">
-                            <div class="pull-right multi-language"><a href="http://stgde.rheincs.net/" class="white-color">DE</a>&nbsp;/&nbsp;<a href="https://stg.rheincs.net/" class="white-color">EN</a></div>
+                            <div class="pull-right multi-language"><a href="https://de.rheincs.com" class="white-color">DE</a>&nbsp;/&nbsp;<a href="https://en.rheincs.com" class="white-color">EN</a> | </div>
                         </div>
-                    </div>
+                    </div> 
                 </div>
                 <div class="logo col-md-12 col-md-offset-0 navbar-static-top header-responsive-align header-box-shadow" id="nav">
                     <br />
@@ -902,5 +903,5 @@ load_css_async("/Assets/css/OverSheet.css");
         }
     </script>
     <!-- Double click code -->
-<script type="text/javascript">(function () {var s = document.createElement('script');var t = document.getElementsByTagName('script')[0];s.type = 'text/javascript';s.async = true;s.src = 'http://stgde.rheincs.net/2-click/javascripts/jquery.socialshareprivacy.min.autoload.js';t.parentNode.insertBefore(s, t);})();</script> 
+<script type="text/javascript">(function () {var s = document.createElement('script');var t = document.getElementsByTagName('script')[0];s.type = 'text/javascript';s.async = true;s.src = 'https://de.rheincs.com/2-click/javascripts/jquery.socialshareprivacy.min.autoload.js';t.parentNode.insertBefore(s, t);})();</script> 
 </html>
