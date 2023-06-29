@@ -2571,7 +2571,6 @@
     <Content Include="Fabian-Ringel\pages\5-regions.json" />
     <Content Include="Fabian-Ringel\pages\6-regions.json" />
     <Content Include="Fabian-Ringel\pdf\RICBrochure-Fabian-German.pdf" />
-    <None Include="Properties\PublishProfiles\DE.pubxml" />
     <Content Include="Rheincs.Master" />
     <Content Include="RheincsLanding.Master" />
     <Content Include="RIC-Corporate-Brochure-DE\font-awesome-4.7.0\fonts\fontawesome-webfont.eot" />
@@ -2777,7 +2776,6 @@
     <Compile Include="api\MailList.cs" />
     <Compile Include="api\ManufacturingDE.cs" />
     <Compile Include="api\ReportSearch.cs" />
-    <Compile Include="Assets2\css\Class1.cs" />
     <Compile Include="Brochure\Brochure.aspx.cs">
       <DependentUpon>Brochure.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2818,6 +2816,9 @@
     <Compile Include="Data\EmailType.cs">
       <DependentUpon>RheinBruckeEntity.tt</DependentUpon>
     </Compile>
+    <Compile Include="Data\FactSheet.cs">
+      <DependentUpon>RheinBruckeEntity.tt</DependentUpon>
+    </Compile>
     <Compile Include="Data\JobApplication.cs">
       <DependentUpon>RheinBruckeEntity.tt</DependentUpon>
     </Compile>
@@ -2827,7 +2828,7 @@
     <Compile Include="Data\LandingPage.cs">
       <DependentUpon>RheinBruckeEntity.tt</DependentUpon>
     </Compile>
-    <Compile Include="Data\Login.cs">
+    <Compile Include="Data\LeadSquareLog.cs">
       <DependentUpon>RheinBruckeEntity.tt</DependentUpon>
     </Compile>
     <Compile Include="Data\MailSetting.cs">
@@ -2847,12 +2848,19 @@
       <AutoGen>True</AutoGen>
     </Compile>
     <Compile Include="Data\RheinBruckeEntity.Designer.cs">
-      <DependentUpon>RheinBruckeEntity.cs</DependentUpon>
+      <DependentUpon>RheinBruckeEntity.edmx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Data\RICNew.cs">
+      <DependentUpon>RheinBruckeEntity.tt</DependentUpon>
     </Compile>
     <Compile Include="Data\Testimonial.cs">
       <DependentUpon>RheinBruckeEntity.tt</DependentUpon>
     </Compile>
-    <Compile Include="Data\UserRole.cs" />
+    <Compile Include="Data\UserRole.cs">
+      <DependentUpon>RheinBruckeEntity.tt</DependentUpon>
+    </Compile>
     <Compile Include="Data\WhitePaper.cs">
       <DependentUpon>RheinBruckeEntity.tt</DependentUpon>
     </Compile>
@@ -3328,7 +3336,6 @@
     <Compile Include="Datenschutzerklärung.aspx.designer.cs">
       <DependentUpon>Datenschutzerklärung.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="search.aspx.cs">
       <DependentUpon>search.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -3364,6 +3371,7 @@
     <Folder Include="Assets\images\NewsEventsold\" />
     <Folder Include="Assets\images\Thumbnail\" />
     <Folder Include="AttachmentFile\" />
+    <Folder Include="Properties\PublishProfiles\" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

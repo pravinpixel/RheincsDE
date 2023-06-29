@@ -6,7 +6,7 @@
     <edmx:StorageModels>
     <Schema Namespace="RheinBruckeDevModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <!--Errors Found During Generation:
-warning 6002: The table/view 'RheinBruckeGer.dbo.Brochure' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+warning 6002: The table/view 'RheinBruckeEN.dbo.Brochure' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="Brochure">
           <Key>
             <PropertyRef Name="BrochureId" />
@@ -20,7 +20,7 @@ warning 6002: The table/view 'RheinBruckeGer.dbo.Brochure' does not have a prima
           <Property Name="DisplayOrder" Type="int" />
         </EntityType>
         <!--Errors Found During Generation:
-warning 6002: The table/view 'RheinBruckeGer.dbo.CaseStudies' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+warning 6002: The table/view 'RheinBruckeEN.dbo.CaseStudies' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="CaseStudies">
           <Key>
             <PropertyRef Name="CaseStudyId" />
@@ -56,6 +56,8 @@ warning 6002: The table/view 'RheinBruckeGer.dbo.CaseStudies' does not have a pr
           <Property Name="Status" Type="bit" />
           <Property Name="CreatedOn" Type="datetime" />
         </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'RheinBruckeEN.dbo.FactSheet' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="FactSheet">
           <Key>
             <PropertyRef Name="FactSheetId" />
@@ -143,6 +145,7 @@ warning 6002: The table/view 'RheinBruckeGer.dbo.CaseStudies' does not have a pr
           <Property Name="ContactUsMailId" Type="nvarchar" MaxLength="100" />
           <Property Name="JobMailId" Type="nvarchar" MaxLength="100" />
           <Property Name="LandingMailId" Type="varchar" MaxLength="100" />
+          <Property Name="EmailId" Type="varchar" MaxLength="100" />
         </EntityType>
         <EntityType Name="NewsEvents">
           <Key>
@@ -194,7 +197,7 @@ warning 6002: The table/view 'RheinBruckeGer.dbo.CaseStudies' does not have a pr
           <Property Name="CreatedOn" Type="datetime" />
         </EntityType>
         <!--Errors Found During Generation:
-warning 6002: The table/view 'RheinBruckeGer.dbo.UserRoles' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+warning 6002: The table/view 'RheinBruckeEN.dbo.UserRoles' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="UserRoles">
           <Key>
             <PropertyRef Name="UserId" />
@@ -207,7 +210,7 @@ warning 6002: The table/view 'RheinBruckeGer.dbo.UserRoles' does not have a prim
           <Property Name="Status" Type="bit" />
         </EntityType>
         <!--Errors Found During Generation:
-warning 6002: The table/view 'RheinBruckeGer.dbo.WhitePapers' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+warning 6002: The table/view 'RheinBruckeEN.dbo.WhitePapers' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="WhitePapers">
           <Key>
             <PropertyRef Name="WhitePaperId" />
@@ -221,7 +224,7 @@ warning 6002: The table/view 'RheinBruckeGer.dbo.WhitePapers' does not have a pr
           <Property Name="NotDuplicate" Type="bit" />
           <Property Name="DisplayOrder" Type="int" />
         </EntityType>
-        <Association Name="FK__EmailRequ__Email__4AB81AF0">
+        <Association Name="FK__EmailRequ__Email__30F848ED">
           <End Role="EmailType" Type="Self.EmailType" Multiplicity="0..1" />
           <End Role="EmailRequest" Type="Self.EmailRequest" Multiplicity="*" />
           <ReferentialConstraint>
@@ -233,7 +236,7 @@ warning 6002: The table/view 'RheinBruckeGer.dbo.WhitePapers' does not have a pr
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__EmailRequ__Email__4BAC3F29">
+        <Association Name="FK__EmailRequ__Email__31EC6D26">
           <End Role="EmailType" Type="Self.EmailType" Multiplicity="0..1" />
           <End Role="EmailRequest" Type="Self.EmailRequest" Multiplicity="*" />
           <ReferentialConstraint>
@@ -245,43 +248,7 @@ warning 6002: The table/view 'RheinBruckeGer.dbo.WhitePapers' does not have a pr
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__EmailRequ__Email__4CA06362">
-          <End Role="EmailType" Type="Self.EmailType" Multiplicity="0..1" />
-          <End Role="EmailRequest" Type="Self.EmailRequest" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="EmailType">
-              <PropertyRef Name="EmailTypeID" />
-            </Principal>
-            <Dependent Role="EmailRequest">
-              <PropertyRef Name="EmailTypeID" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK__EmailRequ__Email__4D94879B">
-          <End Role="EmailType" Type="Self.EmailType" Multiplicity="0..1" />
-          <End Role="EmailRequest" Type="Self.EmailRequest" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="EmailType">
-              <PropertyRef Name="EmailTypeID" />
-            </Principal>
-            <Dependent Role="EmailRequest">
-              <PropertyRef Name="EmailTypeID" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK__EmailRequ__Email__4E88ABD4">
-          <End Role="EmailType" Type="Self.EmailType" Multiplicity="0..1" />
-          <End Role="EmailRequest" Type="Self.EmailRequest" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="EmailType">
-              <PropertyRef Name="EmailTypeID" />
-            </Principal>
-            <Dependent Role="EmailRequest">
-              <PropertyRef Name="EmailTypeID" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK__EmailRequ__Email__4F7CD00D">
+        <Association Name="FK__EmailRequ__Email__32E0915F">
           <End Role="EmailType" Type="Self.EmailType" Multiplicity="0..1" />
           <End Role="EmailRequest" Type="Self.EmailRequest" Multiplicity="*" />
           <ReferentialConstraint>
@@ -296,7 +263,6 @@ warning 6002: The table/view 'RheinBruckeGer.dbo.WhitePapers' does not have a pr
         <EntityContainer Name="RheinBruckeDevModelStoreContainer">
           <EntitySet Name="EmailRequest" EntityType="Self.EmailRequest" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="EmailType" EntityType="Self.EmailType" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="FactSheet" EntityType="Self.FactSheet" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="JobApplication" EntityType="Self.JobApplication" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="JobList" EntityType="Self.JobList" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="LandingPage" EntityType="Self.LandingPage" Schema="dbo" store:Type="Tables" />
@@ -327,6 +293,18 @@ FROM [dbo].[Brochure] AS [Brochure]</DefiningQuery>
 [CaseStudies].[NotDuplicate] AS [NotDuplicate]
 FROM [dbo].[CaseStudies] AS [CaseStudies]</DefiningQuery>
           </EntitySet>
+          <EntitySet Name="FactSheet" EntityType="Self.FactSheet" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+[FactSheet].[FactSheetId] AS [FactSheetId], 
+[FactSheet].[FilterName] AS [FilterName], 
+[FactSheet].[DocumentFileName] AS [DocumentFileName], 
+[FactSheet].[Thumbnail] AS [Thumbnail], 
+[FactSheet].[Description] AS [Description], 
+[FactSheet].[ImageURL] AS [ImageURL], 
+[FactSheet].[NotDuplicate] AS [NotDuplicate], 
+[FactSheet].[DisplayOrder] AS [DisplayOrder]
+FROM [dbo].[FactSheet] AS [FactSheet]</DefiningQuery>
+          </EntitySet>
           <EntitySet Name="UserRoles" EntityType="Self.UserRoles" store:Type="Tables" store:Schema="dbo">
             <DefiningQuery>SELECT 
 [UserRoles].[UserId] AS [UserId], 
@@ -349,27 +327,15 @@ FROM [dbo].[UserRoles] AS [UserRoles]</DefiningQuery>
 [WhitePapers].[DisplayOrder] AS [DisplayOrder]
 FROM [dbo].[WhitePapers] AS [WhitePapers]</DefiningQuery>
           </EntitySet>
-          <AssociationSet Name="FK__EmailRequ__Email__4AB81AF0" Association="Self.FK__EmailRequ__Email__4AB81AF0">
+          <AssociationSet Name="FK__EmailRequ__Email__30F848ED" Association="Self.FK__EmailRequ__Email__30F848ED">
             <End Role="EmailType" EntitySet="EmailType" />
             <End Role="EmailRequest" EntitySet="EmailRequest" />
           </AssociationSet>
-          <AssociationSet Name="FK__EmailRequ__Email__4BAC3F29" Association="Self.FK__EmailRequ__Email__4BAC3F29">
+          <AssociationSet Name="FK__EmailRequ__Email__31EC6D26" Association="Self.FK__EmailRequ__Email__31EC6D26">
             <End Role="EmailType" EntitySet="EmailType" />
             <End Role="EmailRequest" EntitySet="EmailRequest" />
           </AssociationSet>
-          <AssociationSet Name="FK__EmailRequ__Email__4CA06362" Association="Self.FK__EmailRequ__Email__4CA06362">
-            <End Role="EmailType" EntitySet="EmailType" />
-            <End Role="EmailRequest" EntitySet="EmailRequest" />
-          </AssociationSet>
-          <AssociationSet Name="FK__EmailRequ__Email__4D94879B" Association="Self.FK__EmailRequ__Email__4D94879B">
-            <End Role="EmailType" EntitySet="EmailType" />
-            <End Role="EmailRequest" EntitySet="EmailRequest" />
-          </AssociationSet>
-          <AssociationSet Name="FK__EmailRequ__Email__4E88ABD4" Association="Self.FK__EmailRequ__Email__4E88ABD4">
-            <End Role="EmailType" EntitySet="EmailType" />
-            <End Role="EmailRequest" EntitySet="EmailRequest" />
-          </AssociationSet>
-          <AssociationSet Name="FK__EmailRequ__Email__4F7CD00D" Association="Self.FK__EmailRequ__Email__4F7CD00D">
+          <AssociationSet Name="FK__EmailRequ__Email__32E0915F" Association="Self.FK__EmailRequ__Email__32E0915F">
             <End Role="EmailType" EntitySet="EmailType" />
             <End Role="EmailRequest" EntitySet="EmailRequest" />
           </AssociationSet>
@@ -527,6 +493,7 @@ FROM [dbo].[WhitePapers] AS [WhitePapers]</DefiningQuery>
           <Property Name="ContactUsMailId" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
           <Property Name="JobMailId" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
           <Property Name="LandingMailId" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="EmailId" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
         </EntityType>
         <EntityType Name="Brochure">
           <Key>
@@ -737,6 +704,7 @@ FROM [dbo].[WhitePapers] AS [WhitePapers]</DefiningQuery>
           <EntitySetMapping Name="MailSettings">
             <EntityTypeMapping TypeName="RheinBruckeDevModel.MailSetting">
               <MappingFragment StoreEntitySet="MailSettings">
+                <ScalarProperty Name="EmailId" ColumnName="EmailId" />
                 <ScalarProperty Name="LandingMailId" ColumnName="LandingMailId" />
                 <ScalarProperty Name="JobMailId" ColumnName="JobMailId" />
                 <ScalarProperty Name="ContactUsMailId" ColumnName="ContactUsMailId" />

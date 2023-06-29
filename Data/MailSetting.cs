@@ -24,5 +24,6 @@ namespace RheinBrucke.Data
         public string ContactUsMailId { get; set; }
         public string JobMailId { get; set; }
         public string LandingMailId { get; set; }
+        public string EmailId { get; set; }
     }
 }
