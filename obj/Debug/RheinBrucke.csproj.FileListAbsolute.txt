@@ -43,3 +43,4 @@ E:\29. Rheincs Projects\RheincsDE\bin\Antlr3.Runtime.pdb
 E:\29. Rheincs Projects\RheincsDE\bin\Mono.Math.xml
 E:\29. Rheincs Projects\RheincsDE\obj\Debug\RheinBrucke.dll
 E:\29. Rheincs Projects\RheincsDE\obj\Debug\RheinBrucke.pdb
+E:\29. Rheincs Projects\RheincsDE\obj\Debug\RheinBrucke.csprojResolveAssemblyReference.cache

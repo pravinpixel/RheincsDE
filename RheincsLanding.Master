@@ -9,16 +9,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0" />
     <asp:ContentPlaceHolder runat="server" ID="headerPlaceHolder" />
     <script type="text/javascript" src="https://de.rheincs.com/2-click/javascripts/jquery.min.js"></script>
-<script type="text/javascript" src="https://de.rheincs.com/2-click/javascripts/jquery.cookies.js"></script>
-<script type="application/x-social-share-privacy-settings">{"path_prefix":"https://de.rheincs.com/2-click/","uri":"https://de.rheincs.com","layout":"box","services":{"buffer":{"status":false},"delicious":{"status":false},"fbshare":{"status":false},"disqus":{"status":false},"flattr":{"status":false},"hackernews":{"status":false},"mail":{"status":false},"pinterest":{"status":false},"reddit":{"status":false},"stumbleupon":{"status":false},"tumblr":{"status":false},"xing":{"status":false}}}</script> 
+    <script type="text/javascript" src="https://de.rheincs.com/2-click/javascripts/jquery.cookies.js"></script>
+    <script type="application/x-social-share-privacy-settings">{"path_prefix":"https://de.rheincs.com/2-click/","uri":"https://de.rheincs.com","layout":"box","services":{"buffer":{"status":false},"delicious":{"status":false},"fbshare":{"status":false},"disqus":{"status":false},"flattr":{"status":false},"hackernews":{"status":false},"mail":{"status":false},"pinterest":{"status":false},"reddit":{"status":false},"stumbleupon":{"status":false},"tumblr":{"status":false},"xing":{"status":false}}}</script>
     <style>
         @import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc2/css/bootstrap-glyphicons.css");
+
         body {
             opacity: 0;
         }
-        .contentwithpadding
-        {
-            padding:0px 20px;
+
+        .contentwithpadding {
+            padding: 0px 20px;
         }
 
         @media (max-width: 375px) {
@@ -67,138 +68,143 @@
             -webkit-transition-property: top, bottom;
             -webkit-transition-duration: 0.4s;
         }
-         .padd-top-7
-        {
-            padding-top:7px;
+
+        .padd-top-7 {
+            padding-top: 7px;
         }
-        .line-ht-13
-        {
-            line-height:13px;
+
+        .line-ht-13 {
+            line-height: 13px;
         }
+
         .testimonial-img, .testimonial-img1 {
-    margin-right: 10px;
-    float: left;
-    opacity: .7;
-}
+            margin-right: 10px;
+            float: left;
+            opacity: .7;
+        }
 
-.ld-mag2 {
-    margin-left: -26px;
-}
+        .ld-mag2 {
+            margin-left: -26px;
+        }
 
-.img-circle1 {
-    border-radius: 50%;
-    border: 2px solid #7b1315!important;
-}
-.deco-header2 {
-    border-bottom: 1px solid #eee;
-    line-height: 15px;
-}
-.redBottom1 {
-    border-bottom: 2px solid transparent;
-    padding-bottom: 1.001em;
-    margin-bottom: -1px;
-    border-color: #7b1315!important;
-    font-weight: 400;
-    font-size: 12px;
-    font-family: sans-serif;
-    color: #2f2f2f;
-    padding-top: 14px;
-}
-.modal-content {
-    position: relative;
-    border: 5px solid #632424;
-    background-color: #fff;
-    background-clip: padding-box;
-    border-radius: 6px;
-    outline: 0;
-    -webkit-box-shadow: 0 3px 9px rgba(0,0,0,.5);
-    box-shadow: 0 3px 9px rgba(0,0,0,.5);
-}
+        .img-circle1 {
+            border-radius: 50%;
+            border: 2px solid #7b1315 !important;
+        }
 
-.modal-header1 {
-    min-height: 348px;
-}
+        .deco-header2 {
+            border-bottom: 1px solid #eee;
+            line-height: 15px;
+        }
 
-.modal-header, .modal-header1 {
-    border-bottom: 1px solid #e5e5e5;
-    padding: 15px;
-}
-button.close {
-    -webkit-appearance: none;
-    padding: 0;
-    cursor: pointer;
-    background: 0;
-    border: 0;
-}
+        .redBottom1 {
+            border-bottom: 2px solid transparent;
+            padding-bottom: 1.001em;
+            margin-bottom: -1px;
+            border-color: #7b1315 !important;
+            font-weight: 400;
+            font-size: 12px;
+            font-family: sans-serif;
+            color: #2f2f2f;
+            padding-top: 14px;
+        }
 
-.redColor {
-    color: #7b1315 !important;
-}
+        .modal-content {
+            position: relative;
+            border: 5px solid #632424;
+            background-color: #fff;
+            background-clip: padding-box;
+            border-radius: 6px;
+            outline: 0;
+            -webkit-box-shadow: 0 3px 9px rgba(0,0,0,.5);
+            box-shadow: 0 3px 9px rgba(0,0,0,.5);
+        }
 
-.close-popup {
-        color: #7b1315 !important;
-    margin-top: 2px !important;
-    margin-right: 3px !important;
-    opacity: 1 !important;
-   
-}
-.close {
-    float: right;
-    font-size: 21px;
-    font-weight: 700;
-    line-height: 1;
-    color: #000;
-    text-shadow: 0 1px 0 #fff;
-    filter: alpha(opacity=20);
-    opacity: .2;
-}
-  .rhein-banner-heading-black-bg
-       {
-           top:17% !important;
-       }
-@media (max-width:768px)
-{
-    .rhein-banner-heading-black-bg {
-    top: 5% !important;
-    right: 7%;
-}
-}
-@media (max-width:480px)
-{
-    .rhein-banner-heading-black-bg
-    {
-        top:-27% !important;
-        padding:5px !important;
-        line-height:10px;
-    }
-}
-@media (max-width:320px)
-{
-    .rhein-banner-heading-black-bg
-    {
-            top: -61% !important;
-    padding: 5px !important;
-    line-height: 6px;
-    right: -6px;
-    }
-}
+        .modal-header1 {
+            min-height: 348px;
+        }
+
+        .modal-header, .modal-header1 {
+            border-bottom: 1px solid #e5e5e5;
+            padding: 15px;
+        }
+
+        button.close {
+            -webkit-appearance: none;
+            padding: 0;
+            cursor: pointer;
+            background: 0;
+            border: 0;
+        }
+
+        .redColor {
+            color: #7b1315 !important;
+        }
+
+        .close-popup {
+            color: #7b1315 !important;
+            margin-top: 2px !important;
+            margin-right: 3px !important;
+            opacity: 1 !important;
+        }
+
+        .close {
+            float: right;
+            font-size: 21px;
+            font-weight: 700;
+            line-height: 1;
+            color: #000;
+            text-shadow: 0 1px 0 #fff;
+            filter: alpha(opacity=20);
+            opacity: .2;
+        }
+
+        .rhein-banner-heading-black-bg {
+            top: 17% !important;
+        }
+
+        @media (max-width:768px) {
+            .rhein-banner-heading-black-bg {
+                top: 5% !important;
+                right: 7%;
+            }
+        }
+
+        @media (max-width:480px) {
+            .rhein-banner-heading-black-bg {
+                top: -27% !important;
+                padding: 5px !important;
+                line-height: 10px;
+            }
+        }
+
+        @media (max-width:320px) {
+            .rhein-banner-heading-black-bg {
+                top: -61% !important;
+                padding: 5px !important;
+                line-height: 6px;
+                right: -6px;
+            }
+        }
     </style>
-      
+
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
-     <script type="text/javascript">function load_css_async(filename) {  if (document.createStyleSheet) document.createStyleSheet(filename);
-            else {
-                var stylesheet = document.createElement('link');
-                stylesheet.href = filename;
-                stylesheet.rel = 'stylesheet';
-                stylesheet.type = 'text/css';
-                document.getElementsByTagName('head')[0].appendChild(stylesheet);
-            } }</script>
+    <script type="text/javascript">function load_css_async(filename) {
+    if (document.createStyleSheet) document.createStyleSheet(filename);
+    else {
+        var stylesheet = document.createElement('link');
+        stylesheet.href = filename;
+        stylesheet.rel = 'stylesheet';
+        stylesheet.type = 'text/css';
+        document.getElementsByTagName('head')[0].appendChild(stylesheet);
+    }
+}</script>
 
 
     <%=cssload %>
-<script>
-load_css_async("/Assets/css/OverSheet.css");
-</script>
+    <script>
+        load_css_async("/Assets/css/OverSheet.css");
+    </script>
     <%--
     <link href="https://de.rheincs.com/Assets/css/bxSlider.css" rel="stylesheet" />--%>
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
@@ -211,64 +217,68 @@ load_css_async("/Assets/css/OverSheet.css");
     <!--LeadSquared Tracking Code Start-->
     <script type="text/javascript" src="https://web.mxradon.com/t/Tracker.js" defer></script>
     <script type="text/javascript">
-      pidTracker('17537');
+        pidTracker('17537');
     </script>
     <!--LeadSquared Tracking Code End-->
 
-  <!-- GOOGLE ANALYTICS -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-52011571-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'UA-52011571-1');
-  gtag('config', 'UA-52011571-1', { 'anonymize_ip': true });
-</script>
-<!-- END OF GOOGLE ANALYTICS -->
+    <!-- GOOGLE ANALYTICS -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-52011571-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-52011571-1');
+        gtag('config', 'UA-52011571-1', { 'anonymize_ip': true });
+    </script>
+    <!-- END OF GOOGLE ANALYTICS -->
 
     <script type='text/javascript'>
-var _vwo_code=(function(){
-var account_id=292694,
-settings_tolerance=2000,
-library_tolerance=2500,
-use_existing_jquery=false,
-/* DO NOT EDIT BELOW THIS LINE */
-f=false,d=document;return{use_existing_jquery:function(){return use_existing_jquery;},library_tolerance:function(){return library_tolerance;},finish:function(){if(!f){f=true;var a=d.getElementById('_vis_opt_path_hides');if(a)a.parentNode.removeChild(a);}},finished:function(){return f;},load:function(a){var b=d.createElement('script');b.src=a;b.type='text/javascript';b.innerText;b.onerror=function(){_vwo_code.finish();};d.getElementsByTagName('head')[0].appendChild(b);},init:function(){settings_timer=setTimeout('_vwo_code.finish()',settings_tolerance);var a=d.createElement('style'),b='body{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}',h=d.getElementsByTagName('head')[0];a.setAttribute('id','_vis_opt_path_hides');a.setAttribute('type','text/css');if(a.styleSheet)a.styleSheet.cssText=b;else a.appendChild(d.createTextNode(b));h.appendChild(a);this.load('//dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(d.URL)+'&r='+Math.random());return settings_timer;}};}());_vwo_settings_timer=_vwo_code.init();
+        var _vwo_code = (function () {
+            var account_id = 292694,
+            settings_tolerance = 2000,
+            library_tolerance = 2500,
+            use_existing_jquery = false,
+            /* DO NOT EDIT BELOW THIS LINE */
+            f = false, d = document; return { use_existing_jquery: function () { return use_existing_jquery; }, library_tolerance: function () { return library_tolerance; }, finish: function () { if (!f) { f = true; var a = d.getElementById('_vis_opt_path_hides'); if (a) a.parentNode.removeChild(a); } }, finished: function () { return f; }, load: function (a) { var b = d.createElement('script'); b.src = a; b.type = 'text/javascript'; b.innerText; b.onerror = function () { _vwo_code.finish(); }; d.getElementsByTagName('head')[0].appendChild(b); }, init: function () { settings_timer = setTimeout('_vwo_code.finish()', settings_tolerance); var a = d.createElement('style'), b = 'body{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}', h = d.getElementsByTagName('head')[0]; a.setAttribute('id', '_vis_opt_path_hides'); a.setAttribute('type', 'text/css'); if (a.styleSheet) a.styleSheet.cssText = b; else a.appendChild(d.createTextNode(b)); h.appendChild(a); this.load('//dev.visualwebsiteoptimizer.com/j.php?a=' + account_id + '&u=' + encodeURIComponent(d.URL) + '&r=' + Math.random()); return settings_timer; } };
+        }()); _vwo_settings_timer = _vwo_code.init();
     </script>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body class="cbp-spmenu-push">
-   <a id="showLeft1" style="z-index: 1111;" class="slider-menu-icon mobilemenu mobilemenu-color-main-color-hover" href="#"><i class="fa fa-bars"></i></a>
-   <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s2">
+    <a id="showLeft1" style="z-index: 1111;" class="slider-menu-icon mobilemenu mobilemenu-color-main-color-hover" href="#"><i class="fa fa-bars"></i></a>
+    <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s2">
         <div class="pull-right closeicon" id="HideLeft1"><i class="fa fa-times"></i></div>
         <div class="mobilemenu-header">
-             <div class="col-md-3 no-padding  float-left">
-                    <div class="col-md-6">
-                        <!--class="mobile-multi-language">-->
-                        <div ><a href="https://de.rheincs.com" class="mobl-lang">DE</a>&nbsp;/&nbsp;<a href="https://rheincs.com" class="mobl-lang">EN | </a><div id="blogid" style="display:inline-block;">
-                        <a style="color: white; font-size: 13px; font-family: 'Raleway';"
-                           href="https://blog.rheincs.com">BLOG</a>
-                    </div></div>
-                         
-                    </div>
-                    <div style="display:none;" class="">
-                        <div class="textSearchMobile">
-                            <input type="text" class="Search-text-box" id="search-input-mobile" placeholder="SEARCH" onfocus="this.placeholder=''" onblur="this.placeholder='SEARCH'" /><i class="fa fa-search Searchicon mobilesearch-closeicon" id="mob-search"></i>
+            <div class="col-md-3 no-padding  float-left">
+                <div class="col-md-6">
+                    <!--class="mobile-multi-language">-->
+                    <div>
+                        <a href="https://de.rheincs.com" class="mobl-lang">DE</a>&nbsp;/&nbsp;<a href="https://rheincs.com" class="mobl-lang">EN | </a>
+                        <div id="blogid" style="display: inline-block;">
+                            <a style="color: white; font-size: 13px; font-family: 'Raleway';"
+                                href="https://blog.rheincs.com">BLOG</a>
                         </div>
                     </div>
-                   
-                   
+
                 </div>
+                <div style="display: none;" class="">
+                    <div class="textSearchMobile">
+                        <input type="text" class="Search-text-box" id="search-input-mobile" placeholder="SEARCH" onfocus="this.placeholder=''" onblur="this.placeholder='SEARCH'" /><i class="fa fa-search Searchicon mobilesearch-closeicon" id="mob-search"></i>
+                    </div>
+                </div>
+
+
+            </div>
         </div>
-          <ul class="mobilmenu-ul">
+        <ul class="mobilmenu-ul">
             <li class="mobilemenu-level1"><a href="<%=rootpath %>Home" class="Level1-menu ETMenu"><span class="mobilemenu-border-bottom">Home</span></a></li>
             <li><a href="#" class="mobilemenu-level1 Level1-menu"><span class="mobilemenu-border-bottom ETMenu">Über uns</span></a>
                 <ul>
                     <li><a href="<%=rootpath %>ÜberUns/Überblick" class="Level2small-menu ETMenu"><span>Überblick</span></a></li>
                     <li><a href="<%=rootpath %>ÜberUns/ÜberUns-Führung" class="Level2small-menu ETMenu"><span>Führung</span></a></li>
                     <li><a href="<%=rootpath %>ÜberUns/kundenreferenzen" class="Level2small-menu ETMenu"><span>Kundenreferenzen</span></a></li>
-                    <li><a href="<%=rootpath %>ÜberUns/Erfolgsgeschichten" class="Level2small-menu ETMenu"><span>Erfolgsgeschichten</span></a></li>                    
+                    <li><a href="<%=rootpath %>ÜberUns/Erfolgsgeschichten" class="Level2small-menu ETMenu"><span>Erfolgsgeschichten</span></a></li>
                 </ul>
             </li>
             <li><a href="#" class="mobilemenu-level1 Level1-menu"><span class="mobilemenu-border-bottom ETMenu">Lösungen</span></a>
@@ -280,11 +290,11 @@ f=false,d=document;return{use_existing_jquery:function(){return use_existing_jqu
                             <li><a href="<%=rootpath %>Lösungen/KundenorientierteLösungenImKMUMarkt/Großunternehmen.aspx" class="Level3-menu ETMenu"><span>Großunternehmen</span></a></li>
                         </ul>
                     </li>--%>
-                     <li>
+                    <li>
                         <a href="#" class="mobilemenu-level1 Level2-menu"><span class="mobilemenu-border-bottom">Unsere Lösungen</span></a>
                         <ul>
-                            
-                           <li><a href="<%=rootpath %>Epicor-Payroll-MEA" class="Level3-menu ETMenu"><span>Epicor-Payroll-MEA</span></a></li>
+
+                            <li><a href="<%=rootpath %>Epicor-Payroll-MEA" class="Level3-menu ETMenu"><span>Epicor-Payroll-MEA</span></a></li>
                             <li><a href="<%=rootpath %>rheinbrucke-cct-copy-company-tool" class="Level3-menu ETMenu"><span>Copy Company Tool</span></a></li>
                             <li><a href="<%=rootpath %>our-solution-ppa" class="Level3-menu ETMenu"><span>Power Plant Analytics</span></a></li>
                             <li><a href="<%=rootpath %>MeRLIN" class="Level3-menu ETMenu"><span>MeRLIN – Strategic Sourcing Software</span></a></li>
@@ -326,12 +336,12 @@ f=false,d=document;return{use_existing_jquery:function(){return use_existing_jqu
                         </ul>
                     </li>
                 </ul>
-            </li>         
-              <li><a href="#" class="mobilemenu-level1 Level1-menu"><span class="mobilemenu-border-bottom">Resources</span></a>
+            </li>
+            <li><a href="#" class="mobilemenu-level1 Level1-menu"><span class="mobilemenu-border-bottom">Resources</span></a>
                 <ul>
                     <li><a href="https://blog.rheincs.com" class="Level2small-menu ETMenu"><span>Blog</span></a></li>
                     <li><a href="<%=rootpath %>whitePapers/whitepapers" class="Level2small-menu ETMenu"><span>White Papers</span></a></li>
-                    <li><a href="<%=rootpath %>brochure/brochures" class="Level2small-menu ETMenu"><span>Brochures</span></a></li
+                    <li><a href="<%=rootpath %>brochure/brochures" class="Level2small-menu ETMenu"><span>Brochures</span></a></li>
                     <li><a href="<%=rootpath %>factsheets/factsheets" class="Level2small-menu ETMenu"><span>FactSheets</span></a></li>
                     <li><a href="<%=rootpath %>casestudies/CaseStudy" class="Level2small-menu ETMenu"><span>Case Studies</span></a></li>
                     <li><a href="<%=rootpath %>ÜberUns/corporate-videos" class="Level2small-menu ETMenu"><span>Corporate Videos</span></a></li>
@@ -339,7 +349,7 @@ f=false,d=document;return{use_existing_jquery:function(){return use_existing_jqu
                     <li><a href="<%=rootpath %>news-und-events" class="Level2small-menu ETMenu"><span>News und Events</span></a></li>
                 </ul>
             </li>
-              <li><a href="#" class="mobilemenu-level1 Level1-menu"><span class="mobilemenu-border-bottom">Karriere</span></a>
+            <li><a href="#" class="mobilemenu-level1 Level1-menu"><span class="mobilemenu-border-bottom">Karriere</span></a>
                 <ul>
                     <li><a href="<%=rootpath %>karriere/karrieremodelle" class="Level2small-menu ETMenu"><span>Karrieremodelle</span></a></li>
                     <li><a href="<%=rootpath %>karriere/beratungsansatz" class="Level2small-menu ETMenu"><span>Beratungsansatz</span></a></li>
@@ -353,10 +363,10 @@ f=false,d=document;return{use_existing_jquery:function(){return use_existing_jqu
         <div class="container">
             <div class="row">
                 <div class="col-md-12 headertopnav hidden-xs hidden-sm" id="headsearch">
-                     <div class="header-search">
-                        <div class="col-md-3 pull-right no-padding hidden-xs hidden-sm hidden-md" style="width: 5%;padding-left: 30px !important;margin-top: 8px;">
+                    <div class="header-search">
+                        <div class="col-md-3 pull-right no-padding hidden-xs hidden-sm hidden-md" style="width: 5%; padding-left: 30px !important; margin-top: 8px;">
                             <a style="color: white; font-family: raleway !important; font-size: 13px;"
-                               href="https://blog.rheincs.com">BLOG</a>
+                                href="https://blog.rheincs.com">BLOG</a>
                         </div>
                         <div class="col-md-3 pull-right no-padding hidden-xs hidden-sm hidden-md" style="display: none;">
                             <div class="">
@@ -369,7 +379,7 @@ f=false,d=document;return{use_existing_jquery:function(){return use_existing_jqu
                         <div class="col-md-3 pull-right no-padd-right hidden-xs hidden-sm">
                             <div class="pull-right multi-language"><a href="https://de.rheincs.com" class="white-color">DE</a>&nbsp;/&nbsp;<a href="https://en.rheincs.com" class="white-color">EN</a> | </div>
                         </div>
-                    </div> 
+                    </div>
                 </div>
                 <div class="logo col-md-12 col-md-offset-0 navbar-static-top header-responsive-align header-box-shadow" id="nav">
                     <br />
@@ -389,7 +399,7 @@ f=false,d=document;return{use_existing_jquery:function(){return use_existing_jqu
                                                 <li class="menuname-small ETMenu"><a href="<%=rootpath %>ÜberUns/Überblick">Überblick</a></li>
                                                 <li class="menuname-small ETMenu"><a href="<%=rootpath %>ÜberUns/ÜberUns-Führung">Führung</a></li>
                                                 <li class="menuname-small ETMenu"><a href="<%=rootpath %>ÜberUns/kundenreferenzen"><span>Kundenreferenzen</span></a></li>
-                                                <li class="menuname-small ETMenu"><a href="<%=rootpath %>ÜberUns/Erfolgsgeschichten">Erfolgsgeschichten</a></li>                                              
+                                                <li class="menuname-small ETMenu"><a href="<%=rootpath %>ÜberUns/Erfolgsgeschichten">Erfolgsgeschichten</a></li>
                                             </ul>
                                         </li>
                                         <li class="dropdown mega-dropdown active ETMenu"><a href="#" class="dropdown-toggle menuname" data-toggle="dropdown">Lösungen<span class="caret"></span></a>
@@ -398,15 +408,15 @@ f=false,d=document;return{use_existing_jquery:function(){return use_existing_jqu
                                                     <div class="tab-content pull-left">
                                                         <div class="tab-pane active">
                                                             <div class="col-md-3 col-md-3V2">
-                                                               
-                                                                 <ul class="">
+
+                                                                <ul class="">
                                                                     <li class="menuname-small menuheading-large menu-consulting">Unsere Lösungen</li>
                                                                     <br />
 
-                                                                   <li class="menuname-small padd-bottom-7 ETMenu"><a href="<%=rootpath %>Epicor-Payroll-MEA"><span>Epicor-Payroll-MEA</span></a></li>
+                                                                    <li class="menuname-small padd-bottom-7 ETMenu"><a href="<%=rootpath %>Epicor-Payroll-MEA"><span>Epicor-Payroll-MEA</span></a></li>
                                                                     <li class="menuname-small padd-bottom-7 ETMenu"><a href="<%=rootpath %>rheinbrucke-cct-copy-company-tool"><span>Copy Company Tool</span></a></li>
                                                                     <li class="menuname-small padd-bottom-7 ETMenu"><a href="<%=rootpath %>our-solution-ppa">Power Plant Analytics</a></li>
-                                                                     <li class="menuname-small padd-bottom-7 ETMenu"><a href="<%=rootpath %>MeRLIN">MeRLIN – Strategic Sourcing Software</a></li>
+                                                                    <li class="menuname-small padd-bottom-7 ETMenu"><a href="<%=rootpath %>MeRLIN">MeRLIN – Strategic Sourcing Software</a></li>
                                                                 </ul>
                                                             </div>
                                                             <div class="col-md-3 col-md-3V2">
@@ -424,11 +434,11 @@ f=false,d=document;return{use_existing_jquery:function(){return use_existing_jqu
                                                                     <br />
                                                                     <li class="menuname-small padd-bottom-7 ETMenu"><a href="<%=rootpath %>Lösungen/erp-enterprise-solutions-und-services/sap">SAP</a></li>
                                                                     <li class="menuname-small padd-bottom-7 ETMenu"><a href="<%=rootpath %>Lösungen/erp-enterprise-solutions-und-services/epicor">EPICOR</a>
-                                                                      <ul class="padd-top-7">
+                                                                        <ul class="padd-top-7">
                                                                             <li class="menuname-small padd-bottom-7 line-ht-13 ETMenu"><a href="<%=rootpath %>Lösungen/erp-enterprise-solutions-und-services/epicor/epicor-für-fertigung"><span>Epicor für Fertigung</span></a></li>
                                                                             <li class="menuname-small padd-bottom-7 line-ht-13 ETMenu"><a href="<%=rootpath %>Lösungen/erp-enterprise-solutions-und-services/epicor/epicor-für-die-Bauindustrie"><span>Epicor für Bau und EPC</span></a></li>
                                                                             <li class="menuname-small padd-bottom-7 line-ht-13 ETMenu"><a href="<%=rootpath %>Lösungen/erp-enterprise-solutions-und-services/epicor/epicor-hcm"><span>Epicor HCM</span></a></li>
-                                                                          <li class="menuname-small padd-bottom-7 line-ht-13 ETMenu"><a href="<%=rootpath %>Lösungen/erp-enterprise-solutions-und-services/epicor/epicor-iscala-hospitality-industry-software"><span>Epicor iScala für das Gastgewerbe</span></a></li>
+                                                                            <li class="menuname-small padd-bottom-7 line-ht-13 ETMenu"><a href="<%=rootpath %>Lösungen/erp-enterprise-solutions-und-services/epicor/epicor-iscala-hospitality-industry-software"><span>Epicor iScala für das Gastgewerbe</span></a></li>
                                                                         </ul>
                                                                     </li>
                                                                     <li class="menuname-small padd-bottom-7 ETMenu"><a href="<%=rootpath %>Lösungen/erp-enterprise-solutions-und-services/epicor/bi">Business Intelligence</a></li>
@@ -457,7 +467,7 @@ f=false,d=document;return{use_existing_jquery:function(){return use_existing_jqu
                                                 </div>
                                             </div>
                                         </li>
-                                       <li class="dropdown"><a href="#" class="dropdown-toggle menuname" data-toggle="dropdown">Resources<span class="caret"></span></a>
+                                        <li class="dropdown"><a href="#" class="dropdown-toggle menuname" data-toggle="dropdown">Resources<span class="caret"></span></a>
                                             <ul class="dropdown-menu" role="menu">
                                                 <li class="menuname-small ETMenu"><a href="https://blog.rheincs.com"><span>Blog</span></a></li>
                                                 <li class="menuname-small ETMenu"><a href="<%=rootpath %>whitePapers/whitepapers"><span>White Papers</span></a></li>
@@ -494,9 +504,9 @@ f=false,d=document;return{use_existing_jquery:function(){return use_existing_jqu
                 <a href="#" id="back_to_top" class="back-to-top-position-right"><i class="fa fa-angle-up"></i></a>
                 <div id="Contactfeedback" class="ETcallout"><a data-toggle="modal" onclick="Clear()" data-target="#myModal-contactus">Kontakt</a> </div>
                 <div id="socialicon">
-                    <div data-social-share-privacy='true'>      
+                    <div data-social-share-privacy='true'>
                     </div>
-                   <%-- <ul>
+                    <%-- <ul>
                         <li class="hvr-wobble-to-top-right">
                             <a id="linkdin" href="#" target="_blank" title="LinkedIn">
                                 <img style="height: 35px; width: 35px;" src="https://de.rheincs.com/Assets/images/linkedin.png" />
@@ -520,7 +530,7 @@ f=false,d=document;return{use_existing_jquery:function(){return use_existing_jqu
                         </li>
                     </ul>--%>
                 </div>
-                  <div class="modal fade" id="myModal-contactus" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal fade" id="myModal-contactus" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
                             <div class="modal-header modal-header-bgcolor">
@@ -538,12 +548,12 @@ f=false,d=document;return{use_existing_jquery:function(){return use_existing_jqu
                                 <div class="row">
                                     <div class="col-md-12">
                                         <select id="ddlServices" class="dropdown" style="width: 100%; padding: 6px;">
-                                          <option value="0">-- Select Any One --</option>
+                                            <option value="0">-- Select Any One --</option>
                                             <option value="1">Epicor</option>
                                             <option value="2">EPICOR for Manufacturing</option>
                                             <option value="3">EPICOR for EPC and Construction</option>
-                                           <option value="4"> EPICOR iScala for hospitality</option>
-                                           <option value="5"> RheinBrücke Power Plant Analytics</option>
+                                            <option value="4">EPICOR iScala for hospitality</option>
+                                            <option value="5">RheinBrücke Power Plant Analytics</option>
                                             <option value="6">Business Intelligence</option>
                                             <option value="7">MeRLIN </option>
                                             <option value="8">SAP</option>
@@ -706,41 +716,44 @@ f=false,d=document;return{use_existing_jquery:function(){return use_existing_jqu
                                         <div class="fBottom"><span class="telephone download">PDF zum Download</span></div>
                                     </a>
                                     <div class="modal fade" id="myModal-pepdownload" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                                    <div class="modal-dialog" role="document">
-                                        <div class="modal-content mymodal-download">
-                                            <div class="modal-header modal-header-bgcolor">
-                                                <button type="button" class="close closev2" data-dismiss="modal" aria-label="Close" data-backdrop="false"><span aria-hidden="true">&times;</span></button>
-                                                <h4 class="modal-title redColor">EPICOR Partner Enablement -Programm Dokument</h4>
-                                            </div>
-                                            <div class="col-md-12 padd-top">
-                                                <div class="form-group">
-                                                    <label class="success" id="PEPsuccessmessage" hidden="hidden">Vielen Dank für die Übermittlung Ihrer Angaben . Sie werden in Kürze eine E-Mail mit einem Link auf die Rheinbrücke EPICOR Partner Enablement -Programm Dokument herunterladen können.</label>
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content mymodal-download">
+                                                <div class="modal-header modal-header-bgcolor">
+                                                    <button type="button" class="close closev2" data-dismiss="modal" aria-label="Close" data-backdrop="false"><span aria-hidden="true">&times;</span></button>
+                                                    <h4 class="modal-title redColor">EPICOR Partner Enablement -Programm Dokument</h4>
                                                 </div>
-                                            </div>
-                                            <div class="modal-body">
-                                                <p class="formhead">Bitte füllen Sie Ihre Daten , um die Rheinbrücke EPICOR Partner Enablement -Programm Dokument herunterladen.</p>
-                                                <p>&nbsp;</p>
-                                                <p>
-                                                    <input type="text" placeholder="*lhr Name" id="txtCalloutName" class="write-to-us-input" />
-                                                </p>
-                                                <span class="validator" id="reqCalloutName" hidden="hidden" style="margin-top:3px !important;">Überprüfen Sie Ihren Namen</span> </div>
-                                            <div class="modal-body">
-                                                <p>
-                                                    <input type="text" placeholder="*Ihre E-Mail-Addresse" id="txtCalloutEmail" class="write-to-us-input" />
-                                                </p>
-                                                <span class="validator" id="reqCalloutemail" hidden="hidden" style="margin-top:3px !important;">Überprüfen Sie Ihre E-Mail-Adresse</span> <span class="validator" id="valCalloutemail" hidden="hidden" style="margin-top:3px !important;">Ungültige E-Mail-Adresse</span> </div>
-                                            <div class="modal-body">
-                                                <p>
-                                                    <input type="text" placeholder="Ihre Mobile Number" id="txtCalloutMobNo" class="write-to-us-input" />
-                                                </p>
-                                                <span class="validator" id="reqCalloutMobNo" hidden="hidden" style="margin-top:3px !important;">Überprüfen Sie Ihre Mobile Number</span> <span class="validator" id="valCalloutMobNo" hidden="hidden" style="margin-top:3px !important;">Ungültige Mobile Number</span> </div>
-                                            <div class="clearfix">&nbsp;</div>
-                                            <div class="modal-body">
-                                                <input type="button" id="BtnCallout" class="submit-button" data-loading-text="Einreichen.." value="Senden" />
+                                                <div class="col-md-12 padd-top">
+                                                    <div class="form-group">
+                                                        <label class="success" id="PEPsuccessmessage" hidden="hidden">Vielen Dank für die Übermittlung Ihrer Angaben . Sie werden in Kürze eine E-Mail mit einem Link auf die Rheinbrücke EPICOR Partner Enablement -Programm Dokument herunterladen können.</label>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p class="formhead">Bitte füllen Sie Ihre Daten , um die Rheinbrücke EPICOR Partner Enablement -Programm Dokument herunterladen.</p>
+                                                    <p>&nbsp;</p>
+                                                    <p>
+                                                        <input type="text" placeholder="*lhr Name" id="txtCalloutName" class="write-to-us-input" />
+                                                    </p>
+                                                    <span class="validator" id="reqCalloutName" hidden="hidden" style="margin-top: 3px !important;">Überprüfen Sie Ihren Namen</span>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p>
+                                                        <input type="text" placeholder="*Ihre E-Mail-Addresse" id="txtCalloutEmail" class="write-to-us-input" />
+                                                    </p>
+                                                    <span class="validator" id="reqCalloutemail" hidden="hidden" style="margin-top: 3px !important;">Überprüfen Sie Ihre E-Mail-Adresse</span> <span class="validator" id="valCalloutemail" hidden="hidden" style="margin-top: 3px !important;">Ungültige E-Mail-Adresse</span>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p>
+                                                        <input type="text" placeholder="Ihre Mobile Number" id="txtCalloutMobNo" class="write-to-us-input" />
+                                                    </p>
+                                                    <span class="validator" id="reqCalloutMobNo" hidden="hidden" style="margin-top: 3px !important;">Überprüfen Sie Ihre Mobile Number</span> <span class="validator" id="valCalloutMobNo" hidden="hidden" style="margin-top: 3px !important;">Ungültige Mobile Number</span>
+                                                </div>
+                                                <div class="clearfix">&nbsp;</div>
+                                                <div class="modal-body">
+                                                    <input type="button" id="BtnCallout" class="submit-button" data-loading-text="Einreichen.." value="Senden" />
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
                                     <br />
                                     <div class="fBottom"><span class="border">Connect with us</span> </div>
                                     <ul class="social">
@@ -751,7 +764,7 @@ f=false,d=document;return{use_existing_jquery:function(){return use_existing_jqu
                                         <li><a href="https://www.youtube.com/channel/UCuR25ldsvrd7yd5vkzqntAg" title="Youtube" target="_blank" aria-hidden="true" class="icon-youtube ETsocialicon"></a></li>
                                         <li class="social1">
                                             <a href="https://blog.rheincs.com" title="Blog" target="_blank" aria-hidden="true">
-                                                <img src="https://de.rheincs.com/Assets/images/b.png" style="margin-top: 13px;margin-left:1px;" />
+                                                <img src="https://de.rheincs.com/Assets/images/b.png" style="margin-top: 13px; margin-left: 1px;" />
                                             </a>
                                         </li>
                                     </ul>
@@ -767,68 +780,68 @@ f=false,d=document;return{use_existing_jquery:function(){return use_existing_jqu
                             <div class="col-md-3">
                                 <%-- <div class="fBottom"><span class="border">Top Consultant 2014-2015</span></div><a href="/Newsandevents/NewsEventsDetail.aspx?ID=11"> <img src="https://de.rheincs.com/Assets/images/RheinBrücke-TopConsultant-Award.jpg" alt="RheinBrücke Recognized as ‘Top Consultant’ for the year 2014- 2015" class="img-responsive tpc ETtopconsultant" /></a>
                             </div>--%>
-                            <div class="col-md-10 nopadding awards-margin">
-                                <div class="fBottom" style="text-align: center"><span class="border border-awards">Awards and Recognition</span></div>
-                                <div id="myCarousel1" class="carousel slide" data-ride="carousel">
-                                    <%--<ol class="carousel-indicators1">
+                                <div class="col-md-10 nopadding awards-margin">
+                                    <div class="fBottom" style="text-align: center"><span class="border border-awards">Awards and Recognition</span></div>
+                                    <div id="myCarousel1" class="carousel slide" data-ride="carousel">
+                                        <%--<ol class="carousel-indicators1">
                                         <li data-target="#myCarousel1" data-slide-to="0" class="active"></li>
                                         <li data-target="#myCarousel1" data-slide-to="1"></li>
                                         <li data-target="#myCarousel1" data-slide-to="2"></li>
                                     </ol>--%>
-                                    <div class="carousel-inner" role="listbox" style="width: 200px; margin: auto;">
-                                        <%-- <div class="item active">
+                                        <div class="carousel-inner" role="listbox" style="width: 200px; margin: auto;">
+                                            <%-- <div class="item active">
                                             <a href="<%=rootpath %>news-events/rheinbrucke-recognised-as-top-consultant-germany">
                                                 <img src="<%=rootpath %>Assets/images/RheinBrücke-TopConsultant-Award.jpg" alt="RheinBrücke Recognized as ‘Top Consultant’ for the year 2014- 2015" class="img-responsive tpc ETtopconsultant" />
                                             </a>
                                         </div>--%>
-                                        <div class="item active">
-                                            <a href="<%=rootpath %>news-events/rheinbrucke- at-international-business-stevie-Auszeichnungen">
-                                                <img src="<%=rootpath %>Assets/images/companyoftheyear.jpg" alt="bronze-stevieaward" class="img-responsive tpc ETtopconsultant" />
-                                            </a>
-                                        </div>
+                                            <div class="item active">
+                                                <a href="<%=rootpath %>news-events/rheinbrucke- at-international-business-stevie-Auszeichnungen">
+                                                    <img src="<%=rootpath %>Assets/images/companyoftheyear.jpg" alt="bronze-stevieaward" class="img-responsive tpc ETtopconsultant" />
+                                                </a>
+                                            </div>
 
-                                        <div class="item ">
-                                            <a href="<%=rootpath %>news-events/RheinBrücke IT Consulting als Internationaler Epicor-Partner des Jahres ausgezeichnet">
-                                                <img src="<%=rootpath %>Assets/images/Epicor-partner-2016.png" alt="RheinBrücke Epicor Internation Partner of the year 2016" class="img-responsive tpc ETtopconsultant" />
-                                            </a>
-                                        </div>
-                                        <div class="item">
-                                            <a href="<%=rootpath %>news-events/rheinbrucke- at-international-business-stevie-Auszeichnungen">
-                                                <img src="<%=rootpath %>Assets/images/Vetri-IBA-silver-Stevies.png" alt="Vetri Maverick of the year" class="img-responsive tpc ETtopconsultant" />
-                                            </a>
-                                        </div>
-                                        <div class="item">
-                                            <a href="<%=rootpath %>news-events/rheinbrucke- at-international-business-stevie-Auszeichnungen">
-                                                <img src="<%=rootpath %>Assets/images/Vetri-IBA-Stevies.png" alt="Vetri IT executive of the year" class="img-responsive tpc ETtopconsultant" />
-                                            </a>
-                                        </div>
-                                        <div class="item">
-                                            <a href="<%=rootpath %>news-events/rheinbrucke-stevies-international-business-awards">
-                                                <img src="<%=rootpath %>Assets/images/CS-IBA-Stevies.png" alt="Bronze Stevie IBA winner computer services" class="img-responsive tpc ETtopconsultant" />
-                                            </a>
-                                        </div>
-                                        <div class="item">
-                                            <a href="<%=rootpath %>news-events/rheinbrucke-stevies-international-business-awards">
-                                                <img src="<%=rootpath %>Assets/images/Support-IBA-Stevies.png" alt="Bronze Stevie IBA winner support department" class="img-responsive tpc ETtopconsultant" />
-                                            </a>
-                                        </div>
-                                        <div class="item ">
-                                            <a href="<%=rootpath %>news-events/rheinbrucke-stevies-international-business-awards">
-                                                <img src="<%=rootpath %>Assets/images/CS-IBA-Stevies.png" alt="Bronze Stevie IBA winner computer services" class="img-responsive tpc ETtopconsultant" />
-                                            </a>
-                                        </div>
-                                        <div class="item">
-                                            <a href="<%=rootpath %>news-events/rheinbrucke-stevies-international-business-awards">
-                                                <img src="<%=rootpath %>Assets/images/HR-IBA-Stevies.png" alt="Bronze Stevie IBA winner HR department" class="img-responsive tpc ETtopconsultant" />
-                                            </a>
-                                        </div>
+                                            <div class="item ">
+                                                <a href="<%=rootpath %>news-events/RheinBrücke IT Consulting als Internationaler Epicor-Partner des Jahres ausgezeichnet">
+                                                    <img src="<%=rootpath %>Assets/images/Epicor-partner-2016.png" alt="RheinBrücke Epicor Internation Partner of the year 2016" class="img-responsive tpc ETtopconsultant" />
+                                                </a>
+                                            </div>
+                                            <div class="item">
+                                                <a href="<%=rootpath %>news-events/rheinbrucke- at-international-business-stevie-Auszeichnungen">
+                                                    <img src="<%=rootpath %>Assets/images/Vetri-IBA-silver-Stevies.png" alt="Vetri Maverick of the year" class="img-responsive tpc ETtopconsultant" />
+                                                </a>
+                                            </div>
+                                            <div class="item">
+                                                <a href="<%=rootpath %>news-events/rheinbrucke- at-international-business-stevie-Auszeichnungen">
+                                                    <img src="<%=rootpath %>Assets/images/Vetri-IBA-Stevies.png" alt="Vetri IT executive of the year" class="img-responsive tpc ETtopconsultant" />
+                                                </a>
+                                            </div>
+                                            <div class="item">
+                                                <a href="<%=rootpath %>news-events/rheinbrucke-stevies-international-business-awards">
+                                                    <img src="<%=rootpath %>Assets/images/CS-IBA-Stevies.png" alt="Bronze Stevie IBA winner computer services" class="img-responsive tpc ETtopconsultant" />
+                                                </a>
+                                            </div>
+                                            <div class="item">
+                                                <a href="<%=rootpath %>news-events/rheinbrucke-stevies-international-business-awards">
+                                                    <img src="<%=rootpath %>Assets/images/Support-IBA-Stevies.png" alt="Bronze Stevie IBA winner support department" class="img-responsive tpc ETtopconsultant" />
+                                                </a>
+                                            </div>
+                                            <div class="item ">
+                                                <a href="<%=rootpath %>news-events/rheinbrucke-stevies-international-business-awards">
+                                                    <img src="<%=rootpath %>Assets/images/CS-IBA-Stevies.png" alt="Bronze Stevie IBA winner computer services" class="img-responsive tpc ETtopconsultant" />
+                                                </a>
+                                            </div>
+                                            <div class="item">
+                                                <a href="<%=rootpath %>news-events/rheinbrucke-stevies-international-business-awards">
+                                                    <img src="<%=rootpath %>Assets/images/HR-IBA-Stevies.png" alt="Bronze Stevie IBA winner HR department" class="img-responsive tpc ETtopconsultant" />
+                                                </a>
+                                            </div>
 
-                                        <div class="item">
-                                            <a href="<%=rootpath %>news-events/rheinbrucke- at-international-business-stevie-Auszeichnungen">
-                                                <img src="<%=rootpath %>Assets/images/executiveoftheyear.jpg" alt="Silver-Stevie-Award" class="img-responsive tpc ETtopconsultant" />
-                                            </a>
-                                        </div>
-                                        <%-- <div class="item">
+                                            <div class="item">
+                                                <a href="<%=rootpath %>news-events/rheinbrucke- at-international-business-stevie-Auszeichnungen">
+                                                    <img src="<%=rootpath %>Assets/images/executiveoftheyear.jpg" alt="Silver-Stevie-Award" class="img-responsive tpc ETtopconsultant" />
+                                                </a>
+                                            </div>
+                                            <%-- <div class="item">
                                             <a href="<%=rootpath %>news-events/rheinbrucke-at-international-business-stevie-awards">
                                                 <img src="<%=rootpath %>Assets/images/Company-of-the-year.jpg" alt="Silver-Stevie-Award" class="img-responsive tpc ETtopconsultant" />
                                             </a>
@@ -863,29 +876,28 @@ f=false,d=document;return{use_existing_jquery:function(){return use_existing_jqu
                                                 <img src="<%=rootpath %>Assets/images/VetriSelvanIT-Specialist-of-the-Year.jpg" alt="Silver-Stevie-Award" class="img-responsive tpc ETtopconsultant" />
                                             </a>
                                         </div>--%>
-
+                                        </div>
+                                        <a class="left carousel-control" style="left: -31px; height: 30px; margin-top: 100px; font-size: 30px;"
+                                            href="#myCarousel1" role="button" data-slide="prev"><</a>
+                                        <a class="right carousel-control" href="#myCarousel1" style="left: auto; right: -17px; height: 30px; margin-top: 100px; font-size: 30px;"
+                                            role="button" data-slide="next">></a>
                                     </div>
-                                    <a class="left carousel-control" style="left: -31px; height: 30px; margin-top: 100px; font-size: 30px;"
-                                       href="#myCarousel1" role="button" data-slide="prev"><</a>
-                                    <a class="right carousel-control" href="#myCarousel1" style="left: auto; right: -17px; height: 30px; margin-top: 100px; font-size: 30px;"
-                                       role="button" data-slide="next">></a>
                                 </div>
                             </div>
                         </div>
+                        <div class="bottomFooter">
+                            <div class="copy">
+                                <div class="pull-left leftF">© RheinBrücke IT Consulting GmbH - All Rights Reserved</div>
+                                <div class="pull-right rightF"><a href="<%=rootpath %>sitemap">Sitemap</a> |  <a href="<%=rootpath %>impressum">Impressum</a> | <a href="<%=rootpath %>nutzungsbedingungen">Nutzungsbedingungen</a> | <a href="<%=rootpath %>datenschutzerklärung">Datenschutzerklärung</a></div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </footer>
                 </div>
-                <div class="bottomFooter">
-                    <div class="copy">
-                        <div class="pull-left leftF">© RheinBrücke IT Consulting GmbH - All Rights Reserved</div>
-                        <div class="pull-right rightF"><a href="<%=rootpath %>sitemap">Sitemap</a> |  <a href="<%=rootpath %>impressum">Impressum</a> | <a href="<%=rootpath %>nutzungsbedingungen">Nutzungsbedingungen</a> | <a href="<%=rootpath %>datenschutzerklärung">Datenschutzerklärung</a></div>
-                    </div>
-                    <div class="clearfix"></div>
-                </div>
-                </footer>
             </div>
+        </form>
     </div>
-    </form>
-    </div>
- 
+
     <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js" defer>
     </script>
     <noscript>
@@ -895,7 +907,7 @@ f=false,d=document;return{use_existing_jquery:function(){return use_existing_jqu
     </noscript>
 
 </body>
-    <%: Scripts.Render("~/assets/jsmin")%>
+<%: Scripts.Render("~/assets/jsmin")%>
 <asp:contentplaceholder runat="server" id="FooterScript" />
 <script src="https://de.rheincs.com/Assets/js/bxSlider.js" defer></script>
 <script type="text/javascript">
@@ -1220,5 +1232,5 @@ f=false,d=document;return{use_existing_jquery:function(){return use_existing_jqu
 
     };
 </script>
-    <script type="text/javascript">(function () {var s = document.createElement('script');var t = document.getElementsByTagName('script')[0];s.type = 'text/javascript';s.async = true;s.src = 'https://de.rheincs.com/2-click/javascripts/jquery.socialshareprivacy.min.autoload.js';t.parentNode.insertBefore(s, t);})();</script> 
+<script type="text/javascript">(function () { var s = document.createElement('script'); var t = document.getElementsByTagName('script')[0]; s.type = 'text/javascript'; s.async = true; s.src = 'https://de.rheincs.com/2-click/javascripts/jquery.socialshareprivacy.min.autoload.js'; t.parentNode.insertBefore(s, t); })();</script>
 </html>
