@@ -1,0 +1,3379 @@
+﻿/*Jenifa 25-06-2015- 26-06-2015*/
+.bg_img {
+    background-image: url(../../Assets/images/RheinBrücke.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    max-width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+html, body {
+    font-size: 12px;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #2f2f2f;
+    margin: 0;
+    padding: 0;
+}
+
+.textSearch {
+    position: relative;
+    margin: 0 0px 0 25px;
+    overflow: hidden;
+    min-height: 30px;
+    cursor: text;
+    position: relative;
+    background: transparent;
+    border: 2px solid #ccc;
+    background-color: #fff;
+    width: 97%;
+    height: auto;
+}
+
+.Search-text-box {
+    width: 80% !important;
+    height: 28px !important;
+    border-style: none !important;
+    font-size: 13px !important;
+    color: #666666 !important;
+    line-height: 21px;
+    padding-left: 5px;
+}
+
+.srch {
+    margin-top: 10px;
+    float: right;
+    background-color: #1f1f1f;
+}
+
+.headertopnav {
+    line-height: 1em;
+    border-bottom: 1px solid #EEEEEE;
+    text-transform: uppercase;
+    font-size: 0.917em;
+    color: #999999;
+    background: #1f1f1f;
+    width: 100%;
+}
+
+.header-search {
+    margin-bottom: 62px;
+    margin-top: 17px;
+}
+
+.searchright {
+    padding-left: 1em;
+    display: inline-block;
+    margin-left: 1em;
+}
+
+.padd-bottom-10 {
+    padding-bottom: 10px;
+}
+
+.padd-bottom-30 {
+    padding-bottom: 30px;
+}
+
+.padd-bottom-7 {
+    padding-bottom: 7px;
+}
+
+.padd-top-20 {
+    padding-top: 20px;
+}
+
+.navbar-nav > li > .dropdown-menu-sec {
+    margin-top: 10px !important;
+}
+
+.header-border-bottom {
+    border-bottom: 1px solid #ccc;
+    opacity: 1;
+}
+
+.no-padd-right {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}
+
+.epicor-services-box-1 {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}
+
+.multi-language {
+    color: #fff;
+    margin-top: 9px;
+    font-size: 12px;
+    margin-right: -25px;
+}
+
+.Searchicon {
+    margin-left: 7px;
+    /*width: 16px;
+  height: 16px;*/
+}
+
+.logo {
+    background-color: transparent;
+    position: relative;
+}
+
+.container {
+    background: #fff !important;
+}
+
+.menuname {
+    font-size: 14px;
+    text-align: left;
+    text-decoration: none;
+    color: #666666;
+}
+
+
+.menuname-small {
+    font-size: 12px;
+    text-align: left;
+    text-decoration: none;
+    color: #666666;
+}
+
+.menuheading {
+    border-bottom: 1px solid #7b1315;
+    padding-bottom: 10px;
+    color: #666666;
+}
+
+.lineht {
+    line-height: 12px !important;
+}
+
+.menuheading-large {
+    border-bottom: 1px solid #7b1315;
+    padding-bottom: 5px;
+    line-height: 12px !important;
+    color: #666666;
+}
+/*Carousal*/
+.rhein-caption-text {
+    position: absolute;
+    /*border:1px solid #000;*/
+    width: 100%;
+    top: 30px;
+    right: 0px !important;
+    left: 0px !important;
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+.rhein-banner-heading-bg {
+    background: #fff;
+    opacity: 0.8;
+    width: 490px;
+    height: 50px;
+    position: absolute;
+    top: 25%;
+    right: 10%;
+    border-width: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding: 14px !important;
+}
+
+.rhein-banner-heading {
+    font-size: 36px;
+    font-family: 'Raleway' sans-serif;
+    color: #000;
+    font-weight: bold;
+    text-align: left !important;
+}
+
+.rhein-banner-heading-black-bg {
+    background: #000;
+    opacity: 0.8;
+    width: 450px;
+    height: auto;
+    position: absolute;
+    top: 40%;
+    right: 11.7%;
+    border-width: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding: 10px !important;
+}
+
+.rhein-banner-heading-black {
+    font-size: 18px;
+    font-family: 'Raleway' sans-serif;
+    color: #fff;
+    text-align: left !important;
+    line-height: 25px;
+}
+
+.rhein-banner-readmore-bg {
+    background: #B62641;
+    height: auto;
+    position: absolute;
+    top: 58%;
+    right: 11.7%;
+    border-width: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding: 5px !important;
+}
+
+.rhein-banner-readmore-bg4 {
+    background: #B62641;
+    height: auto;
+    position: absolute;
+    top: 69%;
+    right: 11.7%;
+    border-width: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding: 5px !important;
+}
+
+.rhein-banner-readmore-text {
+    font-size: 16px;
+    font-family: 'Raleway' sans-serif;
+    color: #fff;
+    text-align: left !important;
+    line-height: 25px;
+}
+
+/*Jenifa 25-06-2015- 26-06-2015*/
+/*footer*/
+footer {
+    background: #2c2c2c !important;
+    border: none !important;
+    color: #fff !important;
+}
+
+.fBottom {
+    margin-bottom: 1.5em;
+    font-size: 1.3em;
+}
+
+.border {
+    display: inline-block;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 1.001em;
+    margin-bottom: -1px;
+    border-color: #7b1315 !important;
+}
+
+.border1 {
+    display: inline-block;
+    /*border-bottom: 1px solid transparent;*/
+    padding-bottom: 1.001em;
+    margin-bottom: -1px;
+    /*border-color: #7b1315 !important;*/
+}
+
+.alignFooter {
+    padding: 2.3em 27px;
+    font-size: 1.083em;
+}
+
+.telephone {
+    color: #FFFFFF !important;
+    background-color: #1f1f1f;
+    padding: 8px;
+    /*width: 70%;*/
+    font-size: 16px;
+    line-height: 1.4em;
+    float: left;
+    border-radius: 5px;
+}
+
+.imgBottom {
+    margin-bottom: 1.5em;
+}
+
+div .wrappernew p {
+    line-height: 1.5em;
+    margin: 0;
+    padding-bottom: 1em;
+    font-size: 1.3em;
+}
+
+.download {
+    font-size: 12px !important;
+    padding: 12px !important;
+}
+
+.icon-linkedin:before, .icon-twitter:before, .icon-facebook:before, .icon-google-plus:before, .icon-youtube:before,
+.icon-linkedin:after, .icon-twitter:after, .icon-facebook:after, .icon-google-plus:after, .icon-youtube:after {
+    font-family: "FontAwesome";
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    /* line-height: 1;*/
+    font-size: 20px !important;
+    -webkit-font-smoothing: antialiased;
+}
+
+.icon-linkedin:before, .icon-linkedin:after {
+    content: "\f08c";
+}
+
+.icon-twitter:before, .icon-twitter:after {
+    content: "\f099";
+}
+
+.icon-facebook:before, .icon-facebook:after {
+    content: "\f09a";
+}
+
+.icon-google-plus:before, .icon-google-plus:after {
+    content: "\f0d5";
+}
+
+
+
+.icon-youtube:before, .icon-youtube:after {
+    content: "\f167";
+}
+
+
+ul.social {
+    text-align: left;
+}
+
+    ul.social li:before {
+        border: none !important;
+    }
+
+    ul.social li {
+        text-align: center;
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        overflow: hidden;
+        line-height: 50px;
+        background: #000;
+        border-radius: 100%;
+        padding: 0px !important;
+        margin-bottom: .5em;
+        -webkit-transition-duration: 0.7s;
+        -moz-transition-duration: 0.7s;
+        -o-transition-duration: 0.7s;
+        transition-duration: 0.7s;
+    }
+
+        ul.social li:hover {
+            background: #7B1216;
+            box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.3);
+        }
+
+            ul.social li:hover a {
+                top: -55px;
+            }
+
+        ul.social li a {
+            display: block;
+            width: 100%;
+            height: 200%;
+            position: relative;
+            top: 0;
+            color: #7B1216 !important;
+            -webkit-transition: top 0.7s;
+            -moz-transition: top 0.7s;
+            -o-transition: top 0.7s;
+            transition: top 0.7s;
+        }
+
+            ul.social li a:after {
+                text-align: center;
+                position: absolute;
+                width: inherit;
+                height: 50%;
+                left: 0;
+                bottom: 0;
+                line-height: 60px;
+                color: #000;
+            }
+
+.tpc {
+    opacity: 1;
+    transition: opacity 1s;
+    max-width: 170px;
+    height: 210px;
+    margin: 0 9%;
+    border: solid 2px #1F1F1F;
+}
+
+.bottomFooter {
+    background: #1f1f1f !important;
+    margin: 0 0px !important;
+    /*padding-left: 20px !important;
+  padding-right: 20px !important;*/
+    border: none !important;
+}
+
+.copy {
+    padding: .5em 0;
+    margin: 0 20px;
+    color: #999999;
+}
+/* eof footer*/
+/*Ramya 26-06-15*/
+h1, h2, h3, h4, h5, h6 {
+    font-family: Raleway;
+    line-height: 1.5em;
+}
+
+h3 {
+    font-size: 2.2em;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.mainContent {
+    line-height: 1.5em;
+    font-weight: bold;
+    font-size: 1.3em;
+    color: #2f2f2f;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.bulletContent {
+    font-size: 16px;
+    color: #2f2f2f;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.redColor {
+    /*font-weight:700;
+    font-family:Raleway;size:h3*/
+    color: #7b1315 !important;
+}
+
+.blackHeader {
+    font-weight: lighter;
+    color: #2f2f2f;
+    /*size:h2*/
+}
+
+.redBullets {
+    content: '';
+    position: absolute;
+    top: .6em;
+    left: 0em;
+    border: 5px solid #7b1315;
+    /*list-style-type:disc;*/
+    border-radius: 10px;
+}
+/*bold heading black*/
+.boldBlackheading {
+    font-size: 18px;
+    color: #2f2f2f;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: center;
+    line-height: 1.5em;
+}
+
+.headingLighterBlack {
+    /*size:h5*/
+    font-size: 1.167em;
+    font-family: Raleway;
+    color: #2f2f2f;
+}
+
+.contentSmall {
+    font-size: 12px;
+    color: #2f2f2f;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+/*backgroundcolor*/
+.bgcol {
+    background-color: #f3f3f3 !important;
+}
+/*Heading lighter black-- line*/
+.span-below-heading {
+    border-bottom: 1px solid transparent;
+    margin-bottom: -1px;
+    border-color: #7b1315;
+    padding-bottom: .858em;
+}
+
+.heading {
+    text-transform: uppercase;
+    border-bottom: 1px solid #eeeeee;
+    margin-bottom: 1.5em;
+}
+/*inner pages banner heading*/
+.bannerHeading {
+    font-family: Raleway;
+    font-weight: bold;
+    line-height: 43px;
+    padding: 0;
+    text-transform: uppercase;
+    top: 85px;
+    white-space: nowrap;
+    padding: 6.5% 0 0;
+    font-size: 36px;
+    color: #ffffff;
+}
+/*inner pages banner content*/
+.bannerContent {
+    color: #ffffff;
+    font-size: 24px;
+    font-family: Raleway;
+    font-weight: lighter;
+    text-align: center;
+    line-height: 1.5em;
+}
+/*search inner*/
+.innerSearch {
+    position: relative;
+    margin: 0 0 0 25px;
+    overflow: hidden;
+    min-height: 28px;
+    color: #373737;
+}
+/*search placeholder*/
+.searchPlaceholder {
+    position: absolute;
+    margin: 8px 20px 0 28px;
+    color: #808080;
+}
+/*Language(EN/DE)*/
+.language {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 13px 0px !important;
+    line-height: 1em;
+    font-size: 12px;
+    color: #ffffff;
+}
+/*button contact us*/
+.contactUs {
+    display: block;
+    background: #7B1314;
+    height: 20px;
+    width: 80px;
+    padding: 10px 16px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 1.5em;
+    font-size: 15px;
+    color: #fff;
+}
+/* bottom line red below text*/
+.redBottom {
+    display: inline;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 1.001em;
+    margin-bottom: -1px;
+    border-color: #7b1315 !important;
+    font-weight: normal;
+    font-size: 1.3em;
+    font-family: Raleway;
+    color: #2f2f2f;
+}
+/*text in scroll(footer)*/
+.scrollFooter {
+    font-family: Raleway;
+    line-height: normal;
+    font-weight: 300;
+    font-size: 14px;
+    text-align: left;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+.withIcons {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1.3em;
+    color: #7b1315;
+}
+
+
+/*Eof Ramya 26-06-2015*/
+/*Ramya 27-06-2015*/
+.padding {
+    padding-bottom: 20px !important;
+    padding-top: 20px !important;
+}
+
+.paddingGreycontainer {
+    padding: 30px !important;
+}
+/*jenifa 27-06-2015*/
+.img-width {
+    width: 100%;
+}
+
+.white-bg {
+    background: #fff;
+}
+
+h2 {
+    font-size: 32px;
+    -webkit-font-smoothing: antialiased;
+}
+
+.main-container {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.mainContent-normal {
+    line-height: 1.5em;
+    font-size: 1.3em;
+    color: #2f2f2f;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+/*eof jenifa 27-06-2015*/
+
+
+
+.nopadding {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+a /*jenifa 27-06-2015*/
+.img-width {
+    width: 100%;
+}
+
+.white-bg {
+    background: #fff;
+}
+
+h2 {
+    font-size: 32px;
+    -webkit-font-smoothing: antialiased;
+}
+
+h5 {
+    font-size: 1.167em;
+    -webkit-font-smoothing: antialiased;
+}
+
+/*.main-container {
+margin-left: auto;
+margin-right: auto;
+}*/
+
+.mainContent-normal {
+    line-height: 1.5em;
+    font-size: 1.3em;
+    color: #2f2f2f;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.contentdiv {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.marg20 {
+    margin-bottom: 20px;
+}
+
+.deco-header {
+    text-transform: uppercase;
+    border-bottom: 1px solid #eeeeee;
+    line-height: 51px;
+}
+
+.main-top-bottom {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.consulting-icon {
+    background: url(../../Assets/images/consulting-advisory-services.png) no-repeat center #F5F5F5 !important;
+    display: block !important;
+    position: relative;
+    text-align: center;
+    padding: 34px;
+}
+
+.enterprise-icon {
+    background: url(../../Assets/images/erp-services.png) no-repeat center #F5F5F5 !important;
+    display: block !important;
+    position: relative;
+    text-align: center;
+    padding: 34px;
+}
+
+.itservices-icon {
+    background: url(../../Assets/images/it-services.png) no-repeat center #F5F5F5 !important;
+    display: block !important;
+    position: relative;
+    text-align: center;
+    padding: 34px;
+}
+
+.ipproduct-icon {
+    background: url(../../Assets/images/ip-product.png) no-repeat center #F5F5F5 !important;
+    display: block !important;
+    position: relative;
+    text-align: center;
+    padding: 34px;
+}
+
+.services-arrow {
+    position: absolute;
+    bottom: 91px;
+    left: 50%;
+    margin-left: -20px;
+    border: 20px solid transparent;
+    border-top-color: #f5f5f5;
+}
+
+.services-content {
+    text-align: center;
+    border: 1px solid #eeeeee;
+    padding: 34px 17px;
+    background: #ffffff;
+}
+
+.services-text {
+    min-height: 55px;
+    font-size: 1.3em;
+}
+/*.services-box:hover {
+box-shadow:#ccc 1px 1px 1px 1px inset;
+}*/
+
+@media only screen and (min-width:320px) and (max-width:768px) {
+    .services-box {
+        margin-bottom: 30px;
+    }
+
+    .menualign {
+        float: left !important;
+    }
+}
+/*eof jenifa 27-06-2015*/
+.col-md-3V2 {
+    width: 20% !important;
+}
+/*Jenifa 28-06-2015*/
+.inner-banner-image-bg {
+    margin: 0px !important;
+    border-width: 0px !important;
+    padding: 50px 26px !important;
+    background-image: url(../../Assets/images/csr-banner1.jpg) !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
+.inner-banner-white-container {
+    background: #ffffff;
+    opacity: 0.6;
+    min-height: 1px;
+    color: #000;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 26px;
+    width: 65.55%;
+    margin-left: 16.5%;
+    padding: 42px;
+}
+
+.inner-banner-text {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+h2 {
+    line-height: 45px !important;
+}
+
+.content-justify {
+    text-align: justify;
+}
+
+.video_thumb_box {
+    position: relative;
+    width: 166px;
+}
+
+.video_lightbox_auto_anchor_image {
+    width: 166px;
+}
+
+.thumb_play {
+    position: absolute;
+    left: 63px;
+    top: 35px;
+}
+
+.more-videos {
+    color: #7b1315;
+    font-family: Raleway;
+    font-size: 20px;
+}
+
+@media only screen and (min-width:320px) and (max-width:768px) {
+    .inner-banner-white-container {
+        background: #ffffff;
+        opacity: 0.6;
+        min-height: 1px;
+        color: #000;
+        font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        line-height: 26px;
+        width: 100%;
+        margin-left: 0 !important;
+        padding: 20px;
+    }
+
+    h2 {
+        line-height: 40px !important;
+        padding-bottom: 20px;
+    }
+}
+/* Eof Jenifa 28-06-2015*/
+/*Ramya 30-06-2015*/
+.video_lightbox_auto_anchor_image {
+    width: 166px;
+}
+
+.rhein-banner-heading-h2 {
+    font-family: Raleway;
+    font-size: 36px;
+    font-weight: bold;
+    /*line-height: 1.5em;*/
+    line-height: 45px !important;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding-bottom: 20px;
+    padding-top: 0px;
+    /*border-width:0;*/
+}
+
+.border-bottom {
+    border-bottom: 1.5em;
+}
+
+.rhein-banner-heading-p {
+    border-width: 0;
+    color: #ffffff;
+    font-family: Raleway;
+    font-size: 24px;
+    font-weight: lighter;
+    height: auto;
+    /*line-height:1.5em;*/
+    line-height: 29px;
+    padding: 0% 4%;
+    width: 100%;
+    width: 100% !important;
+    height: 72px !important;
+    text-align: center;
+}
+
+
+
+.inner-banner-text1 {
+    position: relative;
+    z-index: 998;
+    width: 100%;
+}
+
+.bg-img1 {
+    background-image: url(../../Assets/images/Overview.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /*width: 1200px;
+    height: 333px;*/
+    /*background-size: cover;*/
+    /*background-attachment: fixed;*/
+    /*max-width:100%;*/
+    padding: 80px 20px !important;
+    /*max-height:100px;*/
+    /*position: fixed;*/
+    /*top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;*/
+}
+
+.inner-banner-image-bg1 {
+    margin: 0px !important;
+    border-width: 0px !important;
+    padding: 80px 20px !important;
+    /*padding: 50px 26px !important;*/
+    background-image: url('../../Assets/images/overview 1.jpg') !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    /*background-size: cover !important;*/
+}
+
+.inner-banner-image-bg2 {
+    margin: 0px !important;
+    border-width: 0px !important;
+    padding: 80px 20px !important;
+    /*padding: 50px 26px !important;*/
+    background-image: url('../../Assets/images/overview 2.jpg') !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    /*background-size: cover !important;*/
+}
+
+.inner-banner-image-bg3 {
+    margin: 0px !important;
+    border-width: 0px !important;
+    padding: 80px 20px !important;
+    /*padding: 50px 26px !important;*/
+    background-image: url('../../Assets/images/overview 3.jpg') !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    /*background-size: cover !important;*/
+}
+
+div .wrappernew h3 .redColor p {
+    line-height: 1.5em;
+    margin: 0;
+    padding-bottom: 1em;
+    font-size: 1.3em;
+}
+
+ul {
+    margin: 0 0 1.5em 0;
+    padding: 0 0 0 .5em;
+}
+
+.padleft {
+    padding-left: 35px !important;
+}
+
+.leadpic {
+    width: 117px;
+    height: 117px;
+}
+
+.padd-right {
+    padding-right: 7px;
+}
+
+.padd-left {
+    padding-left: 25px;
+}
+
+.padd-left-leadership {
+    padding-left: 25px;
+}
+
+.span9 {
+    color: #2f2f2f;
+    font-size: 21px;
+    line-height: 1.5em;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.leadtext-bold {
+    color: #2f2f2f;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.5em;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.padding-bottom {
+    padding-bottom: 15px;
+}
+
+.leadmargin {
+    margin-bottom: 40px !important;
+}
+
+.leadmargin1 {
+    margin-bottom: 15px !important;
+}
+
+.leadsmalltext {
+    text-decoration: none;
+    color: #2f2f2f;
+    font-size: 16px;
+    line-height: 1.5em;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.bg-img2 {
+    background-image: url('../../Assets/images/Leadership1.jpg') !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    /*width:1200px;
+  height:333px;*/
+    background-size: cover;
+    /*background-attachment: fixed;*/
+    /*max-width:100%;*/
+    padding: 80px 20px !important;
+    /*max-height:100px;*/
+    /*position: fixed;*/
+}
+
+.contentText1 {
+    margin: 0px !important;
+    border-width: 0px !important;
+    padding: 15px 0px 0px 10px !important;
+    line-height: 1.4em !important;
+    margin-bottom: 0;
+    line-height: 1.4em !important;
+}
+
+.borderOverAll {
+    margin-top: 0px !important;
+    margin-bottom: 40px !important;
+    padding: 0px !important;
+    background-color: #f4f4f4 !important;
+    border: 1px solid #d5d5d5 !important;
+    padding-bottom: 1em;
+}
+
+.bg-img3 {
+    background-image: url('../../Assets/images/SUCCESS-STORIES1.jpg') !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    /*width:1200px;
+  height:333px;*/
+    background-size: cover;
+    /*background-attachment: fixed;*/
+    max-width: 100%;
+    padding: 80px 20px !important;
+    /*max-height:100px;*/
+    /*position: fixed;*/
+}
+/*Eof Ramya 30-06-2015*/
+/*jenifa 01-07-2015*/
+.menualign {
+    float: right;
+}
+
+.slider-menu-icon {
+    position: fixed;
+    top: 120px;
+    left: 0;
+}
+
+.cbp-spmenu {
+    display: none;
+}
+
+.closeicon {
+    margin-top: 10px;
+    margin-right: 10px;
+    color: #cccccc;
+    cursor: pointer;
+}
+
+.mobile-multi-language {
+    margin-top: -13px;
+    margin-left: -11px;
+    margin-bottom: 38px;
+    /*border:1px solid #fff;*/
+}
+
+.mobile-searchicon {
+    color: #1f1f1f;
+}
+
+.mobilesearch-closeicon {
+    color: #ccc;
+}
+
+.Level1-menu {
+    font-size: 16px !important;
+    text-decoration: none;
+    color: #666666 !important;
+}
+
+.Level2-menu {
+    font-size: 12px !important;
+    margin-left: 10px !important;
+    text-decoration: none;
+    color: #666666 !important;
+}
+
+.Level2small-menu {
+    font-size: 12px !important;
+    margin-left: 20px !important;
+    text-decoration: none;
+    color: #666666 !important;
+}
+
+.Level3-menu {
+    font-size: 12px !important;
+    margin-left: 30px !important;
+    text-decoration: none;
+    color: #666666 !important;
+}
+
+.mobilemenu-level1 {
+    margin: 0px;
+    border-bottom: 1px solid rgba(204, 204, 204, .4) !important;
+    margin-bottom: 0px;
+    padding: 5px 2px !important;
+}
+
+.mobilmenu-ul {
+    padding: 1em 10px;
+}
+
+.mobilemenu-border-bottom {
+    padding-bottom: 12px;
+    border-bottom: 1px solid #7b1315;
+}
+#Contactfeedback
+.mobilemenu {
+    display: none;
+}
+
+@media only screen and (min-width:320px) and (max-width:991px) {
+    .mobilemenu {
+        display: block;
+    }
+
+    .cbp-spmenu {
+        display: block;
+    }
+
+    .mobilemenu-color-main-color-hover {
+        background: #fff;
+        color: #666;
+        z-index: 1025;
+        font-size: 18px;
+        line-height: 40px;
+        height: 40px;
+        width: 40px;
+        text-align: center;
+        box-shadow: 2px 2px 4px rgba(0,0,0,.15);
+        top: 20px;
+        right: 12px !important;
+        border: 1px #ccc solid;
+    }
+}
+
+@media only screen and (max-width:991px) {
+    #menu {
+        display: none;
+    }
+}
+
+.bg-img10 {
+    background-image: url('../../Assets/images/microsoft-technologies-banner%20(1).jpg') !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    /*width:1200px;
+  height:333px;*/
+    background-size: cover;
+    /*background-attachment: fixed;*/
+    max-width: 100%;
+    padding: 80px 20px !important;
+    /*max-height:100px;*/
+    /*position: fixed;*/
+}
+
+.bg-img11 {
+    background-image: url('../../Assets/images/IT-SERVICES-SOLUTIONS-APPLICATION-MAINTENANCE-SUPPORT1.jpg') !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    /*width:1200px;
+  height:333px;*/
+    background-size: cover;
+    /*background-attachment: fixed;*/
+    /*max-width:100%;*/
+    padding: 80px 20px !important;
+    /*max-height:100px;*/
+    /*position: fixed;*/
+}
+
+.imgstyle {
+    width ="227";
+    height ="262";
+}
+/*Jenifa 04-07-2015*/
+.bg-img-epicor {
+    background-image: url(../../Assets/images/ENTERPRISE-SOUTIONSERP-SERVICES-EPICOR.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 80px 20px !important;
+}
+
+.epicorlist {
+    color: #666666 !important;
+}
+
+.redBullets-epicor {
+    content: '';
+    position: absolute;
+    top: -0.3em;
+    left: 0em;
+    border: 5px solid #7b1315;
+    /*list-style-type:disc;*/
+    border-radius: 10px;
+}
+
+.redBullets-epicor-onbg {
+    content: '';
+    position: absolute;
+    top: .3em;
+    left: 0em;
+    border: 5px solid #b03f42;
+    /*list-style-type:disc;*/
+    border-radius: 10px;
+}
+
+.bulletContent-epicor {
+    font-size: 16px !important;
+    line-height: 5px !important;
+    color: #666666;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.epicor-ul {
+    margin: 0 0 0 0 !important;
+    padding: 0px !important;
+    line-height: 0px !important;
+}
+
+.list-padd {
+    padding-left: 20px;
+}
+
+.list-padd-automotive {
+    padding-left: 12px;
+}
+
+.epicor-left-padd {
+    padding-left: 49px;
+}
+
+.bg-img-epicor-for-automotive {
+    background-image: url(../../Assets/images/epicor-for-automative.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    height: auto;
+    background-size: cover;
+}
+
+.bg-img-epicor-for-metal-fabricator {
+    background-image: url(../../Assets/images/epicor-for-metal-fabricator.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    height: auto;
+    background-size: cover;
+}
+
+.bg-img-epicor-for-medical-devices {
+    background-image: url(../../Assets/images/epicor-for-medical-devices.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    /*width: 1170px;*/
+    height: auto;
+    background-size: cover;
+}
+
+.bg-img-epicor-for-oil {
+    background-image: url(../../Assets/images/epicor-for-oil-and-gas.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    /*width: 1170px;*/
+    height: auto;
+    background-size: cover;
+}
+
+.bg-img-epicor-for-professional {
+    background-image: url(../../Assets/images/epicor-for-professional-services.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    /*width: 1170px;*/
+    height: auto;
+    background-size: cover;
+}
+
+.bg-img-epicor-pre-HR {
+    background-image: url(../../Assets/images/epic-inner-banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    /*width: 1170px;*/
+    height: auto;
+    background-size: cover;
+}
+
+.bg-img-epicor-pre-customers {
+    background-image: url(../../Assets/images/preconfigured-industry-solutions.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    /*width: 1170px;*/
+    height: auto;
+    background-size: cover;
+}
+
+.bg-img-epicor-pre-foundry {
+    background-image: url(../../Assets/images/epicor-preconfig-solutions.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    /*width: 1170px;*/
+    height: auto;
+    background-size: cover;
+}
+
+.boldWhiteheading {
+    font-size: 18px;
+    color: #ffffff;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: center;
+    line-height: 1.em;
+}
+
+.redColor-epicor {
+    color: #b03f42;
+    font-weight: bold;
+}
+
+.redBullets-epicor-big {
+    content: '';
+    position: absolute;
+    top: -0.3em;
+    left: 0em;
+    border: 7px solid #7b1315;
+    /*list-style-type:disc;*/
+    border-radius: 16px;
+}
+
+.bulletContent-epicor {
+    font-size: 0.8em;
+    color: #ffffff;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.2em !important;
+}
+
+.padding-epicor {
+    /*padding-bottom:10px !important;
+    padding-top:10px !important;*/
+}
+
+.bulletContent-epicor-grey {
+    font-size: 16px !important;
+    line-height: 5px !important;
+    color: #666666 !important;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.bulletContent-epicor-black {
+    font-size: 16px !important;
+    line-height: 5px !important;
+    color: #2f2f2f !important;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.bulletContent-epicor-grey-big {
+    font-size: 16px !important;
+    line-height: 5px !important;
+    color: #666666 !important;
+    margin-left: 10px;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.strong-para {
+    font-weight: bold;
+}
+
+.list-padd-oil {
+    padding-left: 35px;
+}
+
+a .mailid {
+    color: #7b1315 !important;
+    text-decoration: none;
+}
+
+    a .mailid:hover {
+        color: #2f2f2f !important;
+        text-decoration: none;
+    }
+
+.epicpay-list {
+    color: #2f2f2f;
+    text-decoration: none;
+}
+
+    .epicpay-list:hover {
+        color: #7b1315;
+        text-decoration: none;
+    }
+
+.dec-underline {
+    text-decoration: underline;
+    font-size: 24px;
+}
+
+.readmore-epicpay {
+    background-color: #7b1315;
+    padding: 8px;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.boldBlackheading-preconfig {
+    font-size: 18px;
+    color: #000000;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: center;
+    line-height: 1.5em;
+}
+
+.line-height-foundry {
+    line-height: 20px !important;
+}
+
+.redBulletsFoundry {
+    top: 0.3em !important;
+}
+
+.boxes-align {
+    padding-left: 100px;
+}
+
+.boxes-align1 {
+    padding-left: 300px;
+}
+
+#container-top {
+    padding-top: 80px;
+}
+/*Jenifa 04-07-2015*/
+
+/*Ramya 06-07-2015*/
+.leadlink {
+    text-decoration: none;
+    color: #2f2f2f;
+    font-size: 16px;
+}
+
+.bg-img12 {
+    background-image: url('../../Assets/images/IT-SERVICES-SOLUTIONS-TESTING-SERVICES.jpg') !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    /*width:1200px;
+  height:333px;*/
+    background-size: cover;
+    /*background-attachment: fixed;*/
+    /*max-width:100%;*/
+    padding: 80px 20px !important;
+    /*max-height:100px;*/
+    /*position: fixed;*/
+}
+
+.linktext {
+    font-weight: bold;
+    color: rgb(123, 19, 21) !important;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+bgpic {
+    background-image: url('../../Assets/images/testing.jpg');
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    padding: 50px 30px !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    height: 350px;
+}
+
+.testing-bg-text {
+    color: #ffffff;
+    text-align: left;
+    line-height: 1.5em !important;
+}
+/*Jenifa 01-07-2015 and 02-07-2015*/
+
+
+/*Jenifa 03-07-2015*/
+#navhead {
+    position: relative;
+    /*background: #ffffff;
+  background: rgba(255, 255, 255, 1);*/
+    z-index: 1020;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+    -webkit-transition: background 0.25s ease-out;
+    -moz-transition: background 0.25s ease-out;
+    -ms-transition: background 0.25s ease-out;
+    -o-transition: background 0.25s ease-out;
+    transition: background 0.25s ease-out;
+}
+
+#nav {
+    position: fixed;
+    z-index: 1030;
+    height: 100px;
+    width: 1170px;
+    background: #ffffff;
+    top: 63px;
+}
+
+.mpcth-sticky-header {
+    margin-top: 0;
+    top: 0;
+}
+
+    .mpcth-sticky-header #headsearch {
+        display: none;
+    }
+
+    .mpcth-sticky-header #nav {
+        top: 0;
+    }
+/*Jenifa 03-07-2015*/
+/*Jenifa 04-07-2015*/
+.bg-img-epicor {
+    background-image: url(../../Assets/images/ENTERPRISE-SOUTIONSERP-SERVICES-EPICOR.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 80px 20px !important;
+}
+
+.epicorlist {
+    color: #666666 !important;
+}
+
+.redBullets-epicor {
+    content: '';
+    position: absolute;
+    top: -0.3em;
+    left: 0em;
+    border: 5px solid #7b1315;
+    /*list-style-type:disc;*/
+    border-radius: 10px;
+}
+
+.redBullets-epicor-onbg {
+    content: '';
+    position: absolute;
+    top: .3em;
+    left: 0em;
+    border: 5px solid #b03f42;
+    /*list-style-type:disc;*/
+    border-radius: 10px;
+}
+
+.bulletContent-epicor {
+    font-size: 16px !important;
+    line-height: 5px !important;
+    color: #666666;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.epicor-ul {
+    margin: 0 0 0 0 !important;
+    padding: 0px !important;
+    line-height: 0px !important;
+}
+
+.list-padd {
+    padding-left: 20px;
+}
+
+.list-padd-automotive {
+    padding-left: 12px;
+}
+
+.epicor-left-padd {
+    padding-left: 49px;
+}
+
+.bg-img-epicor-for-automotive {
+    background-image: url(../../Assets/images/epicor-for-automative.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    height: auto;
+    background-size: cover;
+}
+
+.bg-img-epicor-for-metal-fabricator {
+    background-image: url(../../Assets/images/epicor-for-metal-fabricator.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    height: auto;
+    background-size: cover;
+}
+
+.bg-img-epicor-for-medical-devices {
+    background-image: url(../../Assets/images/epicor-for-medical-devices.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    /*width: 1170px;*/
+    height: auto;
+    background-size: cover;
+}
+
+.bg-img-epicor-for-oil {
+    background-image: url(../../Assets/images/epicor-for-oil-and-gas.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    /*width: 1170px;*/
+    height: auto;
+    background-size: cover;
+}
+
+.bg-img-epicor-for-professional {
+    background-image: url(../../Assets/images/epicor-for-professional-services.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    /*width: 1170px;*/
+    height: auto;
+    background-size: cover;
+}
+
+.bg-img-epicor-pre-HR {
+    background-image: url(../../Assets/images/epic-inner-banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    /*width: 1170px;*/
+    height: auto;
+    background-size: cover;
+}
+
+.bg-img-epicor-pre-customers {
+    background-image: url(../../Assets/images/preconfigured-industry-solutions.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    /*width: 1170px;*/
+    height: auto;
+    background-size: cover;
+}
+
+.bg-img-epicor-pre-foundry {
+    background-image: url(../../Assets/images/epicor-preconfig-solutions.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    /*width: 1170px;*/
+    height: auto;
+    background-size: cover;
+}
+
+.boldWhiteheading {
+    font-size: 18px;
+    color: #ffffff;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: center;
+    line-height: 1.em;
+}
+
+.redColor-epicor {
+    color: #b03f42;
+    font-weight: bold;
+}
+
+.redBullets-epicor-big {
+    content: '';
+    position: absolute;
+    top: -0.3em;
+    left: 0em;
+    border: 7px solid #7b1315;
+    /*list-style-type:disc;*/
+    border-radius: 16px;
+}
+
+.bulletContent-epicor {
+    font-size: 0.8em;
+    color: #ffffff;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.2em !important;
+}
+
+.padding-epicor {
+    /*padding-bottom:10px !important;
+    padding-top:10px !important;*/
+}
+
+.bulletContent-epicor-grey {
+    font-size: 16px !important;
+    line-height: 5px !important;
+    color: #666666 !important;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.bulletContent-epicor-black {
+    font-size: 16px !important;
+    line-height: 5px !important;
+    color: #2f2f2f !important;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.bulletContent-epicor-grey-big {
+    font-size: 16px !important;
+    line-height: 5px !important;
+    color: #666666 !important;
+    margin-left: 10px;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.strong-para {
+    font-weight: bold;
+}
+
+.list-padd-oil {
+    padding-left: 35px;
+}
+
+a .mailid {
+    color: #7b1315 !important;
+    text-decoration: none;
+}
+
+    a .mailid:hover {
+        color: #2f2f2f !important;
+        text-decoration: none;
+    }
+
+.epicpay-list {
+    color: #2f2f2f;
+    text-decoration: none;
+}
+
+    .epicpay-list:hover {
+        color: #7b1315;
+        text-decoration: none;
+    }
+
+.dec-underline {
+    text-decoration: underline;
+}
+
+.readmore-epicpay a {
+    background-color: #7b1315;
+    padding: 8px;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+    .readmore-epicpay a:hover {
+        background-color: #000;
+        padding: 8px;
+        color: #ffffff;
+        font-size: 14px;
+    }
+
+.boldBlackheading-preconfig {
+    font-size: 18px;
+    color: #000000;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: center;
+    line-height: 1.5em;
+}
+
+.line-height-foundry {
+    line-height: 20px !important;
+}
+
+.redBulletsFoundry {
+    top: 0.3em !important;
+}
+
+.boxes-align {
+    padding-left: 100px;
+}
+
+.boxes-align1 {
+    padding-left: 300px;
+}
+
+#container-top {
+    padding-top: 80px;
+}
+/*Jenifa 04-07-2015*/
+/*Ramya 05-07-2015*/
+.leadlink {
+    text-decoration: none;
+    color: #2f2f2f;
+    font-size: 16px;
+}
+/*Ramya 05-07-2015*/
+/*Jenifa 06-07-2015*/
+.epicor-channel {
+    background: #7b1315;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.epicor-implementaion {
+    background: #7b1315;
+    color: #fff;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.grey-epicorchannel {
+    background: #f3f3f3;
+    padding-top: 45px;
+    padding-bottom: 20px;
+    float: left;
+    width: 100%;
+}
+
+.channel-text {
+    float: left;
+    margin: 30px 15px !important;
+    clear: none;
+}
+
+.grey-epicorchannel-redtext {
+    color: #7b1315;
+    background: #f3f3f3;
+    text-align: center;
+    font-size: 16px;
+    padding-top: 5px;
+    padding-bottom: 40px;
+}
+
+.img-display {
+    display: inline !important;
+}
+
+.redColorServices {
+    color: #7b1315 !important;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.bg-img-epicor-for-implementation {
+    background-image: url(../../Assets/images/epicor-implementation-services-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    height: auto;
+    background-size: cover;
+}
+/*Jenifa 06-07-2015*/
+/*Jenifa 07-07-2015*/
+.bg-img-epicpay {
+    background-image: url(../../Assets/images/EpicPay-Features.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 80px 20px !important;
+}
+
+.download-epicpay a {
+    background-color: #7b1315;
+    padding: 8px;
+    color: #ffffff;
+    font-size: 14px;
+    /*border:2px solid #000;*/
+    float: right;
+}
+
+    .download-epicpay a:hover {
+        background-color: #000;
+        padding: 8px;
+        color: #ffffff;
+        font-size: 14px;
+        /*border:2px solid #000;*/
+        float: right;
+    }
+
+.bg-img-careermodel {
+    background-image: url(../../Assets/images/CAREERS-CAREER-MODEL.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 80px 20px !important;
+}
+
+.inner-banner-image-bg-careermodel {
+    margin: 0px !important;
+    border-width: 0px !important;
+    padding: 133px 26px !important;
+    background-image: url(../../Assets/images/careers-model-culture.jpg) !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
+.bg-img-counsellingapproach {
+    background-image: url(../../Assets/images/CAREERS-COUNSELING-APPROACH.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 92px 20px !important;
+}
+
+#back_to_top {
+    position: fixed;
+    bottom: 15px;
+    width: 50px;
+    height: 50px;
+    z-index: 100;
+    color: #aaaaaa;
+    background: #aaaaaa;
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 3px;
+    border: 2px solid #cccccc;
+    font-size: 32px;
+    line-height: 48px;
+    text-align: center;
+    visibility: hidden;
+}
+
+    #back_to_top:hover {
+        color: #7b1315;
+        border: 2px solid #7b1315;
+    }
+
+    #back_to_top.back-to-top-position-right {
+        right: 15px;
+    }
+
+    #back_to_top.active {
+        visibility: visible;
+    }
+
+.bottom-icons {
+    position: absolute;
+    top: 0em;
+    left: 0em;
+    font-size: 1.5em;
+}
+
+.contactus-map-icon {
+    position: absolute;
+    top: 0em;
+    left: 0em;
+    font-size: 1.077em;
+}
+
+.bg-img-contactus {
+    background-image: url(../../Assets/images/contactus.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 80px 20px !important;
+}
+
+.write-to-us-input {
+    border-radius: 2px;
+    outline: medium none;
+    padding: 0.4em 1em;
+    border: 1px solid #c9c9c9;
+    width: 100%;
+    font-size: 16px;
+    color: #2f2f2f;
+}
+
+.submit-button {
+    width: 102px;
+    font-size: 16px;
+    text-align: center;
+    padding: 10px 0;
+    border: none;
+    border-radius: 2px;
+    background: #7b1315;
+    color: #ffffff;
+    text-transform: Capitalize;
+    margin: 0px 0 0 0;
+}
+/*Jenifa 07-07-2015*/
+/*Arun*/
+.bg-img4 {
+    background-image: url(../../Assets/images/SOLUTIONS-SMALL-BUSINESS1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    background-size: cover;
+    padding: 80px 20px !important;
+    z-index: 0;
+}
+
+.paddingGreycontainer1 {
+    padding: 30px !important;
+}
+
+.bg-img5 {
+    background-image: url(../../Assets/images/SOLUTIONS-MID-MARKET-COMPANIES.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    background-size: cover;
+    padding: 80px 20px !important;
+    z-index: 0;
+}
+
+.bg-img6 {
+    background-image: url(../../Assets/images/SOLUTIONS-ENTERPRISE.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    background-size: cover;
+    padding: 80px 20px !important;
+    z-index: 0;
+}
+
+.bg-img7 {
+    background-image: url(../../Assets/images/privacy.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    width: 1200px;
+    height: 333px;
+    background-size: cover;
+    padding: 80px 20px !important;
+    z-index: 0;
+}
+
+.bg-img8 {
+    background-image: url(../../Assets/images/CONSULTANCY-ADVISORY-SERVICES-ERP-SELECTION.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    background-size: cover;
+    padding: 80px 20px !important;
+    z-index: 0;
+}
+
+.inner-banner-image-bg4 {
+    margin: 0px !important;
+    border-width: 0px !important;
+    padding: 50px 26px !important;
+    background-image: url(../../Assets/images/ERP-1.jpg) !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
+.inner-banner-image-bg5 {
+    margin: 0px !important;
+    border-width: 0px !important;
+    padding: 80px 20px !important;
+    background-image: url('../../Assets/images/ERP-2.jpg') !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
+.bg-img9 {
+    background-image: url(../../Assets/images/CONSULTANCY-ADVISORY-SERVICES-ERP-SELECTION.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 80px 20px !important;
+    z-index: 0;
+}
+
+
+.bg-img11 {
+    background-image: url(../../Assets/images/CONSULTANCY-ADVISORY-SERVICES-PROGRAM-PROJECT-MANAGEMENT.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    background-size: cover;
+    padding: 80px 20px !important;
+    z-index: 0;
+}
+
+
+.inner-banner-image-bg6 {
+    margin: 0px !important;
+    border-width: 0px !important;
+    padding: 80px 20px !important;
+    background-image: url('../../Assets/images/projectmethodology.jpg') !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
+.inner-banner-image-bg7 {
+    margin: 0px !important;
+    border-width: 0px !important;
+    padding: 80px 20px !important;
+    background-image: url('../../Assets/images/pm-2.jpg') !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
+.inner-banner-image-bg8 {
+    margin: 0px !important;
+    border-width: 0px !important;
+    padding: 80px 20px !important;
+    background-image: url('../../Assets/images/pm-3.jpg') !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
+.inner-banner-image-bg9 {
+    margin: 0px !important;
+    border-width: 0px !important;
+    padding: 80px 20px !important;
+    background-image: url('../../Assets/images/pm-4.jpg') !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
+.inner-banner-image-bg10 {
+    margin: 0px !important;
+    border-width: 0px !important;
+    padding: 80px 20px !important;
+    background-image: url('../../Assets/images/pm-4.jpg') !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
+.inner-banner-image-bg11 {
+    margin: 0px !important;
+    border-width: 0px !important;
+    padding: 80px 20px !important;
+    background-image: url('../../Assets/images/it-1.jpg') !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
+
+
+.bg-img12 {
+    background-image: url(../../Assets/images/CONSULTANCY-ADVISORY-SERVICE-IT-BUSINESS-EXCELLENCE-SERVICE.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    background-size: cover;
+    padding: 80px 20px !important;
+    z-index: 0;
+}
+
+.bg-img12 {
+    background-image: url(../../Assets/images/CONSULTANCY-ADVISORY-SERVICES-IT-BUSINESS-EXCELLENCE-SERVICE.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    background-size: cover;
+    padding: 80px 20px !important;
+    z-index: 0;
+}
+
+
+
+.bg-img13 {
+    background-image: url(../../Assets/images/Terms.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    width: 1200px;
+    height: 333px;
+    background-size: cover;
+    padding: 80px 20px !important;
+    z-index: 0;
+}
+
+.bg-img14 {
+    background-image: url(../../Assets/images/ENTERPRISE-SOUTIONSERP-SERVICES-SAP.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    background-size: cover;
+    padding: 80px 20px !important;
+    z-index: 0;
+}
+
+.bg-img15 {
+    background-image: url(../../Assets/images/abap-dvelopment.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    height: auto;
+    background-size: cover;
+    color: #fff;
+}
+
+.bg-img16 {
+    background-image: url(../../Assets/images/sap-services.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    height: auto;
+    background-size: cover;
+    color: #fff;
+}
+
+.inner-banner-image-bg12 {
+    margin: 0px !important;
+    border-width: 0px !important;
+    padding: 80px 20px !important;
+    background-image: url('../../Assets/images/sap-experts-banner1.jpg') !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
+
+.inner-banner-image-bg13 {
+    margin: 0px !important;
+    border-width: 0px !important;
+    padding: 80px 20px !important;
+    background-image: url('../../Assets/images/sap-system-banner1.jpg') !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
+.paddingrt {
+    padding-right: 10px;
+}
+
+
+.bulletContent1 {
+    font-size: 1.3em;
+    color: ##ffffff;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
+.redColor1 {
+    font-weight: bold;
+    color: #7b1315 !important;
+}
+
+.mainContent1 {
+    line-height: 1.5em;
+    font-size: 1.3em;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/*Arun*/
+/*Jenifa 08-07-2015*/
+#Contactfeedback {
+    height: 104px;
+    width: 104px;
+    position: fixed;
+    top: 9%;
+    right: 0;
+    z-index: 1000;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+    cursor: pointer;
+}
+
+    #Contactfeedback a {
+        display: block;
+        background: #7B1314;
+        height: 42px;
+        width: 110px;
+        padding: 10px 16px;
+        color: #fff;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        font-weight: bold;
+        text-decoration: none;
+        transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        border-top: solid 1px #624F4B;
+        border-left: solid 1px #624F4B;
+        border-right: solid 1px #624F4B;
+    }
+
+        #Contactfeedback a:hover {
+            background: #1F1F1F;
+            color: #fff;
+        }
+
+body.modal-open, .modal-open .navbar-fixed-top {
+    padding-right: 0 !important;
+}
+/*Jenifa 08-07-2015*/
+/*Arun 08-07-2015*/
+.bg-microsofttechnologies {
+    background-image: url(../../Assets/images/microsoft-technologies-banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    background-size: cover;
+    padding: 80px 20px !important;
+    z-index: 0;
+}
+
+
+
+.pad {
+    padding-top: 47px !important;
+    padding-bottom: 38px !important;
+    background-color: #560000 !important;
+    margin-top: 10px;
+}
+
+.pad2 {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+    padding-left: 10px !important;
+    background-color: #c7c7c7 !important;
+    height: 460px;
+}
+
+.padd {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    background-color: #96070a !important;
+    margin-top: 10px;
+    margin-bottom: 0;
+    height: 130px;
+    padding-left: 10px;
+}
+
+
+.pad-a {
+    padding-top: 43px !important;
+    padding-bottom: 18px !important;
+    background-color: #560000 !important;
+    margin-top: 10px;
+}
+
+.pad-b {
+    padding-top: 29px !important;
+    padding-bottom: 10px !important;
+    background-color: #560000 !important;
+    margin-top: 10px;
+}
+
+.white {
+    color: #ffffff;
+}
+
+paddingltrt {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+/*Ramya 08-07-2015*/
+.bg-testing {
+    background-image: url(../../Assets/images/IT-SERVICES-SOLUTIONS-TESTING-SERVICES1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    background-size: cover;
+    padding: 80px 20px !important;
+    z-index: 0;
+}
+
+.bgpic {
+    background-image: url('../../Assets/images/testing.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    height: auto;
+    background-size: cover;
+}
+
+.bg-img-Consulting {
+    background-image: url('../../Assets/images/open-source.jpg') !important;
+    margin: 0px !important;
+    border-width: 0px !important;
+    padding: 80px 20px !important;
+    /*padding: 50px 26px !important;*/
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    /*background-size: cover !important;*/
+}
+
+.boldWhiteheading-testing {
+    font-size: 18px;
+    color: #ffffff;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /*text-align:center;*/
+    line-height: 1em;
+}
+
+
+.bg-img-Consulting {
+    background-image: url('../../Assets/images/open-source.jpg') !important;
+    margin: 0px !important;
+    border-width: 0px !important;
+    padding: 80px 20px !important;
+    /*padding: 50px 26px !important;*/
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    /*background-size: cover !important;*/
+}
+
+.grey-text-testing {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.padding-bottom-5 {
+    padding-bottom: 5px;
+}
+
+.bg-img-ms-application {
+    background-image: url('../../Assets/images/IT-SERVICES-SOLUTIONS-APPLICATION-MAINTENANCE-SUPPORT1.jpg') !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 80px 20px !important;
+}
+
+.insights-grey-center-text {
+    font-size: 22px;
+    color: #7b1315;
+    text-align: center;
+    font-weight: bold;
+}
+
+.testing-grey-left {
+    float: left;
+    width: 100%;
+}
+
+.bg-img-ip-product {
+    background-image: url('../../Assets/images/IP-PRODUCT-DEVELOPMENT-SERVICES.jpg') !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    background-size: cover;
+    padding: 80px 20px !important;
+}
+
+.inner-banner-image-bg-ip-product {
+    margin: 0px !important;
+    border-width: 0px !important;
+    padding: 80px 20px !important;
+    background-image: url('../../Assets/images/productEngineering.jpg') !important;
+    /*padding: 50px 26px !important;*/
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
+.bg-img-startups {
+    background-image: url('../../Assets/images/IP-PRODUCT-DEVELOPMENT-SERVICES-TECHNOLOGY-SUPPORT-FOR-PRODUCT-STARTUPS.jpg') !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    background-size: cover;
+    padding: 80px 20px !important;
+}
+
+.bg-img-ip-opensource {
+    background-image: url('../../Assets/images/IP-PRODUCT-DEVELOPMENT-SERVICES-OPEN-SOURCE-TECHNOLOGIES.jpg') !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    background-size: cover;
+    padding: 80px 20px !important;
+}
+
+.bg-img-opensource {
+    background-image: url('../../Assets/images/open-source.jpg') !important;
+    margin: 0px !important;
+    border-width: 0px !important;
+    padding: 80px 20px !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+/*Ramya 09-07-15*/
+.padding-bottom-5 {
+    padding-bottom: 5px;
+}
+
+.insights-grey-center-text {
+    font-size: 1.3em;
+    color: #7b1315;
+    text-align: center;
+    /*font-weight: bold;*/
+    line-height: 1.5em;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding-top: 20px;
+}
+
+.sharepoint-grey-center-text {
+    font-size: 20px;
+    color: #2f2f2f;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.sharepoint-black-dottedline {
+    border-top: 1px dotted #2f2f2f;
+    width: 745px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.bg-currentopenings {
+    background-image: url(../../Assets/images/CAREERS-CURRENT-OPENINGS.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    background-size: cover;
+    padding: 80px 20px !important;
+    z-index: 0;
+}
+/*Eof Ramya 09-07-15*/
+/*Arun 09-07-15*/
+.mymodal-download {
+    width: 850px !important;
+    right: 120px !important;
+}
+
+
+.formhead {
+    width: 95%;
+    float: left;
+    padding-left: 3%;
+    padding-top: 2%;
+    padding-right: 2%;
+    font-family: raleway !important;
+    font-size: 14px;
+    color: #2f2f2f;
+}
+/*Eof Arun 09-07-15*/
+/*Jenifa 10-07-15*/
+.modal-header-v2 {
+    min-height: 0px !important;
+    padding: 5px !important;
+    border-bottom: 0px solid #e5e5e5 !important;
+}
+
+.modal-header .closev2 {
+    margin-top: 1px !important;
+    margin-right: 8px !important;
+}
+
+.padd-top {
+    padding-top: 12px;
+}
+
+.validator {
+    margin-top: 20px;
+    color: #f00;
+    font-family: 'Raleway' sans-serif !important;
+    font-size: 14px;
+}
+
+.success {
+    font-family: 'Raleway' sans-serif !important;
+    font-size: 16px;
+    color: #2b8305;
+    width: 100%;
+}
+/*Eof Jenifa 10-07-15*/
+/*Arun*/
+.bread {
+    padding: 8px 15px;
+    margin-bottom: 20px;
+    list-style: none;
+    background-color: #fff !important;
+}
+
+.bg-news {
+    background-image: url('../../Assets/images/news-events-bg.jpg') !important;
+    background-repeat: repeat-y !important;
+    background-position: center 0;
+}
+
+.bg-img-stevie {
+    background-image: url(../../Assets/images/NewsandEvents.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    background-size: cover;
+    padding: 80px 20px !important;
+    z-index: 0;
+}
+
+
+
+.bg-news-arrow-right {
+    width: 100% !important;
+    float: right !important;
+    margin: 0 -30px 0 0 !important;
+    padding: 0 !important;
+    line-height: 1.5em !important;
+    background: url('../../Assets/images/right-arrow.png') no-repeat center !important;
+}
+
+.bg-news-arrow-left {
+    width: 100% !important;
+    float: left !important;
+    margin: 40px 0 0 -28px !important;
+    padding: 0 !important;
+    line-height: 1.5em !important;
+    background: url('../../Assets/images/left-arrow.png') no-repeat center !important;
+}
+
+
+.bg-news-right-box {
+    background: #f6f6f6 !important;
+    width: 275px;
+    padding: 20px;
+    border: 1px solid #c6c6c6 !important;
+    float: right; /* margin: 0 0 0 94px; */
+    margin-right: 265px;
+}
+
+
+.bg-news-left-box {
+    background: #f6f6f6 !important;
+    width: 275px;
+    padding: 20px;
+    border: 1px solid #c6c6c6 !important;
+    float: right; /* margin: 0 0 0 94px; */
+    margin-right: 265px;
+}
+
+.bg-news-right-inner {
+    background: #f6f6f6 !important;
+    width: 275px;
+    padding: 20px;
+    border: 1px solid #c6c6c6 !important;
+    margin: 0 0 0 265px;
+}
+/*Jenifa 13-07-2015*/
+.smaller {
+    float: left;
+    text-align: left !important;
+    width: 60%;
+    opacity: 0.7;
+    font-size: 12px;
+    line-height: 12px;
+}
+
+.testimonial-img {
+    margin-right: 10px;
+    float: left;
+    opacity: 0.7;
+}
+
+.testimonial-paragraph {
+    font-family: 'Raleway' sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.testimonial-name {
+    padding-top: 7px;
+    text-align: left;
+}
+
+.testimonial-img:hover {
+    opacity: 1;
+}
+
+.bg-img-sitemap {
+    background-image: url('../../Assets/images/sitemap.jpg') !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    background-size: cover;
+    padding: 80px 20px !important;
+}
+
+.sub-menu {
+    font-weight: bold;
+}
+
+.sub-menu2 {
+    color: #b03f42;
+}
+
+
+.sitemapLevel1 {
+    font-weight: bold;
+    font-size: 14px;
+    color: #7b1315;
+}
+
+.sub-menu li, .sub-menu2 li, .sub-menu3 li, .sub-menu4 li {
+    margin-bottom: 10px;
+}
+
+    .sub-menu li i {
+        color: #7b1315;
+        font-size: 10px;
+    }
+
+    .sub-menu2 li i, .sub-menu3 li i, .sub-menu4 li i {
+        color: #7b1315;
+        font-size: 16px;
+        margin-top: 15px;
+    }
+
+.sub-menu2 li {
+    margin-left: 10px;
+    margin-bottom: 0px;
+    font-weight: normal !important;
+}
+
+.sub-menu3 li {
+    margin-left: 10px;
+}
+
+    .sub-menu3 li i {
+        color: #7b1315;
+        font-size: 10px;
+    }
+
+.sub-menu4 li {
+    margin-left: 10px;
+}
+
+.header-box-shadow {
+    box-shadow: 0 1px 4px -2px #ccc;
+    -moz-box-shadow: 0 1px 4px -2px #ccc;
+    -webkit-box-shadow: 0 1px 4px -2px #ccc;
+}
+/*Arun 13/7/2015*/
+.wrappernewbullet p {
+    line-height: 1.5em;
+    margin: 0;
+    padding-bottom: 6px;
+    font-size: 1.3em;
+}
+
+.wrappernewbullet-application p {
+    line-height: 1.5em;
+    margin: 0;
+    /*padding-bottom: 6px;*/
+    font-size: 1.3em;
+}
+
+.bulcolor {
+    color: #2f2f2f;
+}
+
+.selection-bgarrow {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    margin-top: -30px;
+    z-index: 4;
+}
+
+
+
+.bulletContent-program {
+    font-size: 16px;
+    color: #2f2f2f;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding-left: 25px;
+}
+
+.bg-business {
+    background-image: url('../../Assets/images/CONSULTANCY-ADVISORY-SERVICES-IT-BUSINESS-EXCELLENCE-SERVICE.jpg');
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    padding: 50px 30px !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    height: 350px;
+}
+
+.bulletContent-business {
+    font-size: 16px;
+    color: #2f2f2f;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding-left: 25px;
+    padding-bottom: 5px;
+}
+
+.inner-banner-image-business {
+    margin: 0px !important;
+    border-width: 0px !important;
+    padding: 80px 20px !important;
+    background-image: url('../../Assets/images/it-2.jpg') !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
+.wrappernewbusiness p {
+    line-height: 1.5em;
+    margin: 0;
+    font-size: 1.3em;
+}
+
+.redBullets-terms {
+    content: '';
+    position: absolute;
+    top: 0.7em;
+    left: 0em;
+    border: 5px solid #7b1315;
+    border-radius: 10px;
+}
+
+.bulletContent-terms {
+    font-size: 16px;
+    color: #2f2f2f;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding-left: 15px;
+    padding-bottom: 5px;
+}
+
+.redBullets-epicor-sap {
+    content: '';
+    position: absolute;
+    top: -0.3em;
+    left: 2em;
+    border: 5px solid #7b1315;
+    /*list-style-type:disc;*/
+    border-radius: 10px;
+}
+
+.bulletContent-epicor-sap {
+    font-size: 16px !important;
+    line-height: 5px !important;
+    color: #2f2f2f !important;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding-left: 25px;
+}
+
+.bulletContent-sap {
+    font-size: 16px;
+    color: #2f2f2f;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding-left: 30px;
+    padding-bottom: 5px;
+}
+
+.bulletContent-pre {
+    font-size: 16px !important;
+    line-height: 17px !important;
+    color: #2f2f2f !important;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding-left: 10px;
+}
+
+.redBullets-pre {
+    content: '';
+    position: absolute;
+    top: 0.3em;
+    left: 0em;
+    border: 5px solid #7b1315;
+    border-radius: 10px;
+}
+
+.bulletContent-service {
+    font-size: 16px !important;
+    line-height: 22px !important;
+    color: #2f2f2f;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding-left: 10px;
+}
+
+
+.padd-top-40 {
+    padding-top: 40px;
+}
+
+.padding-bottom-30 {
+    padding-bottom: 30px;
+}
+
+/*Ramya 14-07-15*/
+
+.paddingGrey {
+    padding: 50px 30px;
+}
+
+.width {
+    width: 100px;
+    height: 150px;
+}
+/*jenifa 15-07-2015*/
+.advisory {
+    font-size: 20px;
+    font-weight: bold !important;
+    line-height: 28px !important;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+
+.padding45 {
+    padding: 45px !important;
+}
+
+.padd-left30 {
+    padding-left: 28px;
+}
+
+.bg-project {
+    background-image: url(../../Assets/images/CONSULTANCY-ADVISORY-SERVICES-PROGRAM-PROJECT-MANAGEMENT.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    background-size: cover;
+    padding: 80px 20px !important;
+    z-index: 0;
+}
+
+.management-font {
+    font-size: 24px !important;
+    text-align: center;
+    line-height: 36px;
+    padding-bottom: 25px;
+}
+
+.it-font {
+    font-size: 20px !important;
+    font-weight: bold;
+}
+
+.redBullets-epicor-inner {
+    content: '';
+    position: absolute;
+    top: 0.2em;
+    left: 0em;
+    border: 5px solid #b03f42;
+    /* list-style-type: disc; */
+    border-radius: 10px;
+}
+
+.bulletContent-epicor-inner {
+    font-size: 16px;
+    color: #ffffff;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.2em !important;
+}
+
+.sap-margin {
+    margin-bottom: 30px;
+}
+
+.copyrights-link-footer {
+    text-align: left;
+    margin-bottom: 0px;
+}
+
+.microsoft-images-left {
+    margin-left: 72px;
+}
+
+.microsoft-images-right {
+    margin-left: -72px;
+}
+
+.microsoft-images-right1 {
+    margin-left: -100px;
+}
+
+.microsoft-img-5 {
+    margin-left: -175px;
+}
+
+.video-class {
+    font-size: 16px;
+    color: #7b1315;
+    text-decoration: none;
+}
+
+    .video-class:hover {
+        font-size: 16px;
+        color: #7b1315;
+        text-decoration: none;
+    }
+
+.banner-ms-logo {
+    margin-left: 10px;
+}
+
+.click {
+    font-size: 20px !important;
+}
+
+.success-span {
+    font-size: 14px;
+    color: #2f2f2f;
+    line-height: 1.0em;
+}
+
+.noleftpadd {
+    padding-left: 0px !important;
+}
+
+.question-it {
+    font-size: 16px;
+    color: #2f2f2f;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 8px !important;
+}
+/*Ramya 10-07-15*/
+.currentopenings-mail-text {
+    text-decoration: none;
+    color: #7b1315 !important;
+}
+
+.arrow-icon {
+    display: inline-block;
+    padding: 1em;
+    background: #ffffff;
+    border-radius: 100%;
+    border: 1px solid #eeeeee;
+    bottom: 0.3em;
+    width: 1em;
+    height: 1em;
+    text-align: center;
+    line-height: 1em;
+}
+
+.apply-button {
+    background: #7b1314 !important;
+    width: 120px;
+    text-align: center;
+    padding: 5px 0px 7px;
+    color: #ffffff !important;
+    border-radius: 5px;
+}
+
+p.apply-button a {
+    /*text-decoartion: none;*/
+    cursor: pointer;
+    color: #ffffff !important;
+    padding: 5px 10px;
+}
+
+.itpratice-button {
+    padding: 5px !important;
+    background: #bfbfbf !important;
+    color: #ffffff !important;
+}
+
+.itpractice-meta {
+    list-style: none outside;
+    padding: 0;
+    margin: 0 0 2.5em;
+    overflow: hidden;
+    zoom: 1;
+    clear: both;
+}
+
+    .itpractice-meta li {
+        margin: 0 1em 0 0;
+        /*padding: .5em;*/
+        float: left;
+        /*line-height: 1em;*/
+        padding: 5px !important;
+        background: #bfbfbf !important;
+        color: #ffffff !important;
+    }
+
+h4.mpcth-post-title.current-openings-heading {
+    display: block !important;
+    font-weight: normal !important;
+    padding: 15px 0 10px !important;
+    font-size: 20px;
+}
+
+.arrow-class {
+    position: relative;
+    right: 2px;
+    top: -6px;
+}
+
+.padding-arrowicons {
+    padding-left: 7px;
+}
+
+.deco-header-dotnet {
+    border-bottom: 1px solid #eeeeee;
+    line-height: 70px;
+}
+
+.company-logo {
+    width: 42px;
+    height: 42px;
+    position: relative;
+    left: 0;
+    float: left;
+    margin-right: 1em;
+    vertical-align: middle;
+    box-shadow: none;
+}
+
+.marginRight {
+    margin-right: 15px;
+}
+
+.position {
+    float: left;
+    width: 60%;
+    padding: 0 0 0 0px;
+    /*padding-top:-10px !important;*/
+    line-height: 1.5em;
+}
+
+.padding-top-10 {
+    padding-top: 10px;
+}
+
+.location {
+    color: #2f2f2f !important;
+    font-size: 14px !important;
+    font-weight: normal !important;
+    /*margin-top: 20px*/
+    /*margin-left: 50px;*/
+}
+
+.search-keyword {
+    float: left;
+    padding-right: .5em;
+    width: 50%;
+}
+
+.search-jobs {
+    padding: 1em;
+    zoom: 1;
+}
+/*Eof Ramya 10-07-15*/
+/*Ramya 11-07-15*/
+h4 {
+    font-size: 1.5em;
+}
+
+.job-types {
+    list-style: none outside;
+    margin: 0;
+    font-size: .83em;
+    border-top: 1px solid #e5e5e5;
+    zoom: 1;
+}
+
+.job-types-check {
+    background: #dbdbdb !important;
+    padding: 0.5em 1em !important;
+    margin-left: 0px !important;
+}
+
+.bg-currentopenings-dotnetDeveloper {
+    background-image: url(../../Assets/images/current-openings-description.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    background-size: cover;
+    padding: 80px 20px !important;
+    z-index: 0;
+}
+
+
+/*EOF Ramya 14-07-15*/
+.redBullets-epicor-erp {
+    content: '';
+    position: absolute;
+    top: -0.3em;
+    left: -1em;
+    border: 7px solid #7b1315;
+    /* list-style-type: disc; */
+    border-radius: 10px;
+}
+
+.pad-tech {
+    padding-bottom: 20px !important;
+    padding-top: 20px !important;
+}
+
+.bulletContent-open {
+    font-size: 16px;
+    color: #2f2f2f !important;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding-left: 28px;
+}
+
+.bulletContent-sa {
+    font-size: 16px !important;
+    line-height: 5px !important;
+    color: #666666 !important;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding-left: 10px;
+}
+
+.redBullets-pre-epicor {
+    content: '';
+    position: absolute;
+    top: -0.2em;
+    left: 0em;
+    border: 5px solid #7b1315;
+    border-radius: 10px;
+}
+
+.bulletContent-pre-epicor {
+    font-size: 16px !important;
+    line-height: 8px !important;
+    color: #2f2f2f !important;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding-left: 10px;
+}
+/*Arun 17-07-2015*/
+.redBullets-epicor-terms {
+    content: '';
+    position: absolute;
+    top: -0.3em;
+    left: 0em;
+    border: 5px solid #7b1315;
+    /*list-style-type:disc;*/
+    border-radius: 10px;
+}
+
+.vc_separator {
+    position: relative;
+    display: table;
+    margin-bottom: 1.5em;
+}
+
+.vc_el_width_100 {
+    width: 100%;
+}
+
+.vc_separator .vc_sep_holder {
+    display: table-cell;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+}
+
+.vc_separator.vc_sep_color_black .vc_sep_line {
+    border-color: #2a2a2a !important;
+}
+
+.vc_separator.vc_sep_dashed .vc_sep_line {
+    border-top-style: dashed !important;
+}
+
+.vc_separator .vc_sep_holder .vc_sep_line {
+    height: 1px;
+    border-top: 1px solid #ebebeb;
+    display: block;
+    position: relative;
+    top: 1px;
+    width: 100%;
+}
+
+.vc_separator .vc_sep_holder {
+    display: table-cell;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+}
+
+.sep-solid-line {
+    position: absolute;
+    border-bottom: 1px solid #7b1315;
+    width: 5%;
+    top: 1px;
+}
+
+.sep-solid-line1 {
+    position: absolute;
+    border-bottom: 1px solid #7b1315;
+    width: 5%;
+    top: -22px;
+}
+
+.vc_separator-it {
+    position: relative;
+    display: table;
+    margin-bottom: 1.5em;
+}
+
+.vc_el_width_100-it {
+    width: 100%;
+}
+
+.vc_separator-it .vc_sep_holder-it {
+    display: table-cell;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+}
+
+.vc_separator-it.vc_sep_color_black-it .vc_sep_line-it {
+    border-color: #ccc !important;
+}
+
+.vc_separator-it.vc_sep_dashed-it .vc_sep_line-it {
+    border-top-style: solid !important;
+}
+
+.vc_separator-it .vc_sep_holder-it .vc_sep_line-it {
+    height: 1px;
+    border-top: 1px solid #ebebeb;
+    display: block;
+    position: relative;
+    top: 1px;
+    width: 100%;
+}
+
+.vc_separator-it .vc_sep_holder-it {
+    display: table-cell;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+}
+
+.current-open {
+    bottom: -34px;
+}
+
+.current-open-top {
+    bottom: -28px;
+}
+
+.current-field {
+    font-size: 14px;
+}

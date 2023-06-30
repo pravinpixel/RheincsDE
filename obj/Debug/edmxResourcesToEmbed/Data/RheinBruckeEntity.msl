@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="RheinBruckeDevModelStoreContainer" CdmEntityContainer="RheinBruckeDevEntities">
+    <EntitySetMapping Name="EmailRequests">
+      <EntityTypeMapping TypeName="RheinBruckeDevModel.EmailRequest">
+        <MappingFragment StoreEntitySet="EmailRequest">
+          <ScalarProperty Name="Services" ColumnName="Services" />
+          <ScalarProperty Name="ContactUsUrl" ColumnName="ContactUsUrl" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="EmailTypeID" ColumnName="EmailTypeID" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="EmailRequestID" ColumnName="EmailRequestID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EmailTypes">
+      <EntityTypeMapping TypeName="RheinBruckeDevModel.EmailType">
+        <MappingFragment StoreEntitySet="EmailType">
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="EmailTypeName" ColumnName="EmailTypeName" />
+          <ScalarProperty Name="EmailTypeID" ColumnName="EmailTypeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Testimonials">
+      <EntityTypeMapping TypeName="RheinBruckeDevModel.Testimonial">
+        <MappingFragment StoreEntitySet="Testimonial">
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="ImageName" ColumnName="ImageName" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Designation" ColumnName="Designation" />
+          <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="TestimonialID" ColumnName="TestimonialID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="JobLists">
+      <EntityTypeMapping TypeName="RheinBruckeDevModel.JobList">
+        <MappingFragment StoreEntitySet="JobList">
+          <ScalarProperty Name="UrlDetails" ColumnName="UrlDetails" />
+          <ScalarProperty Name="Priority" ColumnName="Priority" />
+          <ScalarProperty Name="JobTitle" ColumnName="JobTitle" />
+          <ScalarProperty Name="Field" ColumnName="Field" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Location" ColumnName="Location" />
+          <ScalarProperty Name="Qualification" ColumnName="Qualification" />
+          <ScalarProperty Name="Responsiblities" ColumnName="Responsiblities" />
+          <ScalarProperty Name="POTR" ColumnName="POTR" />
+          <ScalarProperty Name="JobID" ColumnName="JobID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NewsEvents">
+      <EntityTypeMapping TypeName="RheinBruckeDevModel.NewsEvent">
+        <MappingFragment StoreEntitySet="NewsEvents">
+          <ScalarProperty Name="UrlDetails" ColumnName="UrlDetails" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="ThumbnailPositionLeft" ColumnName="ThumbnailPositionLeft" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="NewsEventsDate" ColumnName="NewsEventsDate" />
+          <ScalarProperty Name="MetaTagKeyword" ColumnName="MetaTagKeyword" />
+          <ScalarProperty Name="MetaTagDescription" ColumnName="MetaTagDescription" />
+          <ScalarProperty Name="NewsImage" ColumnName="NewsImage" />
+          <ScalarProperty Name="ThumbnailImage" ColumnName="ThumbnailImage" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="NewsAndEventsID" ColumnName="NewsAndEventsID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="JobApplications">
+      <EntityTypeMapping TypeName="RheinBruckeDevModel.JobApplication">
+        <MappingFragment StoreEntitySet="JobApplication">
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="CoverLetter" ColumnName="CoverLetter" />
+          <ScalarProperty Name="DocumentName" ColumnName="DocumentName" />
+          <ScalarProperty Name="JobTitle" ColumnName="JobTitle" />
+          <ScalarProperty Name="EmailId" ColumnName="EmailId" />
+          <ScalarProperty Name="MobileNo" ColumnName="MobileNo" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="JobRequestId" ColumnName="JobRequestId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LandingPages">
+      <EntityTypeMapping TypeName="RheinBruckeDevModel.LandingPage">
+        <MappingFragment StoreEntitySet="LandingPage">
+          <ScalarProperty Name="UpgradeProductIntererst" ColumnName="UpgradeProductIntererst" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ServiceType" ColumnName="ServiceType" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Company" ColumnName="Company" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MailSettings">
+      <EntityTypeMapping TypeName="RheinBruckeDevModel.MailSetting">
+        <MappingFragment StoreEntitySet="MailSettings">
+          <ScalarProperty Name="EmailId" ColumnName="EmailId" />
+          <ScalarProperty Name="LandingMailId" ColumnName="LandingMailId" />
+          <ScalarProperty Name="JobMailId" ColumnName="JobMailId" />
+          <ScalarProperty Name="ContactUsMailId" ColumnName="ContactUsMailId" />
+          <ScalarProperty Name="Relay" ColumnName="Relay" />
+          <ScalarProperty Name="EnableSSL" ColumnName="EnableSSL" />
+          <ScalarProperty Name="CustomSMTP" ColumnName="CustomSMTP" />
+          <ScalarProperty Name="Port" ColumnName="Port" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="LoginName" ColumnName="LoginName" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Brochures">
+      <EntityTypeMapping TypeName="RheinBruckeDevModel.Brochure">
+        <MappingFragment StoreEntitySet="Brochure">
+          <ScalarProperty Name="DisplayOrder" ColumnName="DisplayOrder" />
+          <ScalarProperty Name="ImageURL" ColumnName="ImageURL" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Thumbnail" ColumnName="Thumbnail" />
+          <ScalarProperty Name="DocumentFileName" ColumnName="DocumentFileName" />
+          <ScalarProperty Name="FilterName" ColumnName="FilterName" />
+          <ScalarProperty Name="BrochureId" ColumnName="BrochureId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CaseStudies">
+      <EntityTypeMapping TypeName="RheinBruckeDevModel.CaseStudy">
+        <MappingFragment StoreEntitySet="CaseStudies">
+          <ScalarProperty Name="NotDuplicate" ColumnName="NotDuplicate" />
+          <ScalarProperty Name="ImageURL" ColumnName="ImageURL" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Thumbnail" ColumnName="Thumbnail" />
+          <ScalarProperty Name="DocumentFileName" ColumnName="DocumentFileName" />
+          <ScalarProperty Name="FilterName" ColumnName="FilterName" />
+          <ScalarProperty Name="CaseStudyId" ColumnName="CaseStudyId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WhitePapers">
+      <EntityTypeMapping TypeName="RheinBruckeDevModel.WhitePaper">
+        <MappingFragment StoreEntitySet="WhitePapers">
+          <ScalarProperty Name="DisplayOrder" ColumnName="DisplayOrder" />
+          <ScalarProperty Name="NotDuplicate" ColumnName="NotDuplicate" />
+          <ScalarProperty Name="ImageURL" ColumnName="ImageURL" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Thumbnail" ColumnName="Thumbnail" />
+          <ScalarProperty Name="DocumentFileName" ColumnName="DocumentFileName" />
+          <ScalarProperty Name="FilterName" ColumnName="FilterName" />
+          <ScalarProperty Name="WhitePaperId" ColumnName="WhitePaperId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserRoles">
+      <EntityTypeMapping TypeName="RheinBruckeDevModel.UserRole">
+        <MappingFragment StoreEntitySet="UserRoles">
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Department" ColumnName="Department" />
+          <ScalarProperty Name="EmailId" ColumnName="EmailId" />
+          <ScalarProperty Name="UserRole1" ColumnName="UserRole" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RICNews">
+      <EntityTypeMapping TypeName="RheinBruckeDevModel.RICNew">
+        <MappingFragment StoreEntitySet="RICNews">
+          <ScalarProperty Name="UrlDetails" ColumnName="UrlDetails" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="NewsEventsDate" ColumnName="NewsEventsDate" />
+          <ScalarProperty Name="MetaTagKeyword" ColumnName="MetaTagKeyword" />
+          <ScalarProperty Name="MetaTagDescription" ColumnName="MetaTagDescription" />
+          <ScalarProperty Name="BannerImage" ColumnName="BannerImage" />
+          <ScalarProperty Name="NewsImage" ColumnName="NewsImage" />
+          <ScalarProperty Name="ThumbnailImage" ColumnName="ThumbnailImage" />
+          <ScalarProperty Name="DetailedDescription" ColumnName="DetailedDescription" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="NewsID" ColumnName="NewsID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FactSheets">
+      <EntityTypeMapping TypeName="RheinBruckeDevModel.FactSheet">
+        <MappingFragment StoreEntitySet="FactSheet">
+          <ScalarProperty Name="DisplayOrder" ColumnName="DisplayOrder" />
+          <ScalarProperty Name="NotDuplicate" ColumnName="NotDuplicate" />
+          <ScalarProperty Name="ImageURL" ColumnName="ImageURL" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Thumbnail" ColumnName="Thumbnail" />
+          <ScalarProperty Name="DocumentFileName" ColumnName="DocumentFileName" />
+          <ScalarProperty Name="FilterName" ColumnName="FilterName" />
+          <ScalarProperty Name="FactSheetId" ColumnName="FactSheetId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LeadSquareLogs">
+      <EntityTypeMapping TypeName="RheinBruckeDevModel.LeadSquareLog">
+        <MappingFragment StoreEntitySet="LeadSquareLog">
+          <ScalarProperty Name="ServiceType" ColumnName="ServiceType" />
+          <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="FormAction" ColumnName="FormAction" />
+          <ScalarProperty Name="FormMsg" ColumnName="FormMsg" />
+          <ScalarProperty Name="FormStatus" ColumnName="FormStatus" />
+          <ScalarProperty Name="FormPID" ColumnName="FormPID" />
+          <ScalarProperty Name="LogId" ColumnName="LogId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

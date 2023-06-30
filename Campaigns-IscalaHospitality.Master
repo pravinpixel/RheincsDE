@@ -1,0 +1,515 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Campaigns-IscalaHospitality.master.cs" Inherits="RheinBrucke.Campaigns_IscalaHospitality" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Epicor-iscala-hospitality-industry</title>
+     <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta name="robots" content="noindex,nofollow" />
+     <!-- CSS -->
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,400italic|Montserrat:700,400|Varela+Round" />
+    <link href="Assets/css/font-awesome.min.css" rel="stylesheet" />
+    <!-- Swipebox -->
+    <link href="Assets/Iscala/css/swipebox.css" rel="stylesheet" />
+    <!-- Animate CSS -->
+    <link href="Assets/Iscala/css/animate.min.css" rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link href="Assets/Iscala/css/style-v2.css" rel="stylesheet" />
+    <link href="Assets/Iscala/css/style-responsive-v2.css" rel="stylesheet" />
+    <link href="Assets/Iscala/css/expandableGallery.css" rel="stylesheet" />
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.png" />    <link href="Assets/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="Assets/Iscala/css/multiselect.css" rel="stylesheet" />
+    <link href="Assets/Iscala/css/book.css" rel="stylesheet" />
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="../Assets/Iscala/js/modernizr.js"></script> <!-- Modernizr -->
+   
+    <style>
+     
+        .ln-ht-36
+        {
+            line-height:36px;
+        }
+        .iscalaform
+        {
+            float:left;
+            width:30%;
+            position:absolute;
+            top:98px;
+            right:133px;
+        }
+        .iscalaform h4
+        {
+            color:#fff!important;
+        }
+        .thumb {
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+        .sub-para
+        {
+        padding:0px 0px;
+        }
+        .solution-head
+        {
+            color: #582335; font-weight: bold; font-size: 20px;
+        }
+        .btn-default
+        {
+            background:rgba(255, 255, 255, 0.5);
+            height:50px;
+            color: #fff; 
+            border-radius:2px;
+            border-style: none;
+        }
+        .btn{
+            text-align:left;
+        }
+        .no-padding
+        {
+            padding-left:0px;
+            padding-right:0px;
+        }
+.open>.dropdown-toggle.btn-default:hover{
+            color: #fff; 
+    background-color: rgba(255, 255, 255, 0.5);
+    border-style: none;
+}
+.btn-default:hover
+{
+    background-color:rgba(255, 255, 255, 0.5);
+   border-style: none;
+    color: #fff; 
+}
+.dropdown-menu
+{
+    min-width:100%;
+    border-radius:2px;
+}
+.banner-top
+{
+    padding-top:0px;
+}
+.header-bg-color
+{
+    background:none;
+}
+        @media (max-width: 1024px) and (min-width: 990px) {
+            .iscalaform {
+                float: left;
+                width: 25%;
+                position: absolute;
+                top: 70px;
+                right: 126px;
+            }
+
+            .register-form .submit-btn {
+                width: 173%;
+                font-size:17px;
+            }
+            .iscalaform h4{
+                 font-size:18px;
+             }
+            .register-form .hero-input {
+                height: 40px;
+            }
+            .featurettes-quote {
+                line-height: 28px;
+                font-size:14px;
+            }
+            .featurespara {
+                line-height: 28px;
+                font-size:14px;
+            }
+        }
+        @media (max-width: 991px) and (min-width: 768px)
+{
+     .iscalaform
+        {
+             float: left;
+    width: 100%;
+    position: relative;
+    top: 15px;
+    /* right: -103px; */
+    left: 0px;
+    background-color: rgb(75, 33, 47);
+    padding: 20px;
+        }
+     .iscalaform h4{
+     font-size:18px;
+ }
+ .iscalaform p
+ {
+     font-size:12px;
+ }
+  .featurettes-quote
+            {
+                font-size:14px;
+            }
+  .featurespara
+            {
+                font-size:17px;
+            }
+
+}
+@media (max-width: 767px) and (min-width: 640px)
+{
+ .iscalaform
+        { float: left;
+    width: 100%;
+    position: relative;
+    top: 15px;
+    /* right: -103px; */
+    left: 0px;
+    background-color: rgb(75, 33, 47);
+    padding: 20px;
+        }
+ .iscalaform h4{
+     font-size:18px;
+ }
+ .iscalaform p
+ {
+     font-size:12px;
+ }
+  .featurettes-quote
+            {
+                font-size:14px;
+            }
+  .featurespara
+            {
+                font-size:17px;
+            }
+  .banner-top
+  {
+      padding-top:44px;
+  }
+ header
+  {
+      top:-10px;
+  }
+  .header-bg-color
+{
+    background:#333;
+}
+}
+@media (max-width: 639px) and (min-width: 480px)
+{
+ .iscalaform
+        {
+            float: left;
+    width: 100%;
+    position: relative;
+    top: 15px;
+    /* right: -103px; */
+    left: 0px;
+    background-color: rgb(75, 33, 47);
+    padding: 20px;
+        }
+ .iscalaform h4{
+     font-size:18px;
+ }
+ .iscalaform p
+ {
+     font-size:12px;
+ }
+  .featurettes-quote
+            {
+                font-size:14px;
+            }
+  .featurespara
+            {
+                font-size:14px;
+            }
+  .banner-top
+  {
+      padding-top:44px;
+  }
+  header
+  {
+      top:-10px;
+  }
+  .header-bg-color
+{
+    background:#333;
+}
+}
+@media (max-width: 479px) and (min-width: 320px)
+{
+ .iscalaform
+        {
+            float: left;
+    width: 100%;
+    position: relative;
+    top: 15px;
+    /* right: -103px; */
+    left: 0px;
+    background-color: rgb(75, 33, 47);
+    padding: 20px;
+        }
+ .iscalaform h4{
+     font-size:18px;
+ }
+ .iscalaform p
+ {
+     font-size:12px;
+ }
+  .featurettes-quote
+            {
+                font-size:14px;
+                line-height:29px;
+            }
+  .featurespara
+  {
+      line-height:21px;
+      font-size:13px;
+  }
+  .banner-top
+  {
+      padding-top:44px;
+  }
+ header
+  {
+      top:-10px;
+  }
+  .header-bg-color
+{
+    background:#333;
+}
+}
+
+
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+ 
+  
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    
+   
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <!-- SmoothScroll -->
+    <script src="../Assets/Iscala/js/SmoothScroll.min.js"></script>
+    <!-- Classie -->
+    <script src="../Assets/Iscala/js/classie.min.js"></script>
+    <!-- One Page Nav -->
+    <script src="../Assets/Iscala/js/jquery.nav.min.js"></script>
+ <!-- Swipebox -->
+    <script src="../Assets/Iscala/js/jquery.swipebox.min.js"></script>
+    <!-- Expandable Gallery on 2 Block Column -->
+    <script src="../Assets/Iscala/js/expandableGallery.min.js"></script>
+    <!-- Isotope JS -->
+    <script src="../Assets/Iscala/js/rheincsiscala.js"></script>
+    <!-- Headhesive -->
+    <script src="../Assets/Iscala/js/headhesive.min.js"></script>
+    <!-- ScrollReveal -->
+    <script src="../Assets/Iscala/js/scrollReveal.min.js"></script>
+    <!-- Custom JS -->
+    <script src="../Assets/Iscala/js/rheincsiscala-v2.js"></script>
+    <!-- Expandable Navigation Menu -->
+    <script src="../Assets/Iscala/js/expandableNav.min.js"></script>
+   
+    <!-- Begin Analytics Code -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108253059-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-108253059-1');
+  gtag('config', 'UA-108253059-1', { 'anonymize_ip': true });
+</script>
+    <!-- End OF GOOGLE ANALYTICS CODE -->
+    <script src="../Assets/Iscala/js/mulitselectbootstrap.js"></script>
+   <script type="text/javascript">
+$(function() {
+    $('.multiselect-ui').multiselect({
+        includeSelectAllOption: true
+    });
+});
+       </script>
+     <script type="text/javascript">
+    function IsEmailValid(a) {
+            if ("" == a) return !0; var e = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+            return e.test(a)
+        }
+		   var email1, name, mobile;
+        $(document).ready(function () {
+            var _rootUrl = $("#hdfRootUrl").val();
+            $('#hero-submit').click(function () {
+                flagiscala = true;
+                if ($('#hero-fname').val() == '') {
+                    $('.showErrorMsg').text("Please enter your name"); $('#hero-fname').focus(); return false;
+                    flagiscala = false;
+                }
+                if ($('#hero-email').val() == '') {
+                    $('.showErrorMsg').text("Ensure work email!."); $('#hero-email').focus(); return false;
+                    flagiscala = false;
+                }
+                var email = $('#hero-email').val();
+                var a = email.split('@');
+                if (a[1].toLowerCase() == 'gmail.com' || a[1].toLowerCase() == 'live.com' || a[1].toLowerCase() == 'live.in' || a[1].toLowerCase() == 'outlook.com' || a[1].toLowerCase() == 'yahoo.com' || a[1].toLowerCase() == 'zoho.com' || a[1].toLowerCase() == 'yandex.com' || a[1].toLowerCase() == 'aol.com' || a[1].toLowerCase() == 'mail.com' || a[1].toLowerCase() == 'inbox.com') {
+                    $('.showErrorMsg').text("Please provide us with your work e-mail and not your personal e-mail!.");
+                    $('#hero-email').focus(); return false;
+                    flagiscala = false;
+                }
+                
+                if ($('#hero-phone').val() != '' && $('#hero-phone').val().length < 10) {
+                    $('.showErrorMsg').text("Ensure mobile number!."); $('#hero-phone').focus(); return false;
+                    flagiscala = false;
+                }
+
+                var checks = new Array();
+                $('input[type=checkbox]:checked').each(function () {
+
+                    checks.push($(this).val());
+
+                });
+
+                var checked = $("input[type=checkbox]:checked").length;
+
+                if (!checked) {
+                    $('.showErrorMsg').text("Select any one option.");
+                    return false;
+                    flagiscala = false;
+                }
+				    email1 = $('#hero-email').val();
+                mobile = $('#hero-phone').val();
+                name = $('#hero-fname').val();
+                // eof email validation 
+                //leadsquared
+                if (flagiscala = true)
+                {
+                    saveleadiscala();
+                }
+                //sending email data through ajax call
+
+                var Data = {
+                    firstname: $('#hero-fname').val(),
+                    email: $('#hero-email').val(),
+                    phone: $('#hero-phone').val(),
+                    ServiceType: "Epicor iScala Hospitality Industry Software",
+                    CheckBoxValues: checks
+                };
+                $.ajax({
+                    type: 'POST',
+                    url: "/" + "api/Landing/Campaigns",
+                    data: Data,
+                    cache: false,
+                    //contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    success: function (response) {
+
+                        if (response.toLowerCase() == "success") {
+                            //$('#myModal').modal('show');
+                            //var a = $('#hero-fname').val();
+                            // $('.name').text(a);
+                            $('#register-form').trigger("reset");
+                            //$(".country").val('');
+                            $(':input').not(':button, :submit, :reset, :hidden, :checkbox, :radio').val('');
+                            $(':checkbox, :radio').prop('checked', false);
+                            // $('.country').val(0);
+                            $(".showErrorMsg").text(" ");
+                            //$('.multiselect-ui').multiselect('refresh');
+                            window.location.href = "/rheinbrucke-solutions/Thankyou-iScala";
+                        }
+                    }
+                });
+                //eof sending email data through ajax call               
+            });           
+        });
+
+        
+        $('.multiselect-ui').multiselect({
+            nonSelectedText: 'Select options'
+
+        });
+        </script>
+       <%--Lead square implementation--%>
+<script type="text/javascript" src="https://web.mxradon.com/t/FormTracker.js"></script>
+
+                    <script type="text/javascript">                         
+                        function saveleadiscala() {
+                            var fieldMapping = {
+                                MXHOrgCode: "17537",
+                                MXHLandingPageId: "03869e96-cdc1-11e7-9042-22000aa79843",
+                                MXHAsc: "",
+
+                                FirstName: "heroFname",
+                                EmailAddress: "heroEmail",
+                                Mobile: "heroPhone",
+                                mx_Iscala_NewDropdown: "select-options"
+                            };
+                            var onSuccess = function (data) {                   
+                           data = $.parseJSON(data)
+                                var logData = {
+                                    Name: name,
+                                    FormPID: data.PId,
+                                    Email: email1,
+                                    Mobile: mobile,
+                                    FormStatus: data.Status,
+                                    ServiceType: "Rheincs Iscala - Register Page"
+                                }
+                                $.ajax({
+                                    type: "POST",
+                                    url: "/" + "api/Admin/LeadSquaredLog",
+                                    data: JSON.stringify(logData),
+                                    contentType: "application/json; charset=utf-8",
+                                    dataType: "json",
+                                    failure: function (response) {
+                                        alert(response.d);
+                                    }
+
+                                });
+                                console.log(data);
+                            }
+                            var onError = function (data) {              
+                            data = $.parseJSON(data)
+                                var logData = {
+                                    Name: name,
+                                    FormPID: data.PId,
+                                    Email: email1,
+                                    Mobile: mobile,
+                                    FormStatus: data.Status,
+                                    ServiceType: "Rheincs Iscala - Register Page"
+                                }
+                                $.ajax({
+                                    type: "POST",
+                                    url: "/" + "api/Admin/LeadSquaredLog",
+                                    data: JSON.stringify(logData),
+                                    contentType: "application/json; charset=utf-8",
+                                    dataType: "json",
+                                    failure: function (response) {
+                                        alert(response.d);
+                                    }
+
+                                });
+                                console.log(data);
+                            }
+                            new LSQForm().captureLead(fieldMapping, "register-form",
+                            {
+                            onSuccess: onSuccess,   //optional
+                            onError: onError,       //optional
+                            });
+};
+  </script>
+     <%--eof Lead square implementation--%>
+   
+</body>
+   
+</html>

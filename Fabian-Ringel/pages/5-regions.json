@@ -1,0 +1,52 @@
+[
+  {
+    "x": 88,
+    "y": 580,
+    "width": 55,
+    "height": 12,
+    "class": "link",
+    "data": {
+      "url": "https://www.rheincs.com"
+    }
+  },
+  {
+    "x": 60,
+    "y": 330,
+    "width": 150,
+    "height": 120,
+    "class": "link",
+    "data": {
+      "url": "https://www.youtube.com/watch?v=MmXOpBXQdZM"
+    }
+  },
+  {
+    "x": 250,
+    "y": 330,
+    "width": 150,
+    "height": 120,
+    "class": "link",
+    "data": {
+      "url": "https://www.youtube.com/watch?v=C6sDlZCKIA4"
+    }
+  },
+  {
+    "x": 60,
+    "y": 458,
+    "width": 150,
+    "height": 120,
+    "class": "link",
+    "data": {
+      "url": "https://www.youtube.com/watch?v=B-XFRUeSlUs"
+    }
+  },
+  {
+    "x": 243,
+    "y": 456,
+    "width": 150,
+    "height": 120,
+    "class": "link",
+    "data": {
+      "url": "https://www.youtube.com/watch?v=yvtX2yqWxVg"
+    }
+  }
+]

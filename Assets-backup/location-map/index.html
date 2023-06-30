@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>World wide Location Map</title>
+<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+<!--<link href="js/tooltip.css" rel="stylesheet" type="text/css" />
+<script src="js/tooltip.js" type="text/javascript"></script>-->
+<style>
+body{
+	width:100%;
+	margin:0;
+}
+#locations{
+	margin:0 auto;
+	width:1098px;
+	height:483px;
+	max-width:100%;
+	max-height:100%;
+	position:relative;
+	overflow:auto;
+}
+
+#locations img.map{
+	/*max-width:100%;*/
+	position:absolute;
+	z-index:100;
+}
+
+.location-marker{
+	position:absolute;	
+	z-index:1000;
+	display:block;
+	font-family: 'Raleway', sans-serif;
+	font-size:12px;
+	cursor:pointer;
+}
+
+.location-marker img,
+.location-marker span{
+	float:left;
+	
+}
+
+.location-marker span{
+	margin:0;
+	line-height:0.8em;
+	padding:0;
+	position:relative;
+	color:#000000;
+	text-decoration:none;
+}
+
+.location-marker.usa{
+	top:203px;
+	left:273px;
+}
+
+.location-marker.netherlands{
+	top:162px;
+	left:455px;
+}
+
+.location-marker.germany{
+	top:169px;
+	left:546px;
+}
+
+.location-marker.uae{
+	top:270px;
+	left:684px;
+}
+
+.location-marker.india{
+	top:306px;
+	left:761px;
+}
+
+
+</style>
+<!--<link type="text/css" href="css/style.css" rel="stylesheet"  media="screen" />-->
+<link type="text/css" href="css/atooltip.css" rel="stylesheet"  media="screen" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.atooltip.js"></script>
+<script type="text/javascript">
+	window.onload=function(){for(var t=document.getElementsByTagName("a"),e=0;e<t.length;e++){var i=t[e];i.onmouseover=function(){this.setAttribute("org_title",this.title),this.title=""},i.onmouseout=function(){this.title=this.getAttribute("org_title")}}};		$(function(){ 				
+				$('a.clickTip').aToolTip({
+		    		clickIt: true,		    		
+				});	
+			}); 
+		</script>
+</head>
+
+<body>
+<div id="locations">
+<img class="map" src="images/world-map-bg.jpg" alt="World Wide Locations - RheinBrucke" />
+<span class="location-marker usa">
+	<a class="clickTip exampleTip" title="<h3>USA</h3>3815 Chippenham Road,<br />Mechanicsburg,<br>PA 17050, United States<br />  tel: +1 717 265 3937<br /> email: <a href='mailto:info@rheincs.com'>info@rheincs.com</a>"><img src="images/location-marker.png"  /> <span>USA</span></a>
+</span>
+
+<span class="location-marker netherlands"><a class="clickTip exampleTip" title="<h3>Netherlands</h3> Stationsplein <br>8K NL-6221BT, <br>Maastricht, Netherlands <br>tel: +31(0)43 7999 045 <br>fax: +31(0)43 7999 333<br>email: <a href='mailto:info@rheincs.com'>info@rheincs.com</a>"><span>Netherlands</span> <img src="images/location-marker.png"  /></a>
+</span>
+
+<span class="location-marker germany">
+<a class="clickTip exampleTip" title="<h3>Germany</h3>Kranhaus 1, Im Zollhafen 18 <br /> 50678 Köln, Germany <br /> tel: +49 (0) 221 650 60 608 <br /> fax: +49 (0) 221 650 60 500 <br /> email: <a href='mailto:info@rheincs.com'>info@rheincs.com</a>"><img src="images/location-marker.png"  /> <span>Germany</span></a>
+</span>
+
+<span class="location-marker uae">
+<a class="clickTip exampleTip" title="<h3>UAE</h3>Unit No. 30-01-949, <br /> Floor No. 1, Bldg No. 3,<br />  Plot No. 550-554 <br /> J&amp;G, DMCC, Dubai <br /> United Arab Emirates <br /> tel: +971 52 639 6201 <br /> email: <a href='mailto:info@rheincs.com'>info@rheincs.com</a>"><img src="images/location-marker.png"  /> <span>UAE</span></a>
+</span>
+
+<span class="location-marker india">
+<a class="clickTip exampleTip" title="<h3>India</h3>No. 45, 5th Cross Street, <br /> Kalaimagal Nagar, <br /> Ekkatuthangal, Chennai, <br /> Tamil Nadu, India 600 032 <br /> tel: +91 44 4931 5555 <br />fax: +91 44 4931 5566 <br /> email: <a href='mailto:info@rheincs.com'>info@rheincs.com</a>"><img src="images/location-marker.png"  /> <span>India</span></a>
+</span>
+
+</div>
+
+</body>
+</html>

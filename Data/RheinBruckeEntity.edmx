@@ -1,0 +1,844 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="RheinBruckeDevModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'RheinBruckeEN.dbo.Brochure' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="Brochure">
+          <Key>
+            <PropertyRef Name="BrochureId" />
+          </Key>
+          <Property Name="BrochureId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="FilterName" Type="nvarchar" MaxLength="255" />
+          <Property Name="DocumentFileName" Type="nvarchar(max)" />
+          <Property Name="Thumbnail" Type="nvarchar(max)" />
+          <Property Name="Description" Type="nvarchar(max)" />
+          <Property Name="ImageURL" Type="nvarchar(max)" />
+          <Property Name="DisplayOrder" Type="int" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'RheinBruckeEN.dbo.CaseStudies' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="CaseStudies">
+          <Key>
+            <PropertyRef Name="CaseStudyId" />
+          </Key>
+          <Property Name="CaseStudyId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="FilterName" Type="varchar" MaxLength="255" />
+          <Property Name="DocumentFileName" Type="nvarchar(max)" />
+          <Property Name="Thumbnail" Type="nvarchar(max)" />
+          <Property Name="Description" Type="nvarchar(max)" />
+          <Property Name="ImageURL" Type="nvarchar(max)" />
+          <Property Name="NotDuplicate" Type="bit" />
+        </EntityType>
+        <EntityType Name="EmailRequest">
+          <Key>
+            <PropertyRef Name="EmailRequestID" />
+          </Key>
+          <Property Name="EmailRequestID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="50" />
+          <Property Name="Email" Type="nvarchar" MaxLength="50" />
+          <Property Name="Phone" Type="nvarchar" MaxLength="50" />
+          <Property Name="Message" Type="nvarchar(max)" />
+          <Property Name="EmailTypeID" Type="int" />
+          <Property Name="CreatedOn" Type="datetime" />
+          <Property Name="ContactUsUrl" Type="nvarchar" MaxLength="150" />
+          <Property Name="Services" Type="nvarchar" MaxLength="150" />
+        </EntityType>
+        <EntityType Name="EmailType">
+          <Key>
+            <PropertyRef Name="EmailTypeID" />
+          </Key>
+          <Property Name="EmailTypeID" Type="int" Nullable="false" />
+          <Property Name="EmailTypeName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Status" Type="bit" />
+          <Property Name="CreatedOn" Type="datetime" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'RheinBruckeEN.dbo.FactSheet' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="FactSheet">
+          <Key>
+            <PropertyRef Name="FactSheetId" />
+          </Key>
+          <Property Name="FactSheetId" Type="int" Nullable="false" />
+          <Property Name="FilterName" Type="varchar" MaxLength="255" />
+          <Property Name="DocumentFileName" Type="nvarchar(max)" />
+          <Property Name="Thumbnail" Type="nvarchar(max)" />
+          <Property Name="Description" Type="nvarchar(max)" />
+          <Property Name="ImageURL" Type="nvarchar(max)" />
+          <Property Name="NotDuplicate" Type="bit" />
+          <Property Name="DisplayOrder" Type="int" />
+        </EntityType>
+        <EntityType Name="JobApplication">
+          <Key>
+            <PropertyRef Name="JobRequestId" />
+          </Key>
+          <Property Name="JobRequestId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar(max)" />
+          <Property Name="MobileNo" Type="nvarchar" MaxLength="50" />
+          <Property Name="EmailId" Type="nvarchar" MaxLength="100" />
+          <Property Name="JobTitle" Type="nvarchar(max)" />
+          <Property Name="DocumentName" Type="nvarchar(max)" />
+          <Property Name="CoverLetter" Type="nvarchar(max)" />
+          <Property Name="CreatedOn" Type="datetime" />
+        </EntityType>
+        <EntityType Name="JobList">
+          <Key>
+            <PropertyRef Name="JobID" />
+          </Key>
+          <Property Name="JobID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="POTR" Type="nvarchar(max)" />
+          <Property Name="Responsiblities" Type="nvarchar(max)" />
+          <Property Name="Qualification" Type="nvarchar(max)" />
+          <Property Name="Location" Type="nvarchar" MaxLength="150" />
+          <Property Name="CreatedBy" Type="nvarchar" MaxLength="200" />
+          <Property Name="CreatedDate" Type="datetime" />
+          <Property Name="ModifiedDate" Type="datetime" />
+          <Property Name="Field" Type="nvarchar" MaxLength="100" />
+          <Property Name="JobTitle" Type="nvarchar" MaxLength="150" />
+          <Property Name="Priority" Type="int" />
+          <Property Name="UrlDetails" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="LandingPage">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="FirstName" Type="nvarchar" MaxLength="50" />
+          <Property Name="LastName" Type="nvarchar" MaxLength="50" />
+          <Property Name="Company" Type="nvarchar" MaxLength="50" />
+          <Property Name="Email" Type="nvarchar" MaxLength="50" />
+          <Property Name="Phone" Type="varchar" MaxLength="50" />
+          <Property Name="ServiceType" Type="nvarchar" MaxLength="50" />
+          <Property Name="CreatedDate" Type="datetime" />
+          <Property Name="Title" Type="nvarchar" MaxLength="50" />
+          <Property Name="Country" Type="nvarchar" MaxLength="50" />
+          <Property Name="UpgradeProductIntererst" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="LeadSquareLog">
+          <Key>
+            <PropertyRef Name="LogId" />
+          </Key>
+          <Property Name="LogId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="FormPID" Type="uniqueidentifier" />
+          <Property Name="FormStatus" Type="nvarchar" MaxLength="255" />
+          <Property Name="FormMsg" Type="nvarchar(max)" />
+          <Property Name="FormAction" Type="nvarchar(max)" />
+          <Property Name="Name" Type="nvarchar" MaxLength="255" />
+          <Property Name="Email" Type="nvarchar" MaxLength="255" />
+          <Property Name="Mobile" Type="nvarchar" MaxLength="255" />
+          <Property Name="ServiceType" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="MailSettings">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="LoginName" Type="nvarchar(max)" />
+          <Property Name="Password" Type="nvarchar(max)" />
+          <Property Name="Port" Type="nvarchar" MaxLength="50" />
+          <Property Name="CustomSMTP" Type="nvarchar" MaxLength="50" />
+          <Property Name="EnableSSL" Type="bit" />
+          <Property Name="Relay" Type="bit" />
+          <Property Name="ContactUsMailId" Type="nvarchar" MaxLength="100" />
+          <Property Name="JobMailId" Type="nvarchar" MaxLength="100" />
+          <Property Name="LandingMailId" Type="varchar" MaxLength="100" />
+          <Property Name="EmailId" Type="varchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="NewsEvents">
+          <Key>
+            <PropertyRef Name="NewsAndEventsID" />
+          </Key>
+          <Property Name="NewsAndEventsID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Title" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="Description" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="ThumbnailImage" Type="nvarchar" MaxLength="250" />
+          <Property Name="NewsImage" Type="nvarchar" MaxLength="250" />
+          <Property Name="MetaTagDescription" Type="nvarchar(max)" />
+          <Property Name="MetaTagKeyword" Type="nvarchar" MaxLength="250" />
+          <Property Name="NewsEventsDate" Type="datetime" />
+          <Property Name="Status" Type="bit" />
+          <Property Name="ThumbnailPositionLeft" Type="bit" />
+          <Property Name="CreatedOn" Type="datetime" />
+          <Property Name="UrlDetails" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="RICNews">
+          <Key>
+            <PropertyRef Name="NewsID" />
+          </Key>
+          <Property Name="NewsID" Type="int" Nullable="false" />
+          <Property Name="Title" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="Description" Type="nvarchar(max)" />
+          <Property Name="DetailedDescription" Type="nvarchar(max)" />
+          <Property Name="ThumbnailImage" Type="nvarchar" MaxLength="250" />
+          <Property Name="NewsImage" Type="nvarchar" MaxLength="250" />
+          <Property Name="BannerImage" Type="nvarchar" MaxLength="250" />
+          <Property Name="MetaTagDescription" Type="nvarchar(max)" />
+          <Property Name="MetaTagKeyword" Type="nvarchar" MaxLength="250" />
+          <Property Name="NewsEventsDate" Type="datetime" />
+          <Property Name="Status" Type="bit" />
+          <Property Name="CreatedOn" Type="datetime" />
+          <Property Name="UrlDetails" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="Testimonial">
+          <Key>
+            <PropertyRef Name="TestimonialID" />
+          </Key>
+          <Property Name="TestimonialID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="100" />
+          <Property Name="Content" Type="nvarchar(max)" />
+          <Property Name="CompanyName" Type="nvarchar" MaxLength="100" />
+          <Property Name="Designation" Type="nvarchar" MaxLength="100" />
+          <Property Name="Address" Type="nvarchar" MaxLength="250" />
+          <Property Name="ImageName" Type="nvarchar" MaxLength="100" />
+          <Property Name="Status" Type="bit" />
+          <Property Name="CreatedOn" Type="datetime" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'RheinBruckeEN.dbo.UserRoles' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="UserRoles">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="UserId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="UserRole" Type="nvarchar" MaxLength="255" />
+          <Property Name="EmailId" Type="nvarchar" MaxLength="255" />
+          <Property Name="Password" Type="nvarchar(max)" />
+          <Property Name="Department" Type="varchar" MaxLength="255" />
+          <Property Name="Status" Type="bit" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'RheinBruckeEN.dbo.WhitePapers' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="WhitePapers">
+          <Key>
+            <PropertyRef Name="WhitePaperId" />
+          </Key>
+          <Property Name="WhitePaperId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="FilterName" Type="varchar" MaxLength="255" />
+          <Property Name="DocumentFileName" Type="nvarchar(max)" />
+          <Property Name="Thumbnail" Type="nvarchar(max)" />
+          <Property Name="Description" Type="nvarchar(max)" />
+          <Property Name="ImageURL" Type="nvarchar(max)" />
+          <Property Name="NotDuplicate" Type="bit" />
+          <Property Name="DisplayOrder" Type="int" />
+        </EntityType>
+        <Association Name="FK__EmailRequ__Email__30F848ED">
+          <End Role="EmailType" Type="Self.EmailType" Multiplicity="0..1" />
+          <End Role="EmailRequest" Type="Self.EmailRequest" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EmailType">
+              <PropertyRef Name="EmailTypeID" />
+            </Principal>
+            <Dependent Role="EmailRequest">
+              <PropertyRef Name="EmailTypeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__EmailRequ__Email__31EC6D26">
+          <End Role="EmailType" Type="Self.EmailType" Multiplicity="0..1" />
+          <End Role="EmailRequest" Type="Self.EmailRequest" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EmailType">
+              <PropertyRef Name="EmailTypeID" />
+            </Principal>
+            <Dependent Role="EmailRequest">
+              <PropertyRef Name="EmailTypeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__EmailRequ__Email__32E0915F">
+          <End Role="EmailType" Type="Self.EmailType" Multiplicity="0..1" />
+          <End Role="EmailRequest" Type="Self.EmailRequest" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EmailType">
+              <PropertyRef Name="EmailTypeID" />
+            </Principal>
+            <Dependent Role="EmailRequest">
+              <PropertyRef Name="EmailTypeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="RheinBruckeDevModelStoreContainer">
+          <EntitySet Name="EmailRequest" EntityType="Self.EmailRequest" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="EmailType" EntityType="Self.EmailType" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="JobApplication" EntityType="Self.JobApplication" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="JobList" EntityType="Self.JobList" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="LandingPage" EntityType="Self.LandingPage" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="LeadSquareLog" EntityType="Self.LeadSquareLog" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="MailSettings" EntityType="Self.MailSettings" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="NewsEvents" EntityType="Self.NewsEvents" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="RICNews" EntityType="Self.RICNews" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Testimonial" EntityType="Self.Testimonial" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Brochure" EntityType="Self.Brochure" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+[Brochure].[BrochureId] AS [BrochureId], 
+[Brochure].[FilterName] AS [FilterName], 
+[Brochure].[DocumentFileName] AS [DocumentFileName], 
+[Brochure].[Thumbnail] AS [Thumbnail], 
+[Brochure].[Description] AS [Description], 
+[Brochure].[ImageURL] AS [ImageURL], 
+[Brochure].[DisplayOrder] AS [DisplayOrder]
+FROM [dbo].[Brochure] AS [Brochure]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="CaseStudies" EntityType="Self.CaseStudies" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+[CaseStudies].[CaseStudyId] AS [CaseStudyId], 
+[CaseStudies].[FilterName] AS [FilterName], 
+[CaseStudies].[DocumentFileName] AS [DocumentFileName], 
+[CaseStudies].[Thumbnail] AS [Thumbnail], 
+[CaseStudies].[Description] AS [Description], 
+[CaseStudies].[ImageURL] AS [ImageURL], 
+[CaseStudies].[NotDuplicate] AS [NotDuplicate]
+FROM [dbo].[CaseStudies] AS [CaseStudies]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="FactSheet" EntityType="Self.FactSheet" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+[FactSheet].[FactSheetId] AS [FactSheetId], 
+[FactSheet].[FilterName] AS [FilterName], 
+[FactSheet].[DocumentFileName] AS [DocumentFileName], 
+[FactSheet].[Thumbnail] AS [Thumbnail], 
+[FactSheet].[Description] AS [Description], 
+[FactSheet].[ImageURL] AS [ImageURL], 
+[FactSheet].[NotDuplicate] AS [NotDuplicate], 
+[FactSheet].[DisplayOrder] AS [DisplayOrder]
+FROM [dbo].[FactSheet] AS [FactSheet]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="UserRoles" EntityType="Self.UserRoles" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+[UserRoles].[UserId] AS [UserId], 
+[UserRoles].[UserRole] AS [UserRole], 
+[UserRoles].[EmailId] AS [EmailId], 
+[UserRoles].[Password] AS [Password], 
+[UserRoles].[Department] AS [Department], 
+[UserRoles].[Status] AS [Status]
+FROM [dbo].[UserRoles] AS [UserRoles]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="WhitePapers" EntityType="Self.WhitePapers" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+[WhitePapers].[WhitePaperId] AS [WhitePaperId], 
+[WhitePapers].[FilterName] AS [FilterName], 
+[WhitePapers].[DocumentFileName] AS [DocumentFileName], 
+[WhitePapers].[Thumbnail] AS [Thumbnail], 
+[WhitePapers].[Description] AS [Description], 
+[WhitePapers].[ImageURL] AS [ImageURL], 
+[WhitePapers].[NotDuplicate] AS [NotDuplicate], 
+[WhitePapers].[DisplayOrder] AS [DisplayOrder]
+FROM [dbo].[WhitePapers] AS [WhitePapers]</DefiningQuery>
+          </EntitySet>
+          <AssociationSet Name="FK__EmailRequ__Email__30F848ED" Association="Self.FK__EmailRequ__Email__30F848ED">
+            <End Role="EmailType" EntitySet="EmailType" />
+            <End Role="EmailRequest" EntitySet="EmailRequest" />
+          </AssociationSet>
+          <AssociationSet Name="FK__EmailRequ__Email__31EC6D26" Association="Self.FK__EmailRequ__Email__31EC6D26">
+            <End Role="EmailType" EntitySet="EmailType" />
+            <End Role="EmailRequest" EntitySet="EmailRequest" />
+          </AssociationSet>
+          <AssociationSet Name="FK__EmailRequ__Email__32E0915F" Association="Self.FK__EmailRequ__Email__32E0915F">
+            <End Role="EmailType" EntitySet="EmailType" />
+            <End Role="EmailRequest" EntitySet="EmailRequest" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="RheinBruckeDevModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="RheinBruckeDevEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="EmailRequests" EntityType="RheinBruckeDevModel.EmailRequest" />
+          <EntitySet Name="EmailTypes" EntityType="RheinBruckeDevModel.EmailType" />
+          <AssociationSet Name="FK__EmailRequ__Email__15502E78" Association="RheinBruckeDevModel.FK__EmailRequ__Email__15502E78">
+            <End Role="EmailType" EntitySet="EmailTypes" />
+            <End Role="EmailRequest" EntitySet="EmailRequests" />
+          </AssociationSet>
+          <EntitySet Name="Testimonials" EntityType="RheinBruckeDevModel.Testimonial" />
+          <EntitySet Name="JobLists" EntityType="RheinBruckeDevModel.JobList" />
+          <EntitySet Name="NewsEvents" EntityType="RheinBruckeDevModel.NewsEvent" />
+          <EntitySet Name="JobApplications" EntityType="RheinBruckeDevModel.JobApplication" />
+          <EntitySet Name="LandingPages" EntityType="RheinBruckeDevModel.LandingPage" />
+          <EntitySet Name="MailSettings" EntityType="RheinBruckeDevModel.MailSetting" />
+          <EntitySet Name="Brochures" EntityType="RheinBruckeDevModel.Brochure" />
+          <EntitySet Name="CaseStudies" EntityType="RheinBruckeDevModel.CaseStudy" />
+          <EntitySet Name="WhitePapers" EntityType="RheinBruckeDevModel.WhitePaper" />
+          <EntitySet Name="UserRoles" EntityType="RheinBruckeDevModel.UserRole" />
+          <EntitySet Name="RICNews" EntityType="RheinBruckeDevModel.RICNew" />
+          <EntitySet Name="FactSheets" EntityType="RheinBruckeDevModel.FactSheet" />
+          <EntitySet Name="LeadSquareLogs" EntityType="RheinBruckeDevModel.LeadSquareLog" />
+        </EntityContainer>
+        <EntityType Name="EmailRequest">
+          <Key>
+            <PropertyRef Name="EmailRequestID" />
+          </Key>
+          <Property Name="EmailRequestID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Phone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Message" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="EmailTypeID" Type="Int32" />
+          <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="EmailType" Relationship="RheinBruckeDevModel.FK__EmailRequ__Email__15502E78" FromRole="EmailRequest" ToRole="EmailType" />
+          <Property Name="ContactUsUrl" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="Services" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="EmailType">
+          <Key>
+            <PropertyRef Name="EmailTypeID" />
+          </Key>
+          <Property Name="EmailTypeID" Type="Int32" Nullable="false" />
+          <Property Name="EmailTypeName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Status" Type="Boolean" />
+          <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="EmailRequests" Relationship="RheinBruckeDevModel.FK__EmailRequ__Email__15502E78" FromRole="EmailType" ToRole="EmailRequest" />
+        </EntityType>
+        <Association Name="FK__EmailRequ__Email__15502E78">
+          <End Type="RheinBruckeDevModel.EmailType" Role="EmailType" Multiplicity="0..1" />
+          <End Type="RheinBruckeDevModel.EmailRequest" Role="EmailRequest" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EmailType">
+              <PropertyRef Name="EmailTypeID" />
+            </Principal>
+            <Dependent Role="EmailRequest">
+              <PropertyRef Name="EmailTypeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="Testimonial">
+          <Key>
+            <PropertyRef Name="TestimonialID" />
+          </Key>
+          <Property Name="TestimonialID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Content" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="CompanyName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Designation" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Address" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="ImageName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Status" Type="Boolean" />
+          <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="JobList">
+          <Key>
+            <PropertyRef Name="JobID" />
+          </Key>
+          <Property Name="JobID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="POTR" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Responsiblities" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Qualification" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Location" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="CreatedBy" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+          <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+          <Property Name="Field" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="JobTitle" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="Priority" Type="Int32" />
+          <Property Name="UrlDetails" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="NewsEvent">
+          <Key>
+            <PropertyRef Name="NewsAndEventsID" />
+          </Key>
+          <Property Name="NewsAndEventsID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="Description" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="ThumbnailImage" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="NewsImage" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="MetaTagDescription" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="MetaTagKeyword" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="NewsEventsDate" Type="DateTime" Precision="3" />
+          <Property Name="Status" Type="Boolean" />
+          <Property Name="ThumbnailPositionLeft" Type="Boolean" />
+          <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+          <Property Name="UrlDetails" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="JobApplication">
+          <Key>
+            <PropertyRef Name="JobRequestId" />
+          </Key>
+          <Property Name="JobRequestId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="MobileNo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="EmailId" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="JobTitle" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="DocumentName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="CoverLetter" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="LandingPage">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FirstName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="LastName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Company" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Phone" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ServiceType" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+          <Property Name="Title" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Country" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="UpgradeProductIntererst" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="MailSetting">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="LoginName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Password" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Port" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CustomSMTP" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="EnableSSL" Type="Boolean" />
+          <Property Name="Relay" Type="Boolean" />
+          <Property Name="ContactUsMailId" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="JobMailId" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="LandingMailId" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="EmailId" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Brochure">
+          <Key>
+            <PropertyRef Name="BrochureId" />
+          </Key>
+          <Property Name="BrochureId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FilterName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="DocumentFileName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Thumbnail" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="ImageURL" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="DisplayOrder" Type="Int32" />
+        </EntityType>
+        <EntityType Name="CaseStudy">
+          <Key>
+            <PropertyRef Name="CaseStudyId" />
+          </Key>
+          <Property Name="CaseStudyId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FilterName" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="DocumentFileName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Thumbnail" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="ImageURL" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="NotDuplicate" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="WhitePaper">
+          <Key>
+            <PropertyRef Name="WhitePaperId" />
+          </Key>
+          <Property Name="WhitePaperId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FilterName" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="DocumentFileName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Thumbnail" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="ImageURL" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="NotDuplicate" Type="Boolean" />
+          <Property Name="DisplayOrder" Type="Int32" />
+        </EntityType>
+        <EntityType Name="UserRole">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="UserId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UserRole1" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="EmailId" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Department" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="Status" Type="Boolean" />
+          <Property Name="Password" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="RICNew">
+          <Key>
+            <PropertyRef Name="NewsID" />
+          </Key>
+          <Property Name="NewsID" Type="Int32" Nullable="false" />
+          <Property Name="Title" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="DetailedDescription" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="ThumbnailImage" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="NewsImage" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="BannerImage" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="MetaTagDescription" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="MetaTagKeyword" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="NewsEventsDate" Type="DateTime" Precision="3" />
+          <Property Name="Status" Type="Boolean" />
+          <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+          <Property Name="UrlDetails" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="FactSheet">
+          <Key>
+            <PropertyRef Name="FactSheetId" />
+          </Key>
+          <Property Name="FactSheetId" Type="Int32" Nullable="false" />
+          <Property Name="FilterName" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="DocumentFileName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Thumbnail" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="ImageURL" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="NotDuplicate" Type="Boolean" />
+          <Property Name="DisplayOrder" Type="Int32" />
+        </EntityType>
+        <EntityType Name="LeadSquareLog">
+          <Key>
+            <PropertyRef Name="LogId" />
+          </Key>
+          <Property Name="LogId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FormPID" Type="Guid" />
+          <Property Name="FormStatus" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="FormMsg" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="FormAction" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Email" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Mobile" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="ServiceType" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="RheinBruckeDevModelStoreContainer" CdmEntityContainer="RheinBruckeDevEntities">
+          <EntitySetMapping Name="EmailRequests">
+            <EntityTypeMapping TypeName="RheinBruckeDevModel.EmailRequest">
+              <MappingFragment StoreEntitySet="EmailRequest">
+                <ScalarProperty Name="Services" ColumnName="Services" />
+                <ScalarProperty Name="ContactUsUrl" ColumnName="ContactUsUrl" />
+                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+                <ScalarProperty Name="EmailTypeID" ColumnName="EmailTypeID" />
+                <ScalarProperty Name="Message" ColumnName="Message" />
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="EmailRequestID" ColumnName="EmailRequestID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EmailTypes">
+            <EntityTypeMapping TypeName="RheinBruckeDevModel.EmailType">
+              <MappingFragment StoreEntitySet="EmailType">
+                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="EmailTypeName" ColumnName="EmailTypeName" />
+                <ScalarProperty Name="EmailTypeID" ColumnName="EmailTypeID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Testimonials">
+            <EntityTypeMapping TypeName="RheinBruckeDevModel.Testimonial">
+              <MappingFragment StoreEntitySet="Testimonial">
+                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="ImageName" ColumnName="ImageName" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="Designation" ColumnName="Designation" />
+                <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+                <ScalarProperty Name="Content" ColumnName="Content" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="TestimonialID" ColumnName="TestimonialID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="JobLists">
+            <EntityTypeMapping TypeName="RheinBruckeDevModel.JobList">
+              <MappingFragment StoreEntitySet="JobList">
+                <ScalarProperty Name="UrlDetails" ColumnName="UrlDetails" />
+                <ScalarProperty Name="Priority" ColumnName="Priority" />
+                <ScalarProperty Name="JobTitle" ColumnName="JobTitle" />
+                <ScalarProperty Name="Field" ColumnName="Field" />
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="Location" ColumnName="Location" />
+                <ScalarProperty Name="Qualification" ColumnName="Qualification" />
+                <ScalarProperty Name="Responsiblities" ColumnName="Responsiblities" />
+                <ScalarProperty Name="POTR" ColumnName="POTR" />
+                <ScalarProperty Name="JobID" ColumnName="JobID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="NewsEvents">
+            <EntityTypeMapping TypeName="RheinBruckeDevModel.NewsEvent">
+              <MappingFragment StoreEntitySet="NewsEvents">
+                <ScalarProperty Name="UrlDetails" ColumnName="UrlDetails" />
+                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+                <ScalarProperty Name="ThumbnailPositionLeft" ColumnName="ThumbnailPositionLeft" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="NewsEventsDate" ColumnName="NewsEventsDate" />
+                <ScalarProperty Name="MetaTagKeyword" ColumnName="MetaTagKeyword" />
+                <ScalarProperty Name="MetaTagDescription" ColumnName="MetaTagDescription" />
+                <ScalarProperty Name="NewsImage" ColumnName="NewsImage" />
+                <ScalarProperty Name="ThumbnailImage" ColumnName="ThumbnailImage" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="NewsAndEventsID" ColumnName="NewsAndEventsID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="JobApplications">
+            <EntityTypeMapping TypeName="RheinBruckeDevModel.JobApplication">
+              <MappingFragment StoreEntitySet="JobApplication">
+                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+                <ScalarProperty Name="CoverLetter" ColumnName="CoverLetter" />
+                <ScalarProperty Name="DocumentName" ColumnName="DocumentName" />
+                <ScalarProperty Name="JobTitle" ColumnName="JobTitle" />
+                <ScalarProperty Name="EmailId" ColumnName="EmailId" />
+                <ScalarProperty Name="MobileNo" ColumnName="MobileNo" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="JobRequestId" ColumnName="JobRequestId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="LandingPages">
+            <EntityTypeMapping TypeName="RheinBruckeDevModel.LandingPage">
+              <MappingFragment StoreEntitySet="LandingPage">
+                <ScalarProperty Name="UpgradeProductIntererst" ColumnName="UpgradeProductIntererst" />
+                <ScalarProperty Name="Country" ColumnName="Country" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="ServiceType" ColumnName="ServiceType" />
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Company" ColumnName="Company" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MailSettings">
+            <EntityTypeMapping TypeName="RheinBruckeDevModel.MailSetting">
+              <MappingFragment StoreEntitySet="MailSettings">
+                <ScalarProperty Name="EmailId" ColumnName="EmailId" />
+                <ScalarProperty Name="LandingMailId" ColumnName="LandingMailId" />
+                <ScalarProperty Name="JobMailId" ColumnName="JobMailId" />
+                <ScalarProperty Name="ContactUsMailId" ColumnName="ContactUsMailId" />
+                <ScalarProperty Name="Relay" ColumnName="Relay" />
+                <ScalarProperty Name="EnableSSL" ColumnName="EnableSSL" />
+                <ScalarProperty Name="CustomSMTP" ColumnName="CustomSMTP" />
+                <ScalarProperty Name="Port" ColumnName="Port" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="LoginName" ColumnName="LoginName" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Brochures">
+            <EntityTypeMapping TypeName="RheinBruckeDevModel.Brochure">
+              <MappingFragment StoreEntitySet="Brochure">
+                <ScalarProperty Name="DisplayOrder" ColumnName="DisplayOrder" />
+                <ScalarProperty Name="ImageURL" ColumnName="ImageURL" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Thumbnail" ColumnName="Thumbnail" />
+                <ScalarProperty Name="DocumentFileName" ColumnName="DocumentFileName" />
+                <ScalarProperty Name="FilterName" ColumnName="FilterName" />
+                <ScalarProperty Name="BrochureId" ColumnName="BrochureId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CaseStudies">
+            <EntityTypeMapping TypeName="RheinBruckeDevModel.CaseStudy">
+              <MappingFragment StoreEntitySet="CaseStudies">
+                <ScalarProperty Name="NotDuplicate" ColumnName="NotDuplicate" />
+                <ScalarProperty Name="ImageURL" ColumnName="ImageURL" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Thumbnail" ColumnName="Thumbnail" />
+                <ScalarProperty Name="DocumentFileName" ColumnName="DocumentFileName" />
+                <ScalarProperty Name="FilterName" ColumnName="FilterName" />
+                <ScalarProperty Name="CaseStudyId" ColumnName="CaseStudyId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="WhitePapers">
+            <EntityTypeMapping TypeName="RheinBruckeDevModel.WhitePaper">
+              <MappingFragment StoreEntitySet="WhitePapers">
+                <ScalarProperty Name="DisplayOrder" ColumnName="DisplayOrder" />
+                <ScalarProperty Name="NotDuplicate" ColumnName="NotDuplicate" />
+                <ScalarProperty Name="ImageURL" ColumnName="ImageURL" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Thumbnail" ColumnName="Thumbnail" />
+                <ScalarProperty Name="DocumentFileName" ColumnName="DocumentFileName" />
+                <ScalarProperty Name="FilterName" ColumnName="FilterName" />
+                <ScalarProperty Name="WhitePaperId" ColumnName="WhitePaperId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="UserRoles">
+            <EntityTypeMapping TypeName="RheinBruckeDevModel.UserRole">
+              <MappingFragment StoreEntitySet="UserRoles">
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="Department" ColumnName="Department" />
+                <ScalarProperty Name="EmailId" ColumnName="EmailId" />
+                <ScalarProperty Name="UserRole1" ColumnName="UserRole" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RICNews">
+            <EntityTypeMapping TypeName="RheinBruckeDevModel.RICNew">
+              <MappingFragment StoreEntitySet="RICNews">
+                <ScalarProperty Name="UrlDetails" ColumnName="UrlDetails" />
+                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="NewsEventsDate" ColumnName="NewsEventsDate" />
+                <ScalarProperty Name="MetaTagKeyword" ColumnName="MetaTagKeyword" />
+                <ScalarProperty Name="MetaTagDescription" ColumnName="MetaTagDescription" />
+                <ScalarProperty Name="BannerImage" ColumnName="BannerImage" />
+                <ScalarProperty Name="NewsImage" ColumnName="NewsImage" />
+                <ScalarProperty Name="ThumbnailImage" ColumnName="ThumbnailImage" />
+                <ScalarProperty Name="DetailedDescription" ColumnName="DetailedDescription" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="NewsID" ColumnName="NewsID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="FactSheets">
+            <EntityTypeMapping TypeName="RheinBruckeDevModel.FactSheet">
+              <MappingFragment StoreEntitySet="FactSheet">
+                <ScalarProperty Name="DisplayOrder" ColumnName="DisplayOrder" />
+                <ScalarProperty Name="NotDuplicate" ColumnName="NotDuplicate" />
+                <ScalarProperty Name="ImageURL" ColumnName="ImageURL" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Thumbnail" ColumnName="Thumbnail" />
+                <ScalarProperty Name="DocumentFileName" ColumnName="DocumentFileName" />
+                <ScalarProperty Name="FilterName" ColumnName="FilterName" />
+                <ScalarProperty Name="FactSheetId" ColumnName="FactSheetId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="LeadSquareLogs">
+            <EntityTypeMapping TypeName="RheinBruckeDevModel.LeadSquareLog">
+              <MappingFragment StoreEntitySet="LeadSquareLog">
+                <ScalarProperty Name="ServiceType" ColumnName="ServiceType" />
+                <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="FormAction" ColumnName="FormAction" />
+                <ScalarProperty Name="FormMsg" ColumnName="FormMsg" />
+                <ScalarProperty Name="FormStatus" ColumnName="FormStatus" />
+                <ScalarProperty Name="FormPID" ColumnName="FormPID" />
+                <ScalarProperty Name="LogId" ColumnName="LogId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="true" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

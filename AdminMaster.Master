@@ -1,0 +1,231 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminMaster.master.cs" Inherits="RheinBrucke.AdminMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Admin</title>
+
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta http-equiv="Cache-Control" content="no-cache"/>
+<meta http-equiv="Pragma" content="no-cache"/>
+<meta http-equiv="Expires" content="0"/>
+    <asp:ContentPlaceHolder runat="server" ID="headerPlaceHolder" />
+    <style>
+        body {
+            opacity: 0;
+        }
+
+        @media (max-width: 375px) {
+            #slider3 .overview li {
+                float: left;
+                margin: 0 0 0 45px;
+                padding: 0px 35px 0px 10px;
+                font-family: raleway !important;
+                line-height: 18px;
+                font-size: 14px;
+                width: 295px;
+                text-align: left;
+            }
+        }
+
+
+        @font-face {
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Raleway'), url(http://fonts.gstatic.com/s/raleway/v9/IczWvq5y_Cwwv_rBjOtT0w.woff) format('woff');
+        }
+
+        @font-face {
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Raleway'), url(http://fonts.gstatic.com/s/raleway/v9/0dTEPzkLWceF7z0koJaX1A.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        .navbar-nav > li > .dropdown-menu {
+            margin-top: -10px;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+        }
+
+
+
+        @media (min-width: 768px) {
+            .navbar-nav > li > a {
+                padding-top: 17px;
+                padding-bottom: 17px;
+            }
+        }
+
+        .mpcth-sticky-header #nav {
+            top: 0;
+            -webkit-transition-property: top, bottom;
+            -webkit-transition-duration: 0.4s;
+        }
+        .dataTables_wrapper .dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover
+        {
+                color: #fff !important;
+    border: 1px solid #979797;
+    background-color: #6f1a1a !important;
+     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #6f1a1a), color-stop(100%, #6f1a1a))!important;
+     background: -webkit-linear-gradient(top, #6f1a1a 0%, #6f1a1a 100%)!important;
+    background: -moz-linear-gradient(top, #6f1a1a 0%, #6f1a1a 100%)!important;
+    background: -ms-linear-gradient(top, #6f1a1a 0%, #6f1a1a 100%)!important;
+    background: -o-linear-gradient(top, #6f1a1a 0%, #6f1a1a 100%)!important;
+     background: linear-gradient(to bottom, #6f1a1a 0%, #6f1a1a 100%)!important;
+
+        }
+        .success-del
+        {
+            color:green; font-size:16px; margin-left:20px;
+        }
+    </style>
+    <script type="text/javascript">function load_css_async(filename) { var cb = function () { var l = document.createElement('link'); l.rel = 'stylesheet'; l.href = filename; var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h); }; var raf = requestAnimationFrame || mozRequestAnimationFrame || webkitRequestAnimationFrame || msRequestAnimationFrame; if (raf) raf(cb); else window.addEventListener('load', cb); }</script>
+    <%--<link href="http://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css" media=""/>--%> <%=cssload %>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.png" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="cbp-spmenu-push">
+    <a id="showLeft1" style="z-index: 1111;" class="slider-menu-icon mobilemenu mobilemenu-color-main-color-hover" href="#"><i class="fa fa-bars"></i></a>
+    <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s2">
+         <div class="pull-right closeicon" id="HideLeft1"><i class="fa fa-times"></i></div>
+
+        <ul class="mobilmenu-ul">
+            <li class="mobilemenu-level1"><a href="<%=rootpath %>Manage-News-and-Events" class="Level1-menu ETMenu"><span class="mobilemenu-border-bottom">News And Events</span></a></li>
+            <li class="mobilemenu-level1"><a href="<%=rootpath %>Manage-Careers" class="Level1-menu ETMenu"><span class="mobilemenu-border-bottom">Careers</span></a></li>
+            <%--<li><a href="#" class="mobilemenu-level1 Level1-menu"><span class="mobilemenu-border-bottom">Reports</span></a>
+                <ul>
+                    <li><a href="<%=rootpath %>job-report" class="Level2small-menu ETMenu"><span>Job Report</span></a></li>
+                    <li><a href="<%=rootpath %>contact-report" class="Level2small-menu ETMenu"><span>Contact Report</span></a></li>
+                    <li><a href="<%=rootpath %>Landing-report" class="Level2small-menu ETMenu"><span>Landing Report</span></a></li>
+                </ul>
+            </li>--%>
+            <%--<li class="mobilemenu-level1"><a href="<%=rootpath %>MailConfig" class="Level1-menu ETMenu"><span class="mobilemenu-border-bottom">Mail Config</span></a></li>--%>
+        </ul>
+    </nav>
+    <header id="navhead">
+        <div class="container">
+            <div class="row">
+                <div class="logo col-md-12 col-md-offset-0 navbar-static-top header-responsive-align header-box-shadow">
+                    <br />
+                    <div class="col-md-2">
+                        <a href="<%=rootpath %>Home">
+                            <img id="Img1" src="~/Assets/images/RheinBrücke-logo.jpg" runat="server" alt="RheinBrücke IT Consulting" class="ETlogo" /></a>
+                    </div>
+                    <div class="col-md-10" id="marketing">
+                        <nav class="navbar navbar-default" role="navigation" id="menu">
+                            <div class="container-fluid">
+                                <div class="collapse navbar-collapse padd-top-20 menualign" id="bs-megadropdown-tabs">
+                                    <ul class="nav navbar-nav">
+                                        <li class="menuname ETMenu"><a href="<%=rootpath %>Manage-News-and-Events?field1=%20%20marketing@rheincs.com">News And Events</a></li>
+                                        <li class="menuname ETMenu"><a href="<%=rootpath %>Manage-Careers?field1=%20%20marketing@rheincs.com">Careers</a></li>
+                                      <%--  <li class="dropdown ETMenu"><a href="#" class="dropdown-toggle menuname" data-toggle="dropdown">Report <span class="caret"></span></a>
+                                            <ul class="dropdown-menu" role="menu">
+                                                <li class="menuname-small ETMenu"><a href="<%=rootpath %>job-report">Job Report</a></li>
+                                                <li class="menuname-small ETMenu"><a href="<%=rootpath %>contact-report">Contact Report</a></li>
+                                                <li class="menuname-small ETMenu"><a href="<%=rootpath %>Landing-report">Landing Report</a></li>
+                                                
+                                            </ul>
+                                        </li>--%>
+                                       <%-- <li class="menuname ETMenu"><a href="<%=rootpath %>mail-config">Mail Config</a></li>--%>
+                                        <li class="menuname ETMenu"><a href="<%=rootpath %>">Log Out</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                     <div class="col-md-10" id="hr">
+                        <nav class="navbar navbar-default" role="navigation" id="menu">
+                            <div class="container-fluid">
+                                <div class="collapse navbar-collapse padd-top-20 menualign" id="bs-megadropdown-tabs">
+                                    <ul class="nav navbar-nav">                                     
+                                        <li class="menuname ETMenu"><a href="<%=rootpath %>Manage-Careers">Careers</a></li>                                                                             
+                                        <li class="menuname ETMenu"><a href="<%=rootpath %>">Log Out</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <%-- <div class="bg_img"></div>--%>
+    <div class="container">
+        <form id="form1" runat="server">
+            <div class="row">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+                <footer>
+                    <div class="bottomFooter">
+                        <div class="copy">
+                            <div class="pull-left leftF">© RheinBrücke IT Consulting GmbH - All Rights Reserved</div>
+                            <div class="pull-right rightF"><a href="<%=rootpath %>Sitemap">Sitemap</a> |  <a href="<%=rootpath %>Impressum.aspx">Impressum</a> | <a href="<%=rootpath %>terms">Terms</a> | <a href="<%=rootpath %>Privacy">Privacy</a></div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </footer>
+            </div>
+        </form>
+    </div>
+   
+</body>
+<%: Scripts.Render("~/assets/jsmin")%>
+<asp:contentplaceholder runat="server" id="FooterScript" />
+<%--<link href="Assets/css/rheincs.min.css" rel="stylesheet" />--%>
+ <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" />
+<link href="Assets/css/jquery.datatables.css" rel="stylesheet" />
+   <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.0/css/responsive.dataTables.min.css" />
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script src="Assets/js/bootstrap.min.js"></script>
+<script src="Assets/js/jquery.table2excel.js"></script>
+<script src="Assets/js/jquery.datatables.min.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        setTimeout(function () { $('html, body').scrollTop(0); }, 1000);
+        $("#marketing").hide();
+        $("#hr").hide();
+        var url = window.location.href;
+        var url2 = window.location.href;
+        url = url.split('%20%20')[1];
+        var url1 = url2.split('++')[1];
+        if (url == "marketing@rheincs.com" || url1 == 'marketing%40rheincs.com') {
+            $("#marketing").show();
+        }
+        else {
+            $("#hr").show();
+        }
+    });
+
+    $(function () {
+        $('#back_to_top').click(function () {
+            $('html, body').animate({
+                scrollTop: 0
+            }, 1000);
+            return false;
+        });
+    });
+
+    $(document).ready(function () {
+        $('.navbar .dropdown').hover(function () {
+            $(this).find('.dropdown-menu').first().stop(true, true).slideDown(150);
+        }, function () {
+            $(this).find('.dropdown-menu').first().stop(true, true).slideUp(105)
+        });
+
+    });
+
+    $(window).on('beforeunload', function () {
+        $(window).scrollTop(0);
+    });
+
+</script>
+
+</html>

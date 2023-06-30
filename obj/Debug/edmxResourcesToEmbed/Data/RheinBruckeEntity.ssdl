@@ -1,0 +1,338 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="RheinBruckeDevModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'RheinBruckeEN.dbo.Brochure' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Brochure">
+    <Key>
+      <PropertyRef Name="BrochureId" />
+    </Key>
+    <Property Name="BrochureId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FilterName" Type="nvarchar" MaxLength="255" />
+    <Property Name="DocumentFileName" Type="nvarchar(max)" />
+    <Property Name="Thumbnail" Type="nvarchar(max)" />
+    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="ImageURL" Type="nvarchar(max)" />
+    <Property Name="DisplayOrder" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'RheinBruckeEN.dbo.CaseStudies' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="CaseStudies">
+    <Key>
+      <PropertyRef Name="CaseStudyId" />
+    </Key>
+    <Property Name="CaseStudyId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FilterName" Type="varchar" MaxLength="255" />
+    <Property Name="DocumentFileName" Type="nvarchar(max)" />
+    <Property Name="Thumbnail" Type="nvarchar(max)" />
+    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="ImageURL" Type="nvarchar(max)" />
+    <Property Name="NotDuplicate" Type="bit" />
+  </EntityType>
+  <EntityType Name="EmailRequest">
+    <Key>
+      <PropertyRef Name="EmailRequestID" />
+    </Key>
+    <Property Name="EmailRequestID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Email" Type="nvarchar" MaxLength="50" />
+    <Property Name="Phone" Type="nvarchar" MaxLength="50" />
+    <Property Name="Message" Type="nvarchar(max)" />
+    <Property Name="EmailTypeID" Type="int" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="ContactUsUrl" Type="nvarchar" MaxLength="150" />
+    <Property Name="Services" Type="nvarchar" MaxLength="150" />
+  </EntityType>
+  <EntityType Name="EmailType">
+    <Key>
+      <PropertyRef Name="EmailTypeID" />
+    </Key>
+    <Property Name="EmailTypeID" Type="int" Nullable="false" />
+    <Property Name="EmailTypeName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Status" Type="bit" />
+    <Property Name="CreatedOn" Type="datetime" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'RheinBruckeEN.dbo.FactSheet' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="FactSheet">
+    <Key>
+      <PropertyRef Name="FactSheetId" />
+    </Key>
+    <Property Name="FactSheetId" Type="int" Nullable="false" />
+    <Property Name="FilterName" Type="varchar" MaxLength="255" />
+    <Property Name="DocumentFileName" Type="nvarchar(max)" />
+    <Property Name="Thumbnail" Type="nvarchar(max)" />
+    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="ImageURL" Type="nvarchar(max)" />
+    <Property Name="NotDuplicate" Type="bit" />
+    <Property Name="DisplayOrder" Type="int" />
+  </EntityType>
+  <EntityType Name="JobApplication">
+    <Key>
+      <PropertyRef Name="JobRequestId" />
+    </Key>
+    <Property Name="JobRequestId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" />
+    <Property Name="MobileNo" Type="nvarchar" MaxLength="50" />
+    <Property Name="EmailId" Type="nvarchar" MaxLength="100" />
+    <Property Name="JobTitle" Type="nvarchar(max)" />
+    <Property Name="DocumentName" Type="nvarchar(max)" />
+    <Property Name="CoverLetter" Type="nvarchar(max)" />
+    <Property Name="CreatedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="JobList">
+    <Key>
+      <PropertyRef Name="JobID" />
+    </Key>
+    <Property Name="JobID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="POTR" Type="nvarchar(max)" />
+    <Property Name="Responsiblities" Type="nvarchar(max)" />
+    <Property Name="Qualification" Type="nvarchar(max)" />
+    <Property Name="Location" Type="nvarchar" MaxLength="150" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="200" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="ModifiedDate" Type="datetime" />
+    <Property Name="Field" Type="nvarchar" MaxLength="100" />
+    <Property Name="JobTitle" Type="nvarchar" MaxLength="150" />
+    <Property Name="Priority" Type="int" />
+    <Property Name="UrlDetails" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="LandingPage">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FirstName" Type="nvarchar" MaxLength="50" />
+    <Property Name="LastName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Company" Type="nvarchar" MaxLength="50" />
+    <Property Name="Email" Type="nvarchar" MaxLength="50" />
+    <Property Name="Phone" Type="varchar" MaxLength="50" />
+    <Property Name="ServiceType" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="Title" Type="nvarchar" MaxLength="50" />
+    <Property Name="Country" Type="nvarchar" MaxLength="50" />
+    <Property Name="UpgradeProductIntererst" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="LeadSquareLog">
+    <Key>
+      <PropertyRef Name="LogId" />
+    </Key>
+    <Property Name="LogId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FormPID" Type="uniqueidentifier" />
+    <Property Name="FormStatus" Type="nvarchar" MaxLength="255" />
+    <Property Name="FormMsg" Type="nvarchar(max)" />
+    <Property Name="FormAction" Type="nvarchar(max)" />
+    <Property Name="Name" Type="nvarchar" MaxLength="255" />
+    <Property Name="Email" Type="nvarchar" MaxLength="255" />
+    <Property Name="Mobile" Type="nvarchar" MaxLength="255" />
+    <Property Name="ServiceType" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="MailSettings">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="LoginName" Type="nvarchar(max)" />
+    <Property Name="Password" Type="nvarchar(max)" />
+    <Property Name="Port" Type="nvarchar" MaxLength="50" />
+    <Property Name="CustomSMTP" Type="nvarchar" MaxLength="50" />
+    <Property Name="EnableSSL" Type="bit" />
+    <Property Name="Relay" Type="bit" />
+    <Property Name="ContactUsMailId" Type="nvarchar" MaxLength="100" />
+    <Property Name="JobMailId" Type="nvarchar" MaxLength="100" />
+    <Property Name="LandingMailId" Type="varchar" MaxLength="100" />
+    <Property Name="EmailId" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="NewsEvents">
+    <Key>
+      <PropertyRef Name="NewsAndEventsID" />
+    </Key>
+    <Property Name="NewsAndEventsID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="Description" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ThumbnailImage" Type="nvarchar" MaxLength="250" />
+    <Property Name="NewsImage" Type="nvarchar" MaxLength="250" />
+    <Property Name="MetaTagDescription" Type="nvarchar(max)" />
+    <Property Name="MetaTagKeyword" Type="nvarchar" MaxLength="250" />
+    <Property Name="NewsEventsDate" Type="datetime" />
+    <Property Name="Status" Type="bit" />
+    <Property Name="ThumbnailPositionLeft" Type="bit" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="UrlDetails" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="RICNews">
+    <Key>
+      <PropertyRef Name="NewsID" />
+    </Key>
+    <Property Name="NewsID" Type="int" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="DetailedDescription" Type="nvarchar(max)" />
+    <Property Name="ThumbnailImage" Type="nvarchar" MaxLength="250" />
+    <Property Name="NewsImage" Type="nvarchar" MaxLength="250" />
+    <Property Name="BannerImage" Type="nvarchar" MaxLength="250" />
+    <Property Name="MetaTagDescription" Type="nvarchar(max)" />
+    <Property Name="MetaTagKeyword" Type="nvarchar" MaxLength="250" />
+    <Property Name="NewsEventsDate" Type="datetime" />
+    <Property Name="Status" Type="bit" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="UrlDetails" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="Testimonial">
+    <Key>
+      <PropertyRef Name="TestimonialID" />
+    </Key>
+    <Property Name="TestimonialID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="100" />
+    <Property Name="Content" Type="nvarchar(max)" />
+    <Property Name="CompanyName" Type="nvarchar" MaxLength="100" />
+    <Property Name="Designation" Type="nvarchar" MaxLength="100" />
+    <Property Name="Address" Type="nvarchar" MaxLength="250" />
+    <Property Name="ImageName" Type="nvarchar" MaxLength="100" />
+    <Property Name="Status" Type="bit" />
+    <Property Name="CreatedOn" Type="datetime" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'RheinBruckeEN.dbo.UserRoles' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="UserRoles">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserRole" Type="nvarchar" MaxLength="255" />
+    <Property Name="EmailId" Type="nvarchar" MaxLength="255" />
+    <Property Name="Password" Type="nvarchar(max)" />
+    <Property Name="Department" Type="varchar" MaxLength="255" />
+    <Property Name="Status" Type="bit" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'RheinBruckeEN.dbo.WhitePapers' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="WhitePapers">
+    <Key>
+      <PropertyRef Name="WhitePaperId" />
+    </Key>
+    <Property Name="WhitePaperId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FilterName" Type="varchar" MaxLength="255" />
+    <Property Name="DocumentFileName" Type="nvarchar(max)" />
+    <Property Name="Thumbnail" Type="nvarchar(max)" />
+    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="ImageURL" Type="nvarchar(max)" />
+    <Property Name="NotDuplicate" Type="bit" />
+    <Property Name="DisplayOrder" Type="int" />
+  </EntityType>
+  <Association Name="FK__EmailRequ__Email__30F848ED">
+    <End Role="EmailType" Type="Self.EmailType" Multiplicity="0..1" />
+    <End Role="EmailRequest" Type="Self.EmailRequest" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EmailType">
+        <PropertyRef Name="EmailTypeID" />
+      </Principal>
+      <Dependent Role="EmailRequest">
+        <PropertyRef Name="EmailTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__EmailRequ__Email__31EC6D26">
+    <End Role="EmailType" Type="Self.EmailType" Multiplicity="0..1" />
+    <End Role="EmailRequest" Type="Self.EmailRequest" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EmailType">
+        <PropertyRef Name="EmailTypeID" />
+      </Principal>
+      <Dependent Role="EmailRequest">
+        <PropertyRef Name="EmailTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__EmailRequ__Email__32E0915F">
+    <End Role="EmailType" Type="Self.EmailType" Multiplicity="0..1" />
+    <End Role="EmailRequest" Type="Self.EmailRequest" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EmailType">
+        <PropertyRef Name="EmailTypeID" />
+      </Principal>
+      <Dependent Role="EmailRequest">
+        <PropertyRef Name="EmailTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="RheinBruckeDevModelStoreContainer">
+    <EntitySet Name="EmailRequest" EntityType="Self.EmailRequest" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="EmailType" EntityType="Self.EmailType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="JobApplication" EntityType="Self.JobApplication" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="JobList" EntityType="Self.JobList" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="LandingPage" EntityType="Self.LandingPage" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="LeadSquareLog" EntityType="Self.LeadSquareLog" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MailSettings" EntityType="Self.MailSettings" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="NewsEvents" EntityType="Self.NewsEvents" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RICNews" EntityType="Self.RICNews" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Testimonial" EntityType="Self.Testimonial" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Brochure" EntityType="Self.Brochure" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+[Brochure].[BrochureId] AS [BrochureId], 
+[Brochure].[FilterName] AS [FilterName], 
+[Brochure].[DocumentFileName] AS [DocumentFileName], 
+[Brochure].[Thumbnail] AS [Thumbnail], 
+[Brochure].[Description] AS [Description], 
+[Brochure].[ImageURL] AS [ImageURL], 
+[Brochure].[DisplayOrder] AS [DisplayOrder]
+FROM [dbo].[Brochure] AS [Brochure]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="CaseStudies" EntityType="Self.CaseStudies" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+[CaseStudies].[CaseStudyId] AS [CaseStudyId], 
+[CaseStudies].[FilterName] AS [FilterName], 
+[CaseStudies].[DocumentFileName] AS [DocumentFileName], 
+[CaseStudies].[Thumbnail] AS [Thumbnail], 
+[CaseStudies].[Description] AS [Description], 
+[CaseStudies].[ImageURL] AS [ImageURL], 
+[CaseStudies].[NotDuplicate] AS [NotDuplicate]
+FROM [dbo].[CaseStudies] AS [CaseStudies]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="FactSheet" EntityType="Self.FactSheet" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+[FactSheet].[FactSheetId] AS [FactSheetId], 
+[FactSheet].[FilterName] AS [FilterName], 
+[FactSheet].[DocumentFileName] AS [DocumentFileName], 
+[FactSheet].[Thumbnail] AS [Thumbnail], 
+[FactSheet].[Description] AS [Description], 
+[FactSheet].[ImageURL] AS [ImageURL], 
+[FactSheet].[NotDuplicate] AS [NotDuplicate], 
+[FactSheet].[DisplayOrder] AS [DisplayOrder]
+FROM [dbo].[FactSheet] AS [FactSheet]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="UserRoles" EntityType="Self.UserRoles" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+[UserRoles].[UserId] AS [UserId], 
+[UserRoles].[UserRole] AS [UserRole], 
+[UserRoles].[EmailId] AS [EmailId], 
+[UserRoles].[Password] AS [Password], 
+[UserRoles].[Department] AS [Department], 
+[UserRoles].[Status] AS [Status]
+FROM [dbo].[UserRoles] AS [UserRoles]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="WhitePapers" EntityType="Self.WhitePapers" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+[WhitePapers].[WhitePaperId] AS [WhitePaperId], 
+[WhitePapers].[FilterName] AS [FilterName], 
+[WhitePapers].[DocumentFileName] AS [DocumentFileName], 
+[WhitePapers].[Thumbnail] AS [Thumbnail], 
+[WhitePapers].[Description] AS [Description], 
+[WhitePapers].[ImageURL] AS [ImageURL], 
+[WhitePapers].[NotDuplicate] AS [NotDuplicate], 
+[WhitePapers].[DisplayOrder] AS [DisplayOrder]
+FROM [dbo].[WhitePapers] AS [WhitePapers]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK__EmailRequ__Email__30F848ED" Association="Self.FK__EmailRequ__Email__30F848ED">
+      <End Role="EmailType" EntitySet="EmailType" />
+      <End Role="EmailRequest" EntitySet="EmailRequest" />
+    </AssociationSet>
+    <AssociationSet Name="FK__EmailRequ__Email__31EC6D26" Association="Self.FK__EmailRequ__Email__31EC6D26">
+      <End Role="EmailType" EntitySet="EmailType" />
+      <End Role="EmailRequest" EntitySet="EmailRequest" />
+    </AssociationSet>
+    <AssociationSet Name="FK__EmailRequ__Email__32E0915F" Association="Self.FK__EmailRequ__Email__32E0915F">
+      <End Role="EmailType" EntitySet="EmailType" />
+      <End Role="EmailRequest" EntitySet="EmailRequest" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

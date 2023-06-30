@@ -1,0 +1,159 @@
+/* Tiny Carousel */
+#slider1 {
+    height: 1%;
+    margin: 30px 0 0;
+    overflow: hidden;
+    position: relative;
+    padding: 0 50px 10px;
+ 
+}
+
+.slider12 {
+
+      height: 1% !important;
+  margin: 0px 0 0 !important;
+  overflow: hidden !important;
+  position: relative !important;
+  padding: 0 50px 0px !important;
+}
+
+#slider1 .viewport {
+    height: 125px;
+    overflow: hidden;
+    position: relative;
+}
+
+#slider1 .buttons {
+    background: #fff;
+    border-radius: 35px;
+    display: block;
+    position: absolute;
+    top: 28%;
+    left: 25px;
+    width: 35px;
+    height: 35px;
+    color:#7b1315 ;
+    font-weight: bold;
+    text-align: center;
+    line-height: 35px;
+    text-decoration: none;
+    font-size: 22px;
+    border:1px solid #ccc;
+}
+
+#slider1 .next {
+    right: 25px;
+    left: auto;
+    top: 28%;
+}
+
+#slider1 .buttons:hover {
+    color: #7b1315;
+    background: #fff;
+}
+
+#slider1 .disable {
+    visibility: hidden;
+}
+
+#slider1 .overview {
+    list-style: none;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    width: 240px;
+    left: 0;
+    top: 0;
+}
+
+#slider1 .overview li {
+    float: left;
+    margin: 0 20px 0 0;
+    padding: 1px;
+    height: auto;
+    line-height:25px;
+    /*border: 1px solid #dcdcdc;*/
+    width: 245px;
+ }
+/*Tiny carousel editing Jenifa 02-07-2015*/
+#slider3 {
+    height: 1%;
+    margin: 30px 0 0;
+    overflow: hidden;
+    /*position: relative;*/
+    padding: 0 10px 10px;
+ 
+}
+
+.slider32 {
+
+      height: 1% !important;
+  margin: 21px -33px 0 !important;
+  overflow: hidden !important;
+  position: relative !important;
+  padding: 0 0px 0px !important;
+}
+
+#slider3 .viewport {
+    /*height: 225px;*/
+    overflow: hidden;
+    /*position: relative;*/
+}
+
+#slider3 .buttons {
+   background: #000;
+  border-radius: 35px;
+  display: block;
+  position: absolute;
+  top: 30%;
+  left: 5px;
+  width: 40px;
+  height: 40px;
+  color: #2f2f2f;
+  text-align: center;
+  line-height: 39px;
+  text-decoration: none;
+  font-size: 30px;
+  opacity: 0.8 
+    /*border:1px solid #ccc;*/
+}
+
+#slider3 .next {
+    right: 0px;
+    left: auto;
+    top: 30%;
+}
+
+#slider3 .buttons:hover {
+    color: #2f2f2f;
+    background: #000;
+    opacity:1;
+}
+
+#slider3 .disable {
+    visibility: hidden;
+}
+
+#slider3 .overview {
+    list-style: none;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    width: 240px;
+    left: 0;
+    top: 0;
+}
+
+#slider3 .overview li {
+    float: left;
+    margin: 0 0 0 67px;
+    padding: 1px;
+    font-family: raleway !important;
+    line-height:18px;
+    font-size:14px; 
+    /*height: 116px;*/
+    /*border: 1px solid #dcdcdc;*/
+    width: 350px;
+ }
+
+/*End Tiny carousel editing Jenifa 02-07-2015*/
