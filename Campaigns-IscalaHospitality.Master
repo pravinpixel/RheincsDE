@@ -2,7 +2,7 @@
 
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html  lang="de"  xml:lang="de" xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Epicor-iscala-hospitality-industry</title>
      <meta charset="utf-8" />
@@ -22,7 +22,8 @@
     <link href="Assets/Iscala/css/style-v2.css" rel="stylesheet" />
     <link href="Assets/Iscala/css/style-responsive-v2.css" rel="stylesheet" />
     <link href="Assets/Iscala/css/expandableGallery.css" rel="stylesheet" />
-    <link rel="shortcut icon" type="image/x-icon" href="/favicon.png" />    <link href="Assets/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.png" />
+    <link href="Assets/css/font-awesome.min.css" rel="stylesheet" />
     <link href="Assets/Iscala/css/multiselect.css" rel="stylesheet" />
     <link href="Assets/Iscala/css/book.css" rel="stylesheet" />
     <!--[if lt IE 9]>

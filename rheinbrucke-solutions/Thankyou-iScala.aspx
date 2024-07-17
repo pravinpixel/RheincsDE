@@ -2,7 +2,7 @@
 
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html  lang="de"  xml:lang="de" xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Thankyou RheinBrücke</title>
     <meta content="IE=edge" http-equiv="X-UA-Compatible" />

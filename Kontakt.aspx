@@ -86,11 +86,20 @@
                                     <img src="Assets/images/location-icon.png" class="img-responsive" alt="Location Indiactor" /></div>
                                 <span class="redColor bulletContent">Deutschland    
                                 </span>
-                                <p class="bulletContent">
+                                <%--<p class="bulletContent">
                                     RheinBrücke IT Consulting GmbH,<br />
                                     Kranhaus 1, Im Zollhafen 18<br />
                                     50678 Köln, Germany<br />
                                     Tel: +49 (0) 221 650 60 608<br />
+                                    Fax: +49 (0) 221 650 60 500<br />
+                                    Email: <a href="mailto:info@rheincs.com">info@rheincs.com</a>
+                                </p>--%>
+                                <p class="bulletContent">
+                                    RheinBrücke IT Consulting GmbH,<br />
+                                    44139 Dortmund,<br />
+                                    Ruhrallee 9,<br />
+                                    Germany<br />
+                                    Tel: +49 231 292 95619<br />
                                     Fax: +49 (0) 221 650 60 500<br />
                                     Email: <a href="mailto:info@rheincs.com">info@rheincs.com</a>
                                 </p>
