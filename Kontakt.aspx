@@ -3,32 +3,31 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="headerPlaceHolder" runat="server">
     <meta name="keywords" content="RheinBrücke Contact RheinBrücke IT Consulting Services" />
     <meta name="Description" content="Contact RheinBrücke for our IT consulting services and technology solutions including Program and Project Management, ERP Solutions aligned to SAP, Microsoft SharePoint and EPICOR and Open Source Technology platforms." />
-    
+
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-        <style>
-            .bulletContent
-        {
-            font-size:14px !important;
+    <style>
+        .bulletContent {
+            font-size: 14px !important;
         }
-        .validator
-        {
-            margin-top:0px;
+
+        .validator {
+            margin-top: 0px;
         }
-        .submit-button
-        {
-            margin-top:10px;
+
+        .submit-button {
+            margin-top: 10px;
         }
     </style>
-     <input type="hidden" id="hdfRootUrl" value="<%=rootpath %>" />
-    
+    <input type="hidden" id="hdfRootUrl" value="<%=rootpath %>" />
+
     <%-- Container Starts Here --%>
     <div class="container" id="container-top">
         <!--banner-->
-         <div class="row">
+        <div class="row">
             <ul class="breadcrumb bread hidden-xs hidden-sm">
-                <li><a href="Home" class="redColor">Home <span> » </span></a></li>
-                
+                <li><a href="Home" class="redColor">Home <span>» </span></a></li>
+
                 <li><a href="#" class="redColor">Kontakt</a></li>
             </ul>
         </div>
@@ -48,9 +47,11 @@
             <p>Unsere Ansprechpartner vor Ort oder weltweit helfen Ihnen gerne bei sämtlichen Fragen weiter.</p>
             <div class="clearfix">&nbsp;</div>
             <div class="col-md-12 hidden-lg hidden-md">
-                <img src="Assets/images/world-map-bg-mobile.jpg" alt="RheinBrücke Locations" class="center-block img-responsive" /></div>
-             <div class="col-md-12 hidden-lg hidden-sm hidden-xs">
-                <img src="Assets/images/Rheinbrucke-map-location.jpg" alt="RheinBrücke Locations" class="center-block img-responsive" /></div>
+                <img src="Assets/images/world-map-bg-mobile.jpg" alt="RheinBrücke Locations" class="center-block img-responsive" />
+            </div>
+            <div class="col-md-12 hidden-lg hidden-sm hidden-xs">
+                <img src="Assets/images/Rheinbrucke-map-location.jpg" alt="RheinBrücke Locations" class="center-block img-responsive" />
+            </div>
             <div class="col-md-12 hidden-xs hidden-sm hidden-md">
                 <iframe src="Assets/location-map/index.html" width="100%" height="500px" frameborder="0" scrolling="no"></iframe>
             </div>
@@ -58,49 +59,39 @@
             <!--locations-->
             <div class="col-md-12 padd-left">
                 <div class="row col-md-12 ">
-
                     <div class="col-md-4">
                         <ul>
                             <li>
                                 <div class="contactus-map-icon">
-                                    <img src="Assets/images/location-icon.png" class="img-responsive" alt="Location Indiactor" /></div>
-                                <span class="redColor bulletContent">Niederlande
+                                    <img src="Assets/images/location-icon.png" class="img-responsive" alt="Location Indiactor" />
+                                </div>
+                                <span class="redColor bulletContent">Netherlands
                                 </span>
                                 <p class="bulletContent">
                                     RheinBrücke IT Consulting BV,<br />
-                                    Stationsplein<br />
+                                    Stationsplein,<br />
                                     8K NL-6221BT,<br />
                                     Maastricht, Netherlands<br />
                                     Tel: +31 (0) 43 799 9102<br />
-                                    Fax: +31 (0) 43 799 9333<br />
                                     Email: <a href="mailto:info@rheincs.com">info@rheincs.com</a>
                                 </p>
                             </li>
                         </ul>
-
                     </div>
                     <div class="col-md-4">
                         <ul>
                             <li>
                                 <div class="contactus-map-icon">
-                                    <img src="Assets/images/location-icon.png" class="img-responsive" alt="Location Indiactor" /></div>
-                                <span class="redColor bulletContent">Deutschland    
+                                    <img src="Assets/images/location-icon.png" class="img-responsive" alt="Location Indiactor" />
+                                </div>
+                                <span class="redColor bulletContent">Germany 
                                 </span>
-                                <%--<p class="bulletContent">
-                                    RheinBrücke IT Consulting GmbH,<br />
-                                    Kranhaus 1, Im Zollhafen 18<br />
-                                    50678 Köln, Germany<br />
-                                    Tel: +49 (0) 221 650 60 608<br />
-                                    Fax: +49 (0) 221 650 60 500<br />
-                                    Email: <a href="mailto:info@rheincs.com">info@rheincs.com</a>
-                                </p>--%>
                                 <p class="bulletContent">
                                     RheinBrücke IT Consulting GmbH,<br />
                                     44139 Dortmund,<br />
                                     Ruhrallee 9,<br />
                                     Germany<br />
                                     Tel: +49 231 292 95619<br />
-                                    Fax: +49 (0) 221 650 60 500<br />
                                     Email: <a href="mailto:info@rheincs.com">info@rheincs.com</a>
                                 </p>
                             </li>
@@ -111,7 +102,8 @@
                         <ul>
                             <li>
                                 <div class="contactus-map-icon">
-                                    <img src="Assets/images/location-icon.png" class="img-responsive" alt="Location Indiactor" /></div>
+                                    <img src="Assets/images/location-icon.png" class="img-responsive" alt="Location Indiactor" />
+                                </div>
                                 <span class="redColor bulletContent">USA
                                 </span>
                                 <p class="bulletContent">
@@ -126,8 +118,7 @@
                         </ul>
 
                     </div>
-                    
- 
+
 
 
                 </div>
@@ -136,55 +127,56 @@
                         <ul>
                             <li>
                                 <div class="contactus-map-icon">
-                                    <img src="Assets/images/location-icon.png" class="img-responsive" alt="Location Indiactor" /></div>
-                                <span class="redColor bulletContent">Indien
+                                    <img src="Assets/images/location-icon.png" class="img-responsive" alt="Location Indiactor" />
+                                </div>
+                                <span class="redColor bulletContent">India
                                 </span>
                                 <p class="bulletContent">
                                     RheinBrücke IT Consulting Pvt Ltd,<br />
-                                    No. 45, 5th Cross Street,<br />
-                                    Kalaimagal Nagar,<br />
-                                    Ekkatuthangal, Chennai,<br />
+                                    Bharati Vilas, 1st Floor,
+                                    <br />
+                                    26B Jawaharlal Nehru  Salai,<br />
+                                    Ekkatuthangal, Guindy Industrial Estate,<br />
+                                    Chennai,<br />
                                     Tamil Nadu, India 600 032<br />
-                                    Tel: +91 44 6671 7555<br />
-                                   
+                                    Tel: +91 44 6671 7555
+                                    <br />
+
                                     Email: <a href="mailto:info@rheincs.com">info@rheincs.com</a>
                                 </p>
                             </li>
                         </ul>
 
                     </div>
-                    <div class="col-md-4">
+                    <%--  <div class="col-md-4">
                         <ul>
                             <li>
                                 <div class="contactus-map-icon">
-                                    <img src="Assets/images/location-icon.png" class="img-responsive" alt="Location Indiactor" /></div>
+                                    <img src="Assets/images/location-icon.png" class="img-responsive" alt="Location Indiactor" />
+                                </div>
                                 <span class="redColor bulletContent">UAE- Office 1
                                 </span>
                                 <p class="bulletContent">
                                     RheinBrücke Middle East IT Infrastructure LLC,<br />
                                     PO Box 450471,<br />
                                     Office #4701- 10,<br />
-                                    Aspin Commercial Towers<br />
-                                    Shaikh Zayed Road, Dubai<br />
-                                    United Arab Emirates<br />
+                                    Aspin Commercial Towers, <br />Shaikh Zayed Road, Dubai, United Arab Emirates<br />
                                     Tel: +9714 388 8247<br />
                                     Email: <a href="mailto:info@rheincs.com">info@rheincs.com</a>
                                 </p>
                             </li>
                         </ul>
-
-                    </div>
-                    
-                  <div class="col-md-4">
+                    </div>--%>
+                    <div class="col-md-4">
                         <ul>
                             <li>
                                 <div class="contactus-map-icon">
                                     <img src="Assets/images/location-icon.png" class="img-responsive" alt="Location Indiactor" />
                                 </div>
-                                <span class="redColor bulletContent">UAE- Office 2
+                                <span class="redColor bulletContent">UAE- Office 1
                                 </span>
                                 <p class="bulletContent">
-                                   RheinBrücke IT Consulting EMEA FZCO,<br />
+                                    RheinBrücke IT Consulting EMEA FZE,<br />
                                     2-234-235 – Techno Hub 2,<br />
                                     P.O Box : 342060<br />
                                     Dubai Silicon Oasis, Dubai<br />
@@ -196,16 +188,14 @@
                         </ul>
 
                     </div>
-                    
 
-                </div>
-                 <div class="row col-md-12">
-                     <div class="col-md-4">
+                    <div class="col-md-4">
                         <ul>
                             <li>
                                 <div class="contactus-map-icon">
-                                    <img src="Assets/images/location-icon.png" class="img-responsive" alt="Location Indiactor" /></div>
-                                <span class="redColor bulletContent">UAE- Office 3 
+                                    <img src="Assets/images/location-icon.png" class="img-responsive" alt="Location Indiactor" />
+                                </div>
+                                <span class="redColor bulletContent">UAE- Office 2 
                                 </span>
                                 <p class="bulletContent">
                                     RheinBrücke IT Consulting DMCC,<br />
@@ -214,27 +204,29 @@
                                     Plot No. 550-554<br />
                                     J&G, DMCC, Dubai<br />
                                     United Arab Emirates<br />
-                                    Tel: +971 52 639 6201<br />
+                                    Tel: +971 50 650 8854<br />
                                     Email: <a href="mailto:info@rheincs.com">info@rheincs.com</a>
                                 </p>
+
                             </li>
                         </ul>
 
                     </div>
-                     </div>
+                </div>
+
             </div>
             <!--locations-->
             <!--FORM-->
             <div class="col-md-12">
                 <h5 class="deco-header">
                     <span class="redBottom">WRITE TO US</span></h5>
-                    <div class="col-md-12 padd-top">
-                            <div class="form-group">
-                                <label class="success" id="successmessage"  hidden="hidden">Wir danken Ihnen für Rheinbrücke . Wir werden in Kürze mit Ihnen in Verbindung .</label>
-                            </div>
-                        </div>
-                    <div class="col-md-4 nopadding">
-                        <div class="col-md-12">
+                <div class="col-md-12 padd-top">
+                    <div class="form-group">
+                        <label class="success" id="successmessage" hidden="hidden">Wir danken Ihnen für Rheinbrücke . Wir werden in Kürze mit Ihnen in Verbindung .</label>
+                    </div>
+                </div>
+                <div class="col-md-4 nopadding">
+                    <div class="col-md-12">
                         <select id="DDLServices" class="dropdown" name="select-services" style="width: 100%; padding: 6px;">
                             <option value="0">-- Select Any One --</option>
                             <option value="Epicor">Epicor</option>
@@ -247,33 +239,33 @@
                         </select>
                         <span class="validator" id="reqDDlservices" hidden="hidden">Select the Services</span>
                     </div>
-                        <div class="clearfix">&nbsp;</div>
-                        <div class="col-md-12">
-                            <input type="text" placeholder="*lhr Name" name="name" id="txtContactName" class="write-to-us-input" />
-                            <span class="validator" id="reqContactName" hidden="hidden">Überprüfen Sie Ihren Namen</span>
-                        </div>
-                        <div class="clearfix">&nbsp;</div>
-                        <div class="col-md-12">
-                            <input type="text" placeholder="*Ihre E-Mail-Addresse" name="email-address" id="txtContactemail" class="write-to-us-input" />
-                             <span class="validator" id="reqContactemail" hidden="hidden">Überprüfen Sie Ihre E-Mail-Adresse</span>
-                            <span class="validator" id="valContactemail" hidden="hidden">Ungültige E-Mail-Adresse</span>
-                        </div>
-                          <div class="clearfix">&nbsp;</div>
+                    <div class="clearfix">&nbsp;</div>
+                    <div class="col-md-12">
+                        <input type="text" placeholder="*lhr Name" name="name" id="txtContactName" class="write-to-us-input" />
+                        <span class="validator" id="reqContactName" hidden="hidden">Überprüfen Sie Ihren Namen</span>
+                    </div>
+                    <div class="clearfix">&nbsp;</div>
+                    <div class="col-md-12">
+                        <input type="text" placeholder="*Ihre E-Mail-Addresse" name="email-address" id="txtContactemail" class="write-to-us-input" />
+                        <span class="validator" id="reqContactemail" hidden="hidden">Überprüfen Sie Ihre E-Mail-Adresse</span>
+                        <span class="validator" id="valContactemail" hidden="hidden">Ungültige E-Mail-Adresse</span>
+                    </div>
+                    <div class="clearfix">&nbsp;</div>
                     <div class="col-md-12">
                         <input type="text" placeholder="*Ihre Mobile Number" name="mobile-number" id="txtmobileno" class="write-to-us-input" />
                         <span style="margin-top: 5px;" class="validator" id="reqmobileno" hidden="hidden">Überprüfen Sie Ihre Mobile Number</span>
                         <span style="margin-top: 5px;" class="validator" id="Validationmobileno" hidden="hidden">Ungültige phone number</span>
                     </div>
-                    </div>
-                    <div class="col-md-4">
-                        
-                        <textarea cols="45" rows="5" style="height: 222px;" placeholder="*Ihre Nachricht" name="message" id="txtContactMessage" class="write-to-us-input"></textarea>
-                         <span class="validator" id="reqContactMessage" hidden="hidden">Überprüfen Sie Ihre Nachricht</span>
-                    </div>
-                    <div class="clearfix">&nbsp;</div>
-                    <div class="col-md-12">
-                           <input type="button" id="btnContact" class="submit-button" data-loading-text="Einreichen.." value="Senden" />
-                       </div>
+                </div>
+                <div class="col-md-4">
+
+                    <textarea cols="45" rows="5" style="height: 222px;" placeholder="*Ihre Nachricht" name="message" id="txtContactMessage" class="write-to-us-input"></textarea>
+                    <span class="validator" id="reqContactMessage" hidden="hidden">Überprüfen Sie Ihre Nachricht</span>
+                </div>
+                <div class="clearfix">&nbsp;</div>
+                <div class="col-md-12">
+                    <input type="button" id="btnContact" class="submit-button" data-loading-text="Einreichen.." value="Senden" />
+                </div>
             </div>
             <!--FORM-->
         </div>
@@ -283,7 +275,6 @@
     </div>
     <!--Container-->
     <%-- Container Ends Here --%>
-    
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="FooterScript" runat="server">
     <script>
@@ -392,111 +383,111 @@
         }
     </script>
 
-     <script type="text/javascript" src="https://web.mxradon.com/t/FormTracker.js"></script>
+    <script type="text/javascript" src="https://web.mxradon.com/t/FormTracker.js"></script>
 
-                    <script type="text/javascript">
-                            
-
-			
-                        function onFormSubmit() {
-
-			var checks = new Array();
-
-                           
-
-
-                            var fieldMapping = {
-                                MXHOrgCode: "17537",
-                                MXHLandingPageId: "fdd83aa5-1f68-11e7-a02b-22000b10e324",
-                                MXHAsc: "",
-
-				
-
-                                FirstName: "name",
-									  EmailAddress: "email-address",
-                                  Phone: "mobile-number",
-                                 mx_Your_Message:"message",
-                               mx_Contactus_dropdown: "select-services",
-                               
-
-
-                            };
-
-                            var onSuccess = function (data) {                   
-                                data = $.parseJSON(data)
-                                var logData = {
-                                    Name: $('#txtContactName').val(),
-                                    FormPID: data.PId,
-                                    Email: $('#txtContactemail').val(),
-                                    Mobile: $('#txtmobileno').val(),
-                                    FormStatus: data.Status,
-                                    FormMsg: data.Message,
-                                    FormAction: data.FormAction,
-                                    ServiceType: "Kontakt"
-                                }
-                                $.ajax({
-                                    type: "POST",
-                                    url: "/" + "api/Admin/LeadSquaredLog",
-                                    data: logData,
-                                    cache: false,
-                                    //contentType: "application/json; charset=utf-8",
-                                    dataType: "json",
-                                    failure: function (response) {
-                                        alert(response.d);
-                                    }
-
-                                });
-                                clear();
-                            console.log(data);
-					
-	
-                            }
-
-                            var onError = function (data) {                 
-                                data = $.parseJSON(data)
-                                var logData = {
-                                    Name: $('#txtContactName').val(),
-                                    FormPID: data.PId,
-                                    Email: $('#txtContactemail').val(),
-                                    Mobile: $('#txtmobileno').val(),
-                                    FormStatus: data.Status,
-                                    FormMsg: data.Message,
-                                    FormAction: data.FormAction,
-                                    ServiceType: "Contact Us"
-                                }
-                                $.ajax({
-                                    type: "POST",
-                                    url: "/" + "api/Admin/LeadSquaredLog",
-                                    data: logData,
-                                    cache: false,
-                                    //contentType: "application/json; charset=utf-8",
-                                    dataType: "json",
-                                    failure: function (response) {
-                                        alert(response.d);
-                                    }
-
-                                });
-                                clear();
-                            console.log(data);
-
-                            }
+    <script type="text/javascript">
 
 
 
-                            new LSQForm().captureLead(fieldMapping, "form1",
+        function onFormSubmit() {
 
-                            {
+            var checks = new Array();
 
-                            onSuccess: onSuccess,   //optional
-                            onError: onError,       //optional
 
-                            });
-			
-				
 
-};
 
-                        
-                    </script>
+            var fieldMapping = {
+                MXHOrgCode: "17537",
+                MXHLandingPageId: "fdd83aa5-1f68-11e7-a02b-22000b10e324",
+                MXHAsc: "",
+
+
+
+                FirstName: "name",
+                EmailAddress: "email-address",
+                Phone: "mobile-number",
+                mx_Your_Message: "message",
+                mx_Contactus_dropdown: "select-services",
+
+
+
+            };
+
+            var onSuccess = function (data) {
+                data = $.parseJSON(data)
+                var logData = {
+                    Name: $('#txtContactName').val(),
+                    FormPID: data.PId,
+                    Email: $('#txtContactemail').val(),
+                    Mobile: $('#txtmobileno').val(),
+                    FormStatus: data.Status,
+                    FormMsg: data.Message,
+                    FormAction: data.FormAction,
+                    ServiceType: "Kontakt"
+                }
+                $.ajax({
+                    type: "POST",
+                    url: "/" + "api/Admin/LeadSquaredLog",
+                    data: logData,
+                    cache: false,
+                    //contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    failure: function (response) {
+                        alert(response.d);
+                    }
+
+                });
+                clear();
+                console.log(data);
+
+
+            }
+
+            var onError = function (data) {
+                data = $.parseJSON(data)
+                var logData = {
+                    Name: $('#txtContactName').val(),
+                    FormPID: data.PId,
+                    Email: $('#txtContactemail').val(),
+                    Mobile: $('#txtmobileno').val(),
+                    FormStatus: data.Status,
+                    FormMsg: data.Message,
+                    FormAction: data.FormAction,
+                    ServiceType: "Contact Us"
+                }
+                $.ajax({
+                    type: "POST",
+                    url: "/" + "api/Admin/LeadSquaredLog",
+                    data: logData,
+                    cache: false,
+                    //contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    failure: function (response) {
+                        alert(response.d);
+                    }
+
+                });
+                clear();
+                console.log(data);
+
+            }
+
+
+
+            new LSQForm().captureLead(fieldMapping, "form1",
+
+                {
+
+                    onSuccess: onSuccess,   //optional
+                    onError: onError,       //optional
+
+                });
+
+
+
+        };
+
+
+    </script>
 
 </asp:Content>
