@@ -20,14 +20,17 @@
 </div>
 <div class="wrappernew main-container">
     <p><b>Herausgeber:</b>  <br />
-RheinBrücke IT Consulting GmbH<br />
-Kranhaus 1<br />
-Im Zollhafen 18<br />
-50678 Köln / Deutschland</p>
+  RheinBrücke IT Consulting GmbH,<br />
+                                    44139 Dortmund,<br />
+                                    Ruhrallee 9,<br />
+                                    Germany<br />
+                                    Tel: +49 231 292 95619<br />
+                                    Fax: +49 (0) 221 650 60 500<br />
+                                    Email: <a href="mailto:info@rheincs.com">info@rheincs.com</a>
 
 <p><b>Ansprechpartner:</b><br />
 Dirk Meinker <br />
-Telefon +49 221 – 65060608<br />
+Telefon +49 231 29295619<br />
 Mobil +49 173 88 16 765<br />
 Mail info@rheincs.com</p>
 
