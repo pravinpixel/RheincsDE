@@ -725,7 +725,7 @@ Hersteller stehen unter ständigem Druck, hochwertige Produkte termingerecht pro
                                 <p class="bulletContent">
                                     <b>RheinBrücke IT Consulting GmbH</b><br/>
                                     Kranhaus 1, Im Zollhafen 18<br/>
-                                    50678 Köln, Deutschland<br/>
+                                    50678 Dortmund, Deutschland<br/>
                                     Tel: +49 (0) 221 650 60 608<br/>
                                     Fax: +49 (0) 221 650 60 500<br/>
                                     Email: <a href="mailto:marketing@rheincs.com" style="color:#7b1314">marketing@rheincs.com</a>
